@@ -1,0 +1,4 @@
+<map id="Gnuplot::set_zlabel" name="Gnuplot::set_zlabel">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a14191e89154f2716608f6907975cc012" title="Construtor, plota um grafico de x_y_z a partir de vetores, diretamente na construcao. " alt="" coords="189,5,309,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#ace776aa2b273c0ec934e856cb28416eb" title="Seta o rotulo (nome) do eixo z. " alt="" coords="192,56,307,83"/>
+</map>

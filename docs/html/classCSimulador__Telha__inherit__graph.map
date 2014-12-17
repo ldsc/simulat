@@ -1,0 +1,7 @@
+<map id="CSimulador_Telha" name="CSimulador_Telha">
+<area shape="rect" id="node6" href="$classCSimulador__Telha__GanhosEnergia.xhtml" title="por causa rotinas entrada saída " alt="" coords="297,1251,543,1549"/>
+<area shape="rect" id="node2" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="5,353,291,679"/>
+<area shape="rect" id="node3" href="$classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="64,6,232,303"/>
+<area shape="rect" id="node4" href="$classCTransferenciaCalorMassa.xhtml" title="por causa rotinas entrada saída " alt="" coords="315,426,524,606"/>
+<area shape="rect" id="node5" href="$classCSolver__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="549,404,739,628"/>
+</map>

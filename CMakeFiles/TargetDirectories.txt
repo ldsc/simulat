@@ -1,0 +1,1 @@
+/home/bueno/Documentos/03-Pesquisa/4-Desenvolvimento/1-Atual/01a-SimulacaoTelhaMestrado/Simulat-SimuladorTelhaMestrado-v4-GNULinux-2014-Classes-SaidaGrafica/src/CMakeFiles/Simulat-SimuladorTelhaMestrado-v4.dir

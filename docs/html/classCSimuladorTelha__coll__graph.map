@@ -1,0 +1,17 @@
+<map id="CSimuladorTelha" name="CSimuladorTelha">
+<area shape="rect" id="node2" href="$classCFuncao__wl.xhtml" title="{CFuncao_wl\n||+ Funcao_wl()\l+ operator()()\l}" alt="" coords="1410,1105,1515,1197"/>
+<area shape="rect" id="node19" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="{CMeioPoroso_Telha_Discretizada_TDMA\n|# esp\l# ol\l# tp\l# ola\l# tpa\l# espaa\l# olaa\l# tpaa\l|+ CMeioPoroso_Telha_Discretizada_TDMA()\l+ ~CMeioPoroso_Telha\l_Discretizada_TDMA()\l+ DadosDefault()\l+ EntrarDadosObjeto()\l+ Next()\l+ CalcularValoresMedios\l_wl_h_rov_dif_k()\l+ Calcular_ti()\l+ Calcular_ol()\l+ Calcular_tp()\l# Calcular_aibicidi_ol()\l# Calcular_efeitos_chuva_ol()\l# Calcular_aibicidi_tp()\l# Calcular_aibicidi_ti()\l}" alt="" coords="1407,1262,1692,1647"/>
+<area shape="rect" id="node3" href="$classCFluido.xhtml" title="{CFluido\n||+ CFluido()\l+ ~CFluido()\l+ DadosDefault()\l+ EntrarDadosObjeto()\l}" alt="" coords="1647,435,1800,557"/>
+<area shape="rect" id="node7" href="$classCMeioPoroso__Telha.xhtml" title="{CMeioPoroso_Telha\n||+ CMeioPoroso_Telha()\l+ ~CMeioPoroso_Telha()\l+ DadosDefault()\l+ EntrarDadosObjeto()\l}" alt="" coords="1341,670,1509,791"/>
+<area shape="rect" id="node8" href="$classCFuncaoCondutividade.xhtml" title="{CFuncaoCondutividade\n||+ CFuncaoCondutividade()\l+ ~CFuncaoCondutividade()\l# EntrarDadosFuncao()\l# FuncaoCondutividade()\l# operator()()\l}" alt="" coords="1083,261,1269,397"/>
+<area shape="rect" id="node10" href="$classCFuncaoDifusividade.xhtml" title="{CFuncaoDifusividade\n||+ CFuncaoDifusividade()\l+ ~CFuncaoDifusividade()\l+ EntrarDadosFuncao()\l+ FuncaoDifusividade()\l+ operator()()\l}" alt="" coords="1347,261,1521,397"/>
+<area shape="rect" id="node12" href="$classCFuncoesClima.xhtml" title="&#45;&#45;&#45;&#45;&#45;—— Definição das classes ordem atributos &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;—— " alt="" coords="1897,582,2103,879"/>
+<area shape="rect" id="node20" href="$classCTransferenciaCalorMassa.xhtml" title="{CTransferenciaCalorMassa\n||+ CTransferenciaCalorMassa()\l+ ~CTransferenciaCalorMassa()\l# DadosDefault()\l# EntrarDadosObjeto()\l}" alt="" coords="795,269,1004,390"/>
+<area shape="rect" id="node21" href="$classCSolver__TDMA.xhtml" title="{CSolver_TDMA\n||+ CSolver_TDMA()\l+ ~CSolver_TDMA()\l# Calcular_piqi()\l}" alt="" coords="303,276,445,383"/>
+<area shape="rect" id="node11" href="$classCFuncaoAdsorcao.xhtml" title="{CFuncaoAdsorcao\n||+ CFuncaoAdsorcao()\l+ ~CFuncaoAdsorcao()\l# EntrarDadosFuncao()\l# FuncaoUmidade()\l# operator()()\l}" alt="" coords="1809,261,1967,397"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="2312,1416,2411,1493"/>
+<area shape="rect" id="node15" title="STL class. " alt="" coords="2417,1105,2553,1197"/>
+<area shape="rect" id="node16" title="STL class. " alt="" coords="2432,685,2565,777"/>
+<area shape="rect" id="node17" title="STL class. " alt="" coords="2421,291,2576,368"/>
+<area shape="rect" id="node18" title="STL class. " alt="" coords="2449,20,2548,97"/>
+</map>

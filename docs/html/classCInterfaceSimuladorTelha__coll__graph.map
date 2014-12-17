@@ -1,0 +1,21 @@
+<map id="CInterfaceSimuladorTelha" name="CInterfaceSimuladorTelha">
+<area shape="rect" id="node4" href="$classCSimulador__Telha__GanhosEnergia.xhtml" title="Representa um simulador de meio poroso tridimensional discretizado com cálculos ganhos energia..." alt="" coords="752,1803,997,2056"/>
+<area shape="rect" id="node5" href="$classCSimulador__Telha.xhtml" title="Representa um simulador de um meio poroso unidimensional discretizado (acrescenta conceitos simulação..." alt="" coords="779,1440,969,1752"/>
+<area shape="rect" id="node6" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="Representa o conjunto de todos os nós de um meio poroso unidimensional discretizado (como uma telha)..." alt="" coords="497,1078,783,1375"/>
+<area shape="rect" id="node7" href="$classCMeioPoroso__Telha.xhtml" title="Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te..." alt="" coords="949,671,1117,793"/>
+<area shape="rect" id="node8" href="$classCFuncaoCondutividade.xhtml" title="Calcula a condutividade a partir de correlações fornecidas pelo usuário. " alt="" coords="567,221,753,371"/>
+<area shape="rect" id="node9" href="$classCFuncaoDifusividade.xhtml" title="Representa a função de difusidade ao vapor de um meio poroso; no caso específico, a telha de cerâmica..." alt="" coords="778,221,952,371"/>
+<area shape="rect" id="node10" href="$classCFuncaoAdsorcao.xhtml" title="Calcula a umidade a partir das curvas de adsorção do material (correlações fornecidas pelo usuário)..." alt="" coords="977,206,1140,386"/>
+<area shape="rect" id="node12" href="$classCTransferenciaCalorMassa.xhtml" title="Inclui atributos associados a conceitos de transferência de calor e massa. " alt="" coords="1575,431,1784,553"/>
+<area shape="rect" id="node13" href="$classCSolver__TDMA.xhtml" title="representa um solver TDMA &#45; Tri&#45;Diagonal Matriz Algorithm (unidimensional). " alt="" coords="249,897,439,1047"/>
+<area shape="rect" id="node15" href="$classCFluido.xhtml" title="Representa um fluido com atributos: rol, cl, lv. " alt="" coords="754,671,907,793"/>
+<area shape="rect" id="node16" href="$classCFuncoesClima.xhtml" title="Armazena e calcula funções como temperatura externa/interna, radiação onda curta/longa, umidade externa/interna, e chuva. Estes atributos podem ser constantes ou função da hora do dia. " alt="" coords="1141,598,1320,866"/>
+<area shape="rect" id="node14" href="$classCFuncao__wl.xhtml" title="Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol..." alt="" coords="961,1137,1119,1317"/>
+<area shape="rect" id="node18" title="STL class. " alt="" coords="1604,1891,1684,1968"/>
+<area shape="rect" id="node19" title="STL class. " alt="" coords="1593,1550,1719,1642"/>
+<area shape="rect" id="node20" title="STL class. " alt="" coords="1747,1891,1845,1968"/>
+<area shape="rect" id="node21" title="STL class. " alt="" coords="1743,1550,1880,1642"/>
+<area shape="rect" id="node22" title="STL class. " alt="" coords="1745,1181,1879,1273"/>
+<area shape="rect" id="node23" title="STL class. " alt="" coords="1735,693,1889,771"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="1762,257,1861,335"/>
+</map>

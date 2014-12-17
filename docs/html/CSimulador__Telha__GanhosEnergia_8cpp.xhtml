@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência do Arquivo src/CSimulador_Telha_GanhosEnergia.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo CSimulador_Telha_GanhosEnergia.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &quot;<a class="el" href="CSimulador__Telha__GanhosEnergia_8h_source.xhtml">CSimulador_Telha_GanhosEnergia.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Gráfico de dependência de inclusões para CSimulador_Telha_GanhosEnergia.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CSimulador__Telha__GanhosEnergia_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4950d7eea4f7cfd7d9ca597f41cb69ec"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CSimulador__Telha__GanhosEnergia_8cpp.xhtml#a4950d7eea4f7cfd7d9ca597f41cb69ec">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a> &amp;obj)</td></tr>
+<tr class="separator:a4950d7eea4f7cfd7d9ca597f41cb69ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a4950d7eea4f7cfd7d9ca597f41cb69ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referências <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">CSimulador_Telha_GanhosEnergia::be</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">CSimulador_Telha_GanhosEnergia::bm</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">CSimulador_Telha_GanhosEnergia::gec</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">CSimulador_Telha_GanhosEnergia::geci</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">CSimulador_Telha_GanhosEnergia::gecl</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">CSimulador_Telha_GanhosEnergia::geroc</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">CSimulador_Telha_GanhosEnergia::geroci</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">CSimulador_Telha_GanhosEnergia::gerol</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">CSimulador_Telha_GanhosEnergia::geroli</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">CSimulador_Telha_GanhosEnergia::gesp</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">CSimulador_Telha_GanhosEnergia::gev</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">CSimulador_Telha_GanhosEnergia::gic</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">CSimulador_Telha_GanhosEnergia::gici</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">CSimulador_Telha_GanhosEnergia::gicl</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">CSimulador_Telha_GanhosEnergia::gir</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">CSimulador_Telha_GanhosEnergia::giri</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">CSimulador_Telha_GanhosEnergia::giv</a>, <a class="el" href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">CSimulador_Telha::hm</a>, <a class="el" href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">CSimulador_Telha::km</a>, <a class="el" href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">CSimulador_Telha::olm</a>, <a class="el" href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">CSimulador_Telha::tim</a>, <a class="el" href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">CSimulador_Telha::tpm</a> e <a class="el" href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">CSimulador_Telha::wlm</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha_GanhosEnergia:&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha_GanhosEnergia-&gt; Herdados&quot;</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//   os &lt;&lt; static_cast&lt;CSimulador_Telha &gt; (obj);</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> st = obj;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    os &lt;&lt; st;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\nwlm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">wlm</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">hm</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nkm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">km</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nolm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">olm</a></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntpm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">tpm</a></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntim = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">tim</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngev = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">gev</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngiv = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">giv</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngesp = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">gesp</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngec = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">gec</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngic = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">gic</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngecl = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">gecl</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngicl = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">gicl</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroc = &quot;</span> &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">geroc</a></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngerol = &quot;</span> &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">gerol</a></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngir = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">gir</a></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nbm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">bm</a></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nbe = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">be</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeci = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">geci</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngici = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">gici</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroci = &quot;</span>&lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">geroci</a></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroli = &quot;</span>&lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">geroli</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngiri = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">giri</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a3a8825a48e601257befc2ff6c3b64bab"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">CSimulador_Telha_GanhosEnergia::gec</a></div><div class="ttdeci">double gec</div><div class="ttdoc">ganho externo convecção </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:19</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a906fb37eb0d54fde58112bdb58cb410c"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">CSimulador_Telha_GanhosEnergia::geroli</a></div><div class="ttdeci">double geroli</div><div class="ttdoc">ganho externo radiação onda longa </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:31</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a355713c8427b443c472c5c7fc7bce43c"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">CSimulador_Telha_GanhosEnergia::gesp</a></div><div class="ttdeci">double gesp</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:18</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml"><div class="ttname"><a href="classCSimulador__Telha.xhtml">CSimulador_Telha</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:18</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a88105eb897c5b671b28e7b52e86ca442"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">CSimulador_Telha_GanhosEnergia::geroci</a></div><div class="ttdeci">double geroci</div><div class="ttdoc">ganho externo radiação onda curta </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:30</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_adaa5d5a6eb7641857882a6deebdd3c26"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">CSimulador_Telha_GanhosEnergia::gev</a></div><div class="ttdeci">double gev</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:16</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a78a210c7af9486f28421da1783ccf45a"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">CSimulador_Telha_GanhosEnergia::gerol</a></div><div class="ttdeci">double gerol</div><div class="ttdoc">ganho externo radiação onda longa </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:24</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a4a65241ac994cadaedc95ce87243a803"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">CSimulador_Telha::km</a></div><div class="ttdeci">double km</div><div class="ttdoc">condutividade média ? </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:34</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ad8d3780940e5214e01fd410a2e2b35c0"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">CSimulador_Telha_GanhosEnergia::gici</a></div><div class="ttdeci">double gici</div><div class="ttdoc">ganho interno convecção </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:29</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af8cf7c614d44bd6cdcd9f51c94d02e88"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">CSimulador_Telha_GanhosEnergia::gicl</a></div><div class="ttdeci">double gicl</div><div class="ttdoc">ganho interno calor latente </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:22</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a45dfbfc358771cc7e35da528de729069"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">CSimulador_Telha_GanhosEnergia::gecl</a></div><div class="ttdeci">double gecl</div><div class="ttdoc">ganho externo calor latente </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:21</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a7453feee3c47cccd7c0851cf30a3dcf3"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">CSimulador_Telha::tim</a></div><div class="ttdeci">double tim</div><div class="ttdoc">temperatura média telha impermeável ? </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:37</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ae67f600265152d494037c2a082ad1baa"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">CSimulador_Telha_GanhosEnergia::geci</a></div><div class="ttdeci">double geci</div><div class="ttdoc">ganho externo convecção </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:28</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_af33c6495a7304de5e3070f374e5a55c1"><div class="ttname"><a href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">CSimulador_Telha::olm</a></div><div class="ttdeci">double olm</div><div class="ttdoc">conteúdo massa médio ? </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:35</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a211a876a2f0d608c8a6118d92bb95258"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">CSimulador_Telha_GanhosEnergia::bm</a></div><div class="ttdeci">double bm</div><div class="ttdoc">balanco massa </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:26</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af27d2e405d47f36849ce7345d025531a"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">CSimulador_Telha_GanhosEnergia::gir</a></div><div class="ttdeci">double gir</div><div class="ttdoc">ganho interno radicao </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:25</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a8eeee50e6948dc9e76d9188416455cb6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">CSimulador_Telha::wlm</a></div><div class="ttdeci">double wlm</div><div class="ttdoc">double errorecorrenciaol,errorecorrenciatp,errorecorrenciaola,errorecorrenciatpa; ...</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:32</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ab0e2b84b8b1b8b3580f857886724122c"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">CSimulador_Telha::tpm</a></div><div class="ttdeci">double tpm</div><div class="ttdoc">temperatura média telha permeável ? </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:36</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a4be5101232f4cd6e58a045c29ccd563d"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">CSimulador_Telha_GanhosEnergia::giri</a></div><div class="ttdeci">double giri</div><div class="ttdoc">ganho interno radicao </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:32</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a03c4f31c4fdb7414494141b2478389da"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">CSimulador_Telha_GanhosEnergia::geroc</a></div><div class="ttdeci">double geroc</div><div class="ttdoc">ganho externo radiação onda curta </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:23</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a48c934fecfd0e0d541811f52eb664fe9"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">CSimulador_Telha_GanhosEnergia::giv</a></div><div class="ttdeci">double giv</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:17</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a877772b0ec353f3cd31a8fdf1d9f74d0"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">CSimulador_Telha::hm</a></div><div class="ttdeci">double hm</div><div class="ttdoc">coeficiente transferência massa médio ? </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:33</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ae655b9826b4a32d093e738ccbd10f308"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">CSimulador_Telha_GanhosEnergia::be</a></div><div class="ttdeci">double be</div><div class="ttdoc">balanco energia </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:27</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af5a61b3f0172d0fd5c02e703e7786c6d"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">CSimulador_Telha_GanhosEnergia::gic</a></div><div class="ttdeci">double gic</div><div class="ttdoc">ganho interno convecção </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

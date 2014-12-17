@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência do Arquivo src/CFuncaoAdsorcao.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo CFuncaoAdsorcao.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &quot;<a class="el" href="CInterface_8h_source.xhtml">CInterface.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="CFuncaoAdsorcao_8h_source.xhtml">CFuncaoAdsorcao.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Gráfico de dependência de inclusões para CFuncaoAdsorcao.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="CFuncaoAdsorcao_8cpp__incl.svg" width="372" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ade1434c64879279f10c05ce9e01d798e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CFuncaoAdsorcao_8cpp.xhtml#ade1434c64879279f10c05ce9e01d798e">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a> &amp;obj)</td></tr>
+<tr class="memdesc:ade1434c64879279f10c05ce9e01d798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#ade1434c64879279f10c05ce9e01d798e">Mais...</a><br/></td></tr>
+<tr class="separator:ade1434c64879279f10c05ce9e01d798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="ade1434c64879279f10c05ce9e01d798e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao::h</a> e <a class="el" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao::temperatura_ensaio_adsorcao</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                               {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncaoAdsorcao:&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nh (calculado)= &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntemperatura_ensaio_adsorcao = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">temperatura_ensaio_adsorcao</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_a154592a0e5a271203d30d6acb0d6132d"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao::temperatura_ensaio_adsorcao</a></div><div class="ttdeci">double temperatura_ensaio_adsorcao</div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:15</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_aaf934ee9a5245819fb121f0da038b14b"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao::h</a></div><div class="ttdeci">double h</div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

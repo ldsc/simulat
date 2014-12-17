@@ -1,0 +1,5 @@
+<map id="CFuncoesClima::EntrarDadosObjeto" name="CFuncoesClima::EntrarDadosObjeto">
+<area shape="rect" id="node2" href="$classCInterface.xhtml#a34d1e9acbf3da248890eaa8a8a309384" title="CInterface::Carimbo" alt="" coords="286,5,426,32"/>
+<area shape="rect" id="node3" href="$classCTermodinamica.xhtml#a49362abf7162741c870620b9afbccf66" title="Cálculo da concentração de vapor. " alt="" coords="251,57,461,98"/>
+<area shape="rect" id="node4" href="$classCTermodinamica.xhtml#ad71e178a8b77f553f5fb2631a509f790" title="CTermodinamica::PressaoVapor" alt="" coords="509,64,720,91"/>
+</map>

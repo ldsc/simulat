@@ -1,0 +1,5 @@
+<map id="Gnuplot::Smooth" name="Gnuplot::Smooth">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#af845efc728a90d7e10de764eff0b2423" title="Ativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="181,5,323,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a39d10e6ce85875939a9c594d132a10d7" title="Desativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="173,56,331,83"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="379,31,479,57"/>
+</map>

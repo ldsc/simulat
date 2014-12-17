@@ -1,0 +1,8 @@
+<map id="Gnuplot::showonscreen" name="Gnuplot::showonscreen">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a08d1e4ec069ec1cb82bb96427d1e0d7f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="251,56,343,83"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a9aedfe8371083a1a3ac2b9493810049c" title="Gnuplot::reset_all" alt="" coords="235,107,359,133"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#aee70cb6dfc893d6f19976fa9042c8e7c" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="214,157,381,184"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a187eb517b362cf379492fe7f1621ee50" title="Construtor, seta o estilo do grafico na construcao. " alt="" coords="432,5,552,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a1f0052a04c1259e2c008435de407959f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="445,56,539,83"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#ae9e88b397cc6ddd052f6378a58373b0c" title="Gnuplot::ResetAll" alt="" coords="429,107,555,133"/>
+</map>

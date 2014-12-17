@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Código-Fonte de src/CFuncaoAdsorcao_Celso.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CFuncaoAdsorcao_Celso.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CFuncaoAdsorcao__Celso_8h.xhtml">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CFuncaoAdsorcao_Celso_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CFuncaoAdsorcao_Celso_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CFuncaoAdsorcao_8h.xhtml">CFuncaoAdsorcao.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classCFuncaoAdsorcao__Celso.xhtml">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCFuncaoAdsorcao__Celso.xhtml">CFuncaoAdsorcao_Celso</a> : <span class="keyword">public</span> <a class="code" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classCFuncaoAdsorcao__Celso.xhtml#a065f071eb0bf00da3dddd536a83e10bf">   13</a></span>&#160;  <a class="code" href="classCFuncaoAdsorcao__Celso.xhtml#a065f071eb0bf00da3dddd536a83e10bf">CFuncaoAdsorcao_Celso</a>()           { <a class="code" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">temperatura_ensaio_adsorcao</a> = 25.0; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classCFuncaoAdsorcao__Celso.xhtml#aa71caeff588ffec43977f599aa2bd4d8">~CFuncaoAdsorcao_Celso</a>()= <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCFuncaoAdsorcao__Celso.xhtml#a8c8f91448bb7694686ad4fe530ea1c40">   17</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCFuncaoAdsorcao__Celso.xhtml#a8c8f91448bb7694686ad4fe530ea1c40">DadosDefault</a>()               {  <a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a> = 0.0;     <a class="code" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">temperatura_ensaio_adsorcao</a> = 25.0; };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classCFuncaoAdsorcao__Celso.xhtml#aebd26c3fa6fb1b90260c9e0abf98d99f">   20</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCFuncaoAdsorcao__Celso.xhtml#aebd26c3fa6fb1b90260c9e0abf98d99f">ResultadosEnsaio</a>(<span class="keywordtype">double</span>&amp; wl)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">if</span>( wl &gt; 0.0001 and wl &lt;= 0.015671 )</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a> = 2.735972 + 0.300513 * log( wl / 10.0 );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>( wl &gt; 0.015671 and wl &lt;= 0.056975 )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a> = 2.7164 - 57.6623 * wl / 10.0 + 2.2017 * pow( wl / 10,3 ) +0.094077 * log( pow( wl / 10.0, 3.0 ) );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>( wl &gt; 0.056975 )  </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a> = 0.95623 + 0.2415 * wl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml_aebd26c3fa6fb1b90260c9e0abf98d99f"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml#aebd26c3fa6fb1b90260c9e0abf98d99f">CFuncaoAdsorcao_Celso::ResultadosEnsaio</a></div><div class="ttdeci">virtual void ResultadosEnsaio(double &amp;wl) override</div><div class="ttdoc">Chamada por Umidade, inclui dados de ensaios específicos de adsorção (Celso). </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Celso.h:20</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_a154592a0e5a271203d30d6acb0d6132d"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao::temperatura_ensaio_adsorcao</a></div><div class="ttdeci">double temperatura_ensaio_adsorcao</div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:15</div></div>
+<div class="ttc" id="CFuncaoAdsorcao_8h_xhtml"><div class="ttname"><a href="CFuncaoAdsorcao_8h.xhtml">CFuncaoAdsorcao.h</a></div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml_aa71caeff588ffec43977f599aa2bd4d8"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml#aa71caeff588ffec43977f599aa2bd4d8">CFuncaoAdsorcao_Celso::~CFuncaoAdsorcao_Celso</a></div><div class="ttdeci">~CFuncaoAdsorcao_Celso()=default</div><div class="ttdoc">Destrutor. </div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml_a8c8f91448bb7694686ad4fe530ea1c40"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml#a8c8f91448bb7694686ad4fe530ea1c40">CFuncaoAdsorcao_Celso::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Celso.h:17</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_aaf934ee9a5245819fb121f0da038b14b"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao::h</a></div><div class="ttdeci">double h</div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:14</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:11</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml_a065f071eb0bf00da3dddd536a83e10bf"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml#a065f071eb0bf00da3dddd536a83e10bf">CFuncaoAdsorcao_Celso::CFuncaoAdsorcao_Celso</a></div><div class="ttdeci">CFuncaoAdsorcao_Celso()</div><div class="ttdoc">Construtor. </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Celso.h:13</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml">CFuncaoAdsorcao_Celso</a></div><div class="ttdoc">-------------—— Bibliotecas --------------------------—— </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Celso.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

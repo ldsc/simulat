@@ -1,0 +1,6 @@
+<map id="Gnuplot::plotfile_xy" name="Gnuplot::plotfile_xy">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a777b6a5474951d6d023dff4237d80a2b" title="Plota pares x,y a partir de vetores. " alt="" coords="191,31,308,57"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a68d5b282f0fc0d65d432009b55705cbd" title="Plota pares x,y a partir de um arquivo de disco. " alt="" coords="190,81,309,108"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a24327b6116c71acdc195eadf665c67cb" title="Construtor, plota um grafico do tipo x_y a partir de vetores, diretamente na construcao. " alt="" coords="365,5,485,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#ae282636936128008b2c82f569f607820" title="Plota pares x,y a partir de vetores. " alt="" coords="357,56,493,83"/>
+</map>

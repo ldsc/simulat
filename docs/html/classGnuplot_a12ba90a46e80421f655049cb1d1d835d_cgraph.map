@@ -1,0 +1,5 @@
+<map id="Gnuplot::PlotFile" name="Gnuplot::PlotFile">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a4ca35415fa5560764597cfdfa46c6c40" title="Plota dados de um arquivo de disco. " alt="" coords="174,31,301,57"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="350,5,485,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="367,56,467,83"/>
+</map>

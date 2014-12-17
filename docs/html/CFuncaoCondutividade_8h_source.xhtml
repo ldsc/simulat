@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Código-Fonte de src/CFuncaoCondutividade.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CFuncaoCondutividade.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CFuncaoCondutividade_8h.xhtml">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CFuncaoCondutividade_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CFuncaoCondutividade_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>         </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// redefinivel</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml">   12</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="comment">// Propriedades associadas ao cálculo da condutividade</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">   16</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">ak</a>{13.486};                   </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">   17</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">bk</a>{0.743};                    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   <a class="code" href="classCFuncaoCondutividade.xhtml#a2661ffce705f1a1c95531c652de85006">CFuncaoCondutividade</a>() = <span class="keywordflow">default</span>;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <a class="code" href="classCFuncaoCondutividade.xhtml#a6752709788924674ceb013e1d2967ce2">~CFuncaoCondutividade</a>()= <span class="keywordflow">default</span>;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml#aef846dfe5249c1e8047def962c1d0e8d">   24</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCFuncaoCondutividade.xhtml#aef846dfe5249c1e8047def962c1d0e8d">DadosDefault</a>()                       { <a class="code" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">ak</a> = 13.486; <a class="code" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">bk</a> = 0.743; };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCFuncaoCondutividade.xhtml#a2cbe70afdd9eef1cdc237904710ee751">EntrarDadosFuncao</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml#a8abd73d5096f714d226670c1ee139a75">   29</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="classCFuncaoCondutividade.xhtml#a8abd73d5096f714d226670c1ee139a75">Condutividade</a>( <span class="keywordtype">double</span> wl )  {   </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> ( <a class="code" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">bk</a> + <a class="code" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">ak</a> * wl );                            </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCFuncaoCondutividade.xhtml#aa3601b2978a4eaf57cee39b1fb8d00d1">   34</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classCFuncaoCondutividade.xhtml#aa3601b2978a4eaf57cee39b1fb8d00d1">operator()</a>( <span class="keywordtype">double</span> wl )            { <span class="keywordflow">return</span> <a class="code" href="classCFuncaoCondutividade.xhtml#a8abd73d5096f714d226670c1ee139a75">Condutividade</a>( wl ); };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classCFuncaoCondutividade.xhtml#a5259302a0803834d534a63353f1a0743">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a>&amp; obj);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:12</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a6752709788924674ceb013e1d2967ce2"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a6752709788924674ceb013e1d2967ce2">CFuncaoCondutividade::~CFuncaoCondutividade</a></div><div class="ttdeci">~CFuncaoCondutividade()=default</div><div class="ttdoc">Destrutor. </div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_aef846dfe5249c1e8047def962c1d0e8d"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#aef846dfe5249c1e8047def962c1d0e8d">CFuncaoCondutividade::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:24</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_aa3601b2978a4eaf57cee39b1fb8d00d1"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#aa3601b2978a4eaf57cee39b1fb8d00d1">CFuncaoCondutividade::operator()</a></div><div class="ttdeci">double operator()(double wl)</div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:34</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a2661ffce705f1a1c95531c652de85006"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a2661ffce705f1a1c95531c652de85006">CFuncaoCondutividade::CFuncaoCondutividade</a></div><div class="ttdeci">CFuncaoCondutividade()=default</div><div class="ttdoc">Construtor. </div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a2cbe70afdd9eef1cdc237904710ee751"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a2cbe70afdd9eef1cdc237904710ee751">CFuncaoCondutividade::EntrarDadosFuncao</a></div><div class="ttdeci">void EntrarDadosFuncao()</div><div class="ttdoc">Entrada de dados (associados aos ensaios) </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.cpp:14</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a5259302a0803834d534a63353f1a0743"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a5259302a0803834d534a63353f1a0743">CFuncaoCondutividade::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, CFuncaoCondutividade &amp;obj)</div><div class="ttdoc">Saída de dados do objeto para os (tela) </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.cpp:32</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a6c5aeb9f6ec94873b08b18888a4899a7"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">CFuncaoCondutividade::ak</a></div><div class="ttdeci">double ak</div><div class="ttdoc">Coeficiente a para cálculo condutividade como função linear. </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:16</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a8abd73d5096f714d226670c1ee139a75"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a8abd73d5096f714d226670c1ee139a75">CFuncaoCondutividade::Condutividade</a></div><div class="ttdeci">double Condutividade(double wl)</div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:29</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_ada1ec0851bbe01c9d3cb987ad9efaee2"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">CFuncaoCondutividade::bk</a></div><div class="ttdeci">double bk</div><div class="ttdoc">Coeficiente b para cálculo condutividade como função linear. </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

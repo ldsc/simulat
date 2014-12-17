@@ -1,0 +1,51 @@
+<map id="Gnuplot::cmd" name="Gnuplot::cmd">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#af9ffb5b4c18cdf7c56e5c446f72e515d" title="Envia comando para o gnuplot. " alt="" coords="189,5,291,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a0d6db1521e789d7b73415ce85b723046" title="Envia comando para o gnuplot. " alt="" coords="173,56,307,83"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#ae56495dc15f23d32f099129d3a50dd6c" title="Sobrecarga operador &lt;&lt;, funciona como Comando. " alt="" coords="171,107,309,133"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a42dfb8c9d4636745c7be277ed818e849" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="164,157,316,184"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#a79aed3a6927f7d1d3497cba441e8a943" title="Plota uma equacao fornecida na forma de uma std::string z=f(x,y). Escrever somente a funcao f(x..." alt="" coords="157,208,323,235"/>
+<area shape="rect" id="node9" href="$classGnuplot.xhtml#ab71117b8fa74d53ea20c313717d86b5c" title="Plota uma imagem. " alt="" coords="171,259,309,285"/>
+<area shape="rect" id="node11" href="$classGnuplot.xhtml#a51ea5105eb87285820bb93910f8d346c" title="Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. " alt="" coords="173,309,307,336"/>
+<area shape="rect" id="node13" href="$classGnuplot.xhtml#a4ca35415fa5560764597cfdfa46c6c40" title="Plota dados de um arquivo de disco. " alt="" coords="177,360,303,387"/>
+<area shape="rect" id="node14" href="$classGnuplot.xhtml#af226f395310d3c5c4f8b4d2aaf5d8823" title="Plota pares x,y a partir de um arquivo de disco. " alt="" coords="173,411,307,437"/>
+<area shape="rect" id="node15" href="$classGnuplot.xhtml#a33ab4bb031fa6a6b798c90a9089648e9" title="Plota pares x,y com barra de erro dy a partir de um arquivo. " alt="" coords="162,461,318,488"/>
+<area shape="rect" id="node16" href="$classGnuplot.xhtml#abd1c17c49fc59979a1143384c77c5b66" title="Plota valores de x,y,z a partir de um arquivo de disco. " alt="" coords="169,512,311,539"/>
+<area shape="rect" id="node17" href="$classGnuplot.xhtml#ae4f110479cfd8dc9b1b3d45809fb05e0" title="Gnuplot::replot" alt="" coords="187,563,293,589"/>
+<area shape="rect" id="node18" href="$classGnuplot.xhtml#a9aedfe8371083a1a3ac2b9493810049c" title="Gnuplot::reset_all" alt="" coords="393,1221,517,1248"/>
+<area shape="rect" id="node19" href="$classGnuplot.xhtml#a032072c7c01b508a7535a17fb08562b1" title="Salva sessao do gnuplot para um arquivo postscript, nome do arquivo sem extensao. ..." alt="" coords="176,664,304,691"/>
+<area shape="rect" id="node20" href="$classGnuplot.xhtml#a2c8c8ae0441f54dd728bc6594051c137" title="Seta intervalo da palette (autoscale por padrao). " alt="" coords="167,715,313,741"/>
+<area shape="rect" id="node21" href="$classGnuplot.xhtml#af845efc728a90d7e10de764eff0b2423" title="Ativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="169,765,311,792"/>
+<area shape="rect" id="node22" href="$classGnuplot.xhtml#a4b7245b12dad1c0ef326e5f59eb83001" title="Ativa o grid (padrao = desativado). " alt="" coords="179,816,301,843"/>
+<area shape="rect" id="node23" href="$classGnuplot.xhtml#a5ada5c76db0a735d3d331caa0eb4968a" title="Ativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). " alt="" coords="164,867,316,893"/>
+<area shape="rect" id="node24" href="$classGnuplot.xhtml#ab810fa4c02fb49ae197786c305b78702" title="Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d)..." alt="" coords="157,917,323,944"/>
+<area shape="rect" id="node25" href="$classGnuplot.xhtml#ad64a717dac18167f656c4f09239973f8" title="Ativa a legenda (a legenda é setada por padrao). Posicao: inside/outside, left/center/right, top/center/bottom, nobox/box. " alt="" coords="171,968,309,995"/>
+<area shape="rect" id="node26" href="$classGnuplot.xhtml#a95ec1636a871447dfe99463b769339c7" title="Desativa suavizacao. " alt="" coords="164,1019,316,1045"/>
+<area shape="rect" id="node27" href="$classGnuplot.xhtml#a671cbe7b18a267ea59f532c83a0035f6" title="Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. " alt="" coords="165,1069,315,1096"/>
+<area shape="rect" id="node28" href="$classGnuplot.xhtml#a0e36dcd81618234c6cdd135a9e1eee2b" title="Ativa a visualizacao da superficie (para plotagen 3d). " alt="" coords="169,1120,311,1147"/>
+<area shape="rect" id="node29" href="$classGnuplot.xhtml#aa693e806a115af1e2776a15078e75b46" title="Ativa o titulo da secao do gnuplot. " alt="" coords="179,1171,301,1197"/>
+<area shape="rect" id="node30" href="$classGnuplot.xhtml#a453688dc2eb979f842082290f3c02ac3" title="Seta escalonamento automatico do eixo x (default). " alt="" coords="159,1221,321,1248"/>
+<area shape="rect" id="node31" href="$classGnuplot.xhtml#a58808028aec03a22b5c19693b14baeef" title="Seta o rotulo (nome) do eixo x. " alt="" coords="173,1272,307,1299"/>
+<area shape="rect" id="node32" href="$classGnuplot.xhtml#aff546fad227d93babeb5d2cc9f047b89" title="Ativa escala logaritma do eixo x (logscale nao e setado por default). " alt="" coords="163,1323,317,1349"/>
+<area shape="rect" id="node33" href="$classGnuplot.xhtml#a726232ac7226b9fc8811eaefa87c902b" title="Seta intervalo do eixo x. " alt="" coords="171,1373,309,1400"/>
+<area shape="rect" id="node34" href="$classGnuplot.xhtml#a3cc19dba32bb2d3ac59494ae1493faa7" title="Seta escalonamento automatico do eixo y (default). " alt="" coords="159,1424,321,1451"/>
+<area shape="rect" id="node35" href="$classGnuplot.xhtml#a7654b86e3873aec4c5101abb466fe4ab" title="Seta o rotulo (nome) do eixo y. " alt="" coords="173,1475,307,1501"/>
+<area shape="rect" id="node36" href="$classGnuplot.xhtml#a201a802d2f27fece0d39809c4eb3bce0" title="Ativa escala logaritma do eixo y (logscale nao e setado por default). " alt="" coords="163,1525,317,1552"/>
+<area shape="rect" id="node37" href="$classGnuplot.xhtml#af621a43664a07523f098ffc3fb5a99b0" title="Seta intervalo do eixo y. " alt="" coords="171,1576,309,1603"/>
+<area shape="rect" id="node38" href="$classGnuplot.xhtml#ad72aa208fad039b6b7d13ea9595ce157" title="Seta escalonamento automatico do eixo z (default). " alt="" coords="159,1627,321,1653"/>
+<area shape="rect" id="node39" href="$classGnuplot.xhtml#ab3206e715d20f05cc0dd1eec89ce8b07" title="Seta o rotulo (nome) do eixo z. " alt="" coords="173,1677,307,1704"/>
+<area shape="rect" id="node40" href="$classGnuplot.xhtml#a1da3838163b0dbde8809b55c5b5c56b1" title="Ativa escala logaritma do eixo y (logscale nao e setado por default). " alt="" coords="163,1728,317,1755"/>
+<area shape="rect" id="node41" href="$classGnuplot.xhtml#a91666451b8cfd1c5b279d2e585b11af6" title="Seta intervalo do eixo z. " alt="" coords="171,1779,309,1805"/>
+<area shape="rect" id="node42" href="$classGnuplot.xhtml#a356d2faaa79f08d13fec9718b776b28d" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="161,1829,319,1856"/>
+<area shape="rect" id="node43" href="$classGnuplot.xhtml#a39d10e6ce85875939a9c594d132a10d7" title="Desativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="161,1880,319,1907"/>
+<area shape="rect" id="node44" href="$classGnuplot.xhtml#a8b9a16d5793c3f4939b917b2c263860c" title="Desativa o grid (padrao = desativado). " alt="" coords="173,1931,307,1957"/>
+<area shape="rect" id="node45" href="$classGnuplot.xhtml#a763ff17df1679cc2b1463b024aa89ebc" title="Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). ..." alt="" coords="157,1981,323,2008"/>
+<area shape="rect" id="node46" href="$classGnuplot.xhtml#a584e0710d7f5bcaa35653d1987f1563e" title="Desativa a legenda (a legenda é setada por padrao). " alt="" coords="164,2032,316,2059"/>
+<area shape="rect" id="node47" href="$classGnuplot.xhtml#a805f1807c9b3a0a6745d66fa1729e3be" title="Desativa a visualizacao da superficie (para plotagen 3d). " alt="" coords="161,2083,319,2109"/>
+<area shape="rect" id="node48" href="$classGnuplot.xhtml#aed8f962539fd8f53ab2c0218da7a6010" title="Desativa escala logaritma do eixo x (logscale nao e setado por default). " alt="" coords="155,2133,325,2160"/>
+<area shape="rect" id="node49" href="$classGnuplot.xhtml#a74ebc96273b30c98fb9c8f047dd34ac0" title="Desativa escala logaritma do eixo y (logscale nao e setado por default). " alt="" coords="155,2184,325,2211"/>
+<area shape="rect" id="node50" href="$classGnuplot.xhtml#a294d7473091f849fe70e4dba8df8712a" title="Desativa escala logaritma do eixo z (logscale nao e setado por default). " alt="" coords="155,2235,325,2261"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a901b030726d78e791f7005acf987bc44" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="380,157,529,184"/>
+<area shape="rect" id="node8" href="$classGnuplot.xhtml#a545ea6339c234d277339ab148cd11dba" title="Plota uma equacao fornecida na forma de uma std::string z=f(x,y). Escrever somente a funcao f(x..." alt="" coords="373,208,536,235"/>
+<area shape="rect" id="node10" href="$classGnuplot.xhtml#aeb28a013344a81314bf831e14623154e" title="Plota uma imagem. " alt="" coords="387,259,522,285"/>
+<area shape="rect" id="node12" href="$classGnuplot.xhtml#af4c2215781aa7a32ba73caa26941407c" title="Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. " alt="" coords="389,309,520,336"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Gnuplot::create_tmpfile" name="Gnuplot::create_tmpfile">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a7570e646c15a59d9ee2d7ed304cbccb5" title="Cria arquivo temporario. " alt="" coords="211,5,373,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#ab71117b8fa74d53ea20c313717d86b5c" title="Plota uma imagem. " alt="" coords="223,56,361,83"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a9400d43204b9df62851c063aee604f0d" title="Plota dados de um vector. " alt="" coords="237,107,347,133"/>
+<area shape="rect" id="node8" href="$classGnuplot.xhtml#a777b6a5474951d6d023dff4237d80a2b" title="Plota pares x,y a partir de vetores. " alt="" coords="233,157,351,184"/>
+<area shape="rect" id="node11" href="$classGnuplot.xhtml#a3dd3934b09094a9ba48035a2edf4d4fd" title="Plota pares x,y com barra de erro dy a partir de vetores. " alt="" coords="223,233,361,260"/>
+<area shape="rect" id="node13" href="$classGnuplot.xhtml#aee30f21a00a4f31c8356a2ef1f0e26e3" title="Plota valores de x,y,z a partir de vetores. " alt="" coords="230,309,354,336"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#aeb28a013344a81314bf831e14623154e" title="Plota uma imagem. " alt="" coords="455,5,590,32"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a8ceac5808e42665c1dee305ae7ea9070" title="Construtor, plota um grafico a partir de um vector, diretamente na construcao. " alt="" coords="463,56,583,83"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#ab478d91039848a22733fc7a0f7c25f04" title="Plota dados de um vector. " alt="" coords="455,107,591,133"/>
+<area shape="rect" id="node9" href="$classGnuplot.xhtml#a24327b6116c71acdc195eadf665c67cb" title="Construtor, plota um grafico do tipo x_y a partir de vetores, diretamente na construcao. " alt="" coords="463,157,583,184"/>
+<area shape="rect" id="node10" href="$classGnuplot.xhtml#ae282636936128008b2c82f569f607820" title="Plota pares x,y a partir de vetores. " alt="" coords="455,208,591,235"/>
+<area shape="rect" id="node12" href="$classGnuplot.xhtml#a6d3863c1b14d93c14b50df0a11dfdbd8" title="Plota pares x,y com barra de erro dy a partir de vetores. " alt="" coords="421,259,624,285"/>
+<area shape="rect" id="node14" href="$classGnuplot.xhtml#a14191e89154f2716608f6907975cc012" title="Construtor, plota um grafico de x_y_z a partir de vetores, diretamente na construcao. " alt="" coords="463,309,583,336"/>
+<area shape="rect" id="node15" href="$classGnuplot.xhtml#a239b222cd7ff6ba4a60d583b22248a4f" title="Plota valores de x,y,z a partir de vetores. " alt="" coords="455,360,591,387"/>
+</map>

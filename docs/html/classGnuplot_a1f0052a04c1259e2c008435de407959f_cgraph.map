@@ -1,0 +1,8 @@
+<map id="Gnuplot::Init" name="Gnuplot::Init">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a08d1e4ec069ec1cb82bb96427d1e0d7f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="147,81,239,108"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a3a769e47861d74fa713070ecd857dd17" title="Retorna verdadeiro se a path esta presente. " alt="" coords="288,56,467,83"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a356d2faaa79f08d13fec9718b776b28d" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="298,107,457,133"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="515,5,650,32"/>
+<area shape="rect" id="node5" href="$CGnuplot_8cpp.xhtml#a999b660e008a191d56b4c01a09a38f45" title="stringtok" alt="" coords="547,56,619,83"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="533,107,633,133"/>
+</map>

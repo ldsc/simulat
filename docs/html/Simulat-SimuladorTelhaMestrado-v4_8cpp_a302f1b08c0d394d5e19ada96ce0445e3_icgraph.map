@@ -1,0 +1,13 @@
+<map id="Carimbo" name="Carimbo">
+<area shape="rect" id="node2" href="$classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936" title="Entrada de dados. " alt="" coords="125,5,323,46"/>
+<area shape="rect" id="node3" href="$classCMeioPoroso__Telha.xhtml#a70735fb3dc927168aca84bb0cecb0023" title="Entrada de dados. " alt="" coords="150,70,298,111"/>
+<area shape="rect" id="node4" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9" title="Entrada de dados. " alt="" coords="371,121,591,162"/>
+<area shape="rect" id="node5" href="$classCSimulador__Telha.xhtml#ad3ec0d6df9f0f7325de23d6a04e3b76a" title="Entrada de dados. " alt="" coords="641,179,813,221"/>
+<area shape="rect" id="node6" href="$classCFluido.xhtml#a86b2d6d0cb5b81d50d976385aa69dcf8" title="Entrada de dados. " alt="" coords="131,237,317,264"/>
+<area shape="rect" id="node7" href="$classCTransferenciaCalorMassa.xhtml#a07a41f40068191679771e44309b75beb" title="Entrada de dados. " alt="" coords="391,259,572,301"/>
+<area shape="rect" id="node8" href="$classCInterfaceSimuladorTelha.xhtml#ab7c2c609bbc63c85f7f69c8f88782f79" title="Entrada de dados. " alt="" coords="137,339,311,381"/>
+<area shape="rect" id="node9" href="$classCInterfaceSimuladorTelha.xhtml#a6f9b30a6da8b37ca6d2044a7653fd8c1" title="Finaliza apresentacao resultados. " alt="" coords="137,405,311,446"/>
+<area shape="rect" id="node10" href="$classCInterfaceSimuladorTelha.xhtml#a9bcae5d4ebe43285a7dd220df94a26c6" title="Tela inicial. " alt="" coords="137,470,311,511"/>
+<area shape="rect" id="node11" href="$classCInterfaceSimuladorTelha.xhtml#a097471c7e5fbbfda346be44876fd1ea3" title="Inicia apresentacao resultados. " alt="" coords="137,535,311,577"/>
+<area shape="rect" id="node12" href="$classCInterfaceSimuladorTelha.xhtml#a6dceb4805861b576b5753aa5a436afc0" title="Função de help/ajuda. " alt="" coords="137,601,311,642"/>
+</map>

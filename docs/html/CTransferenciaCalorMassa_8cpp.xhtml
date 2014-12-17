@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência do Arquivo src/CTransferenciaCalorMassa.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo CTransferenciaCalorMassa.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="CInterface_8h_source.xhtml">CInterface.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="CTransferenciaCalorMassa_8h_source.xhtml">CTransferenciaCalorMassa.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Gráfico de dependência de inclusões para CTransferenciaCalorMassa.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="CTransferenciaCalorMassa_8cpp__incl.svg" width="388" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4c303bb035ca96a6667a38f4227ebd77"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CTransferenciaCalorMassa_8cpp.xhtml#a4c303bb035ca96a6667a38f4227ebd77">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> &amp;obj)</td></tr>
+<tr class="memdesc:a4c303bb035ca96a6667a38f4227ebd77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a4c303bb035ca96a6667a38f4227ebd77">Mais...</a><br/></td></tr>
+<tr class="separator:a4c303bb035ca96a6667a38f4227ebd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a4c303bb035ca96a6667a38f4227ebd77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">CTransferenciaCalorMassa::hce</a>, <a class="el" href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">CTransferenciaCalorMassa::hci</a>, <a class="el" href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">CTransferenciaCalorMassa::hme</a> e <a class="el" href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">CTransferenciaCalorMassa::hmi</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CTransferenciaCalorMassa:\n&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhce = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">hce</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhci = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">hci</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhme = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">hme</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhmi = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">hmi</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a87115427ab2154fe3ba9c42098906eeb"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">CTransferenciaCalorMassa::hme</a></div><div class="ttdeci">double hme</div><div class="ttdoc">hme coeficiente troca massa externo </div><div class="ttdef"><b>Definition:</b> CTransferenciaCalorMassa.h:15</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a438107d7d875bf7f46fd6fe27e115fda"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">CTransferenciaCalorMassa::hce</a></div><div class="ttdeci">double hce</div><div class="ttdoc">coeficiente convecção externo </div><div class="ttdef"><b>Definition:</b> CTransferenciaCalorMassa.h:13</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a85cb77cbc3cfae47345d20aa107fe69f"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">CTransferenciaCalorMassa::hmi</a></div><div class="ttdeci">double hmi</div><div class="ttdoc">hmi coeficiente troca massa interno </div><div class="ttdef"><b>Definition:</b> CTransferenciaCalorMassa.h:16</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a4d25b41fcab0cf54cb38edab55050c1f"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">CTransferenciaCalorMassa::hci</a></div><div class="ttdeci">double hci</div><div class="ttdoc">coeficiente convecção interno </div><div class="ttdef"><b>Definition:</b> CTransferenciaCalorMassa.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

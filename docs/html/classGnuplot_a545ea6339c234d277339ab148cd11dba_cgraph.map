@@ -1,0 +1,4 @@
+<map id="Gnuplot::PlotEquation3d" name="Gnuplot::PlotEquation3d">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a79aed3a6927f7d1d3497cba441e8a943" title="Plota uma equacao fornecida na forma de uma std::string z=f(x,y). Escrever somente a funcao f(x..." alt="" coords="217,5,383,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="433,5,533,32"/>
+</map>

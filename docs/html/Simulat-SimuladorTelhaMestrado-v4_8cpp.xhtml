@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência do Arquivo src/Simulat-SimuladorTelhaMestrado-v4.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#typedef-members">Definições de Tipos</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo Simulat-SimuladorTelhaMestrado-v4.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Gráfico de dependência de inclusões para Simulat-SimuladorTelhaMestrado-v4.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="Simulat-SimuladorTelhaMestrado-v4_8cpp__incl.svg" width="436" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTermodinamica.xhtml">CTermodinamica</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa conceitos e funções básicas da termodinâmica.  <a href="classCTermodinamica.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncoesClima.xhtml">CFuncoesClima</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Armazena e calcula funções como temperatura externa/interna, radiação onda curta/longa, umidade externa/interna, e chuva. Estes atributos podem ser constantes ou função da hora do dia.  <a href="classCFuncoesClima.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncaoDifusividade.xhtml">CFuncaoDifusividade</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa a função de difusidade ao vapor de um meio poroso; no caso específico, a telha de cerâmica. A partir dos resultados do ensaio de difusividade, foi desenvolvida regressão estatistica que correlaciona a difusividade e o conteúdo de massa volumétrico ol.  <a href="classCFuncaoDifusividade.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a condutividade a partir de correlações fornecidas pelo usuário.  <a href="classCFuncaoCondutividade.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a umidade a partir das curvas de adsorção do material (correlações fornecidas pelo usuário). Resultados ensaio adsorção telha permeável (André Bueno).  <a href="classCFuncaoAdsorcao.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncaoAdsorcao__Celso.xhtml">CFuncaoAdsorcao_Celso</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa ensaio adsorção telha argamassa (Celso Perez Fernandes).  <a href="classCFuncaoAdsorcao__Celso.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncaoAdsorcao__Pablo.xhtml">CFuncaoAdsorcao_Pablo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa ensaio adsorção telha argamassa (Pablo).  <a href="classCFuncaoAdsorcao__Pablo.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo tempo uma telha permeável e uma telha impermeável, ou seja, vai calcular as informações para os dois casos, permitindo a comparação dos valores.  <a href="classCMeioPoroso__Telha.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFluido.xhtml">CFluido</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa um fluido com atributos: rol, cl, lv.  <a href="classCFluido.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml">CFuncao_wl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol, rol e rot. Note que é uma classe de associação, que calcula uma informaçao com base nas informações de duas classes associadas, a <a class="el" href="classCFluido.xhtml" title="Representa um fluido com atributos: rol, cl, lv. ">CFluido</a> e a <a class="el" href="classCMeioPoroso__Telha.xhtml" title="Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te...">CMeioPoroso_Telha</a>.  <a href="classCFuncao__wl.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inclui atributos associados a conceitos de transferência de calor e massa.  <a href="classCTransferenciaCalorMassa.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml">CSolver_TDMA</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">representa um solver TDMA - Tri-Diagonal Matriz Algorithm (unidimensional).  <a href="classCSolver__TDMA.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa o conjunto de todos os nós de um meio poroso unidimensional discretizado (como uma telha).  <a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa um simulador de um meio poroso unidimensional discretizado (acrescenta conceitos simulação).  <a href="classCSimulador__Telha.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa um simulador de meio poroso tridimensional discretizado com cálculos ganhos energia.  <a href="classCSimulador__Telha__GanhosEnergia.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCInterfaceSimuladorTelha.xhtml">CInterfaceSimuladorTelha</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface em modo texto para <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml" title="Representa um simulador de meio poroso tridimensional discretizado com cálculos ganhos energia...">CSimulador_Telha_GanhosEnergia</a>. Contém as funções necessárias para gerar as saídas para tela, impressora, disco e gráficas. Posteriormente deverá ser desmembrada (ex: tela/disco/impressora). Nota: Quando gerou a versão para Unix eliminou saída gráfica pois usava drives e bibliotecas disponíveis apenas para DOS. Quando gerou versão 4, com divisão das classes, eliminou saíuda para impressora, o motivo, não se vende mais este tipo de impressora. *-*-*-*-* Todos os comandos gráficos estão formatados para o DOS e consideram que o seu monitor aceita o modo vga!!! Na versão para UNIX e GNU-LINUX a parte gráfica do DOS foi desativada.  <a href="classCInterfaceSimuladorTelha.xhtml#details">Mais...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definições de Tipos</h2></td></tr>
+<tr class="memitem:a38b8a448025e3a3cb23f96f87004c271"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a38b8a448025e3a3cb23f96f87004c271">CFuncaoAdsorcao_Bueno</a> = <a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></td></tr>
+<tr class="separator:a38b8a448025e3a3cb23f96f87004c271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a302f1b08c0d394d5e19ada96ce0445e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a302f1b08c0d394d5e19ada96ce0445e3">Carimbo</a> ()</td></tr>
+<tr class="separator:a302f1b08c0d394d5e19ada96ce0445e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9343a89b48930f9f8e6731b28b2f1c9f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a9343a89b48930f9f8e6731b28b2f1c9f">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncoesClima.xhtml">CFuncoesClima</a> &amp;obj)</td></tr>
+<tr class="memdesc:a9343a89b48930f9f8e6731b28b2f1c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a9343a89b48930f9f8e6731b28b2f1c9f">Mais...</a><br/></td></tr>
+<tr class="separator:a9343a89b48930f9f8e6731b28b2f1c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe375a68a41d38254dce037016041e3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a7fe375a68a41d38254dce037016041e3">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncaoDifusividade.xhtml">CFuncaoDifusividade</a> &amp;obj)</td></tr>
+<tr class="memdesc:a7fe375a68a41d38254dce037016041e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a7fe375a68a41d38254dce037016041e3">Mais...</a><br/></td></tr>
+<tr class="separator:a7fe375a68a41d38254dce037016041e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5259302a0803834d534a63353f1a0743"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a5259302a0803834d534a63353f1a0743">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a> &amp;obj)</td></tr>
+<tr class="memdesc:a5259302a0803834d534a63353f1a0743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a5259302a0803834d534a63353f1a0743">Mais...</a><br/></td></tr>
+<tr class="separator:a5259302a0803834d534a63353f1a0743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1434c64879279f10c05ce9e01d798e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ade1434c64879279f10c05ce9e01d798e">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a> &amp;obj)</td></tr>
+<tr class="memdesc:ade1434c64879279f10c05ce9e01d798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#ade1434c64879279f10c05ce9e01d798e">Mais...</a><br/></td></tr>
+<tr class="separator:ade1434c64879279f10c05ce9e01d798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e8932c80d6accda56900f7d9d31f1d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> &amp;obj)</td></tr>
+<tr class="memdesc:a96e8932c80d6accda56900f7d9d31f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a96e8932c80d6accda56900f7d9d31f1d">Mais...</a><br/></td></tr>
+<tr class="separator:a96e8932c80d6accda56900f7d9d31f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd24c1194502b533cefca78d2896199"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a8bd24c1194502b533cefca78d2896199">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFluido.xhtml">CFluido</a> &amp;obj)</td></tr>
+<tr class="memdesc:a8bd24c1194502b533cefca78d2896199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a8bd24c1194502b533cefca78d2896199">Mais...</a><br/></td></tr>
+<tr class="separator:a8bd24c1194502b533cefca78d2896199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bd321954cfbbf59369684a5d7b5f01"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ae1bd321954cfbbf59369684a5d7b5f01">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncao__wl.xhtml">CFuncao_wl</a> &amp;obj)</td></tr>
+<tr class="memdesc:ae1bd321954cfbbf59369684a5d7b5f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#ae1bd321954cfbbf59369684a5d7b5f01">Mais...</a><br/></td></tr>
+<tr class="separator:ae1bd321954cfbbf59369684a5d7b5f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c303bb035ca96a6667a38f4227ebd77"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a4c303bb035ca96a6667a38f4227ebd77">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> &amp;obj)</td></tr>
+<tr class="memdesc:a4c303bb035ca96a6667a38f4227ebd77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a4c303bb035ca96a6667a38f4227ebd77">Mais...</a><br/></td></tr>
+<tr class="separator:a4c303bb035ca96a6667a38f4227ebd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc20db78c9cee19db31eec94355af34f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSolver__TDMA.xhtml">CSolver_TDMA</a> &amp;obj)</td></tr>
+<tr class="memdesc:abc20db78c9cee19db31eec94355af34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#abc20db78c9cee19db31eec94355af34f">Mais...</a><br/></td></tr>
+<tr class="separator:abc20db78c9cee19db31eec94355af34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878c9b742de58d6238fe565c8f3a26e6"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a878c9b742de58d6238fe565c8f3a26e6">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a> &amp;obj)</td></tr>
+<tr class="memdesc:a878c9b742de58d6238fe565c8f3a26e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a878c9b742de58d6238fe565c8f3a26e6">Mais...</a><br/></td></tr>
+<tr class="separator:a878c9b742de58d6238fe565c8f3a26e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d93556e5a8cbc3c2aefe913dc649a1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ad9d93556e5a8cbc3c2aefe913dc649a1">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> &amp;obj)</td></tr>
+<tr class="separator:ad9d93556e5a8cbc3c2aefe913dc649a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4950d7eea4f7cfd7d9ca597f41cb69ec"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a4950d7eea4f7cfd7d9ca597f41cb69ec">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a> &amp;obj)</td></tr>
+<tr class="separator:a4950d7eea4f7cfd7d9ca597f41cb69ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2195ca5090062d41c94338131fb338"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a4e2195ca5090062d41c94338131fb338">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCInterfaceSimuladorTelha.xhtml">CInterfaceSimuladorTelha</a> &amp;obj)</td></tr>
+<tr class="separator:a4e2195ca5090062d41c94338131fb338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a0f1d5a27cde55270f226a123bef28efe"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> {10}</td></tr>
+<tr class="separator:a0f1d5a27cde55270f226a123bef28efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições dos tipos</h2>
+<a class="anchor" id="a38b8a448025e3a3cb23f96f87004c271"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a38b8a448025e3a3cb23f96f87004c271">CFuncaoAdsorcao_Bueno</a> =  <a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a302f1b08c0d394d5e19ada96ce0445e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Carimbo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<hr/>
+<p> Implementação função Carimbo carimbo apresentado início programa, e para algumas saídas de tela. </p>
+
+<p>Referenciado por <a class="el" href="classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936">CFuncoesClima::EntrarDadosObjeto()</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a70735fb3dc927168aca84bb0cecb0023">CMeioPoroso_Telha::EntrarDadosObjeto()</a>, <a class="el" href="classCFluido.xhtml#a86b2d6d0cb5b81d50d976385aa69dcf8">CFluido::EntrarDadosObjeto()</a>, <a class="el" href="classCTransferenciaCalorMassa.xhtml#a07a41f40068191679771e44309b75beb">CTransferenciaCalorMassa::EntrarDadosObjeto()</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9">CMeioPoroso_Telha_Discretizada_TDMA::EntrarDadosObjeto()</a>, <a class="el" href="classCSimulador__Telha.xhtml#ad3ec0d6df9f0f7325de23d6a04e3b76a">CSimulador_Telha::EntrarDadosObjeto()</a>, <a class="el" href="classCInterfaceSimuladorTelha.xhtml#ab7c2c609bbc63c85f7f69c8f88782f79">CInterfaceSimuladorTelha::EntrarDadosObjeto()</a>, <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a6f9b30a6da8b37ca6d2044a7653fd8c1">CInterfaceSimuladorTelha::FimSaida()</a>, <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a9bcae5d4ebe43285a7dd220df94a26c6">CInterfaceSimuladorTelha::FolhaRosto()</a>, <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a097471c7e5fbbfda346be44876fd1ea3">CInterfaceSimuladorTelha::InicioSaida()</a> e <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a6dceb4805861b576b5753aa5a436afc0">CInterfaceSimuladorTelha::Leiame()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;               {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t.___________________________________________________________.&quot;</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t|                                                           |&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t| SIMULAÇÃO DA TRANSFÊRENCIA DE CALOR E UMIDADE EM TELHAS   |&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t|     Mestrado Engenharia Civil - NCC - LMPT - SITERPA      |&quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t|                    André Duarte Bueno                     |&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\t.___________________________________________________________.&quot;</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções que utilizam esta função:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Simulat-SimuladorTelhaMestrado-v4_8cpp_a302f1b08c0d394d5e19ada96ce0445e3_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<hr/>
+ <h2>FUNCAO PRINCIPAL MAIN() /// *-*-*-*-* </h2>
+<p>Cria objeto de simulação</p>
+<p>Chama função de simulação </p>
+
+<p>Referências <a class="el" href="classCInterfaceSimuladorTelha.xhtml#af991c87fbf29237cacf87a1ebb1113aa">CInterfaceSimuladorTelha::ExecutarSimulador()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;           {</div>
+<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;   <span class="keywordtype">char</span> respreiniciarprograma = <span class="charliteral">&#39;r&#39;</span>;</div>
+<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;   <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;        <a class="code" href="classCInterfaceSimuladorTelha.xhtml">CInterfaceSimuladorTelha</a> simulat;       </div>
+<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;        simulat.<a class="code" href="classCInterfaceSimuladorTelha.xhtml#af991c87fbf29237cacf87a1ebb1113aa">ExecutarSimulador</a>();            </div>
+<div class="line"><a name="l02416"></a><span class="lineno"> 2416</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\n\n\n\t\tDeseja Reiniciar o Programa..............(r)&quot;</span>;</div>
+<div class="line"><a name="l02417"></a><span class="lineno"> 2417</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\n\t\t       Abandonar Programa............... (a): &quot;</span>;</div>
+<div class="line"><a name="l02418"></a><span class="lineno"> 2418</span>&#160;        cin.get( respreiniciarprograma );</div>
+<div class="line"><a name="l02419"></a><span class="lineno"> 2419</span>&#160;        cin.get();</div>
+<div class="line"><a name="l02420"></a><span class="lineno"> 2420</span>&#160;      }</div>
+<div class="line"><a name="l02421"></a><span class="lineno"> 2421</span>&#160;   <span class="keywordflow">while</span>( respreiniciarprograma == <span class="charliteral">&#39;r&#39;</span> or respreiniciarprograma == <span class="charliteral">&#39;R&#39;</span> );   </div>
+<div class="line"><a name="l02422"></a><span class="lineno"> 2422</span>&#160;   <span class="keywordflow">return</span> ( 0 );</div>
+<div class="line"><a name="l02423"></a><span class="lineno"> 2423</span>&#160;}</div>
+<div class="ttc" id="classCInterfaceSimuladorTelha_xhtml_af991c87fbf29237cacf87a1ebb1113aa"><div class="ttname"><a href="classCInterfaceSimuladorTelha.xhtml#af991c87fbf29237cacf87a1ebb1113aa">CInterfaceSimuladorTelha::ExecutarSimulador</a></div><div class="ttdeci">void ExecutarSimulador()</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:2207</div></div>
+<div class="ttc" id="classCInterfaceSimuladorTelha_xhtml"><div class="ttname"><a href="classCInterfaceSimuladorTelha.xhtml">CInterfaceSimuladorTelha</a></div><div class="ttdoc">Interface em modo texto para CSimulador_Telha_GanhosEnergia. Contém as funções necessárias para gerar...</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:2114</div></div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções utilizadas por esta função:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="Simulat-SimuladorTelhaMestrado-v4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="283" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9343a89b48930f9f8e6731b28b2f1c9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncoesClima.xhtml">CFuncoesClima</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+<p>Cálculo da emissividade void CalculoEmissividade(); Cálculo da radiação de onda curta Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">CFuncoesClima::amortecimento</a>, <a class="el" href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">CFuncoesClima::hext</a>, <a class="el" href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">CFuncoesClima::hint</a>, <a class="el" href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">CFuncoesClima::horaFimChuva</a>, <a class="el" href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">CFuncoesClima::horaInicioChuva</a>, <a class="el" href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">CFuncoesClima::precipitacao</a>, <a class="el" href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">CFuncoesClima::radoc</a>, <a class="el" href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">CFuncoesClima::radol</a>, <a class="el" href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">CFuncoesClima::respHumidadeExterna</a>, <a class="el" href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">CFuncoesClima::respHumidadeInterna</a>, <a class="el" href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">CFuncoesClima::respTemperaturaInterna</a>, <a class="el" href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">CFuncoesClima::retardo</a>, <a class="el" href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">CFuncoesClima::rove</a>, <a class="el" href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">CFuncoesClima::rovi</a>, <a class="el" href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">CFuncoesClima::text</a> e <a class="el" href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">CFuncoesClima::tint</a>.</p>
+<div class="fragment"><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                                                           {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncoesClima:&quot;</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntext = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">text</a></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntint = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">tint</a></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhext = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">hext</a></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhint = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">hint</a></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrove = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">rove</a></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrovi = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">rovi</a></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nradoc = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">radoc</a></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nradol = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">radol</a></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nretardo = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">retardo</a></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\namortecimento = &quot;</span>         &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">amortecimento</a></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhoraInicioChuva = &quot;</span>       &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">horaInicioChuva</a></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhoraFimChuva = &quot;</span>          &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">horaFimChuva</a></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nprecipitacao = &quot;</span>          &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">precipitacao</a></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrespTemperaturaInterna = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">respTemperaturaInterna</a></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrespHhext = &quot;</span>             &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">respHumidadeExterna</a></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrespHumidadeInterna = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">respHumidadeInterna</a>;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;}</div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ad42592234730be560773e418008e5600"><div class="ttname"><a href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">CFuncoesClima::radol</a></div><div class="ttdeci">double radol</div><div class="ttdoc">radiação onda longa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:182</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ae045fe9c5a2108a7eddef8e1cfe35b05"><div class="ttname"><a href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">CFuncoesClima::amortecimento</a></div><div class="ttdeci">double amortecimento</div><div class="ttdoc">amortecimento térmico em função espessura parede </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:186</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_aba60e21adf269084e43707aac4b157d0"><div class="ttname"><a href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">CFuncoesClima::hext</a></div><div class="ttdeci">double hext</div><div class="ttdoc">umidade externa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:177</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4ce585b6d41a32c73b830613ab0f4bdc"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">CFuncoesClima::rove</a></div><div class="ttdeci">double rove</div><div class="ttdoc">concentração vapor externo (calculado) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:179</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_af1a7ee8fe06285423d05461d7efc42a6"><div class="ttname"><a href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">CFuncoesClima::radoc</a></div><div class="ttdeci">double radoc</div><div class="ttdoc">radiação onda curta </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:181</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a0c629461f59dbd4822306492b5acfd74"><div class="ttname"><a href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">CFuncoesClima::respTemperaturaInterna</a></div><div class="ttdeci">char respTemperaturaInterna</div><div class="ttdoc">temperatura interna constante ou calculada </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:196</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a1742f3b532412a2fed2618df39e169e0"><div class="ttname"><a href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">CFuncoesClima::text</a></div><div class="ttdeci">double text</div><div class="ttdoc">temperatura externa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:175</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_abf5352ebd555ac36f94eeaa8d8880433"><div class="ttname"><a href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">CFuncoesClima::respHumidadeInterna</a></div><div class="ttdeci">char respHumidadeInterna</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:198</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4ec2885d1b3a564e9c2eb20c8fd1166f"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">CFuncoesClima::respHumidadeExterna</a></div><div class="ttdeci">char respHumidadeExterna</div><div class="ttdoc">umidade externa constante ou calculada </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:197</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a1cea96ddc70c9bd7f6033a5f33c2369d"><div class="ttname"><a href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">CFuncoesClima::horaInicioChuva</a></div><div class="ttdeci">double horaInicioChuva</div><div class="ttdoc">hora início da chuva </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:189</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_aabe2b0cf2225c86241f9b788df3b5c03"><div class="ttname"><a href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">CFuncoesClima::horaFimChuva</a></div><div class="ttdeci">double horaFimChuva</div><div class="ttdoc">hora fim da chuva </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:190</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a61dcce7b581dd784874a4e650d84ac85"><div class="ttname"><a href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">CFuncoesClima::tint</a></div><div class="ttdeci">double tint</div><div class="ttdoc">temperatura interna </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:176</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a6c1843312f69c15be4602c67c5871604"><div class="ttname"><a href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">CFuncoesClima::hint</a></div><div class="ttdeci">double hint</div><div class="ttdoc">umidade interna </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:178</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a768d57abaf81b764d039e163bbc058d5"><div class="ttname"><a href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">CFuncoesClima::rovi</a></div><div class="ttdeci">double rovi</div><div class="ttdoc">concentração vapor interno (calculado) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:180</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a039bb905b47666394f91969a2bdea476"><div class="ttname"><a href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">CFuncoesClima::precipitacao</a></div><div class="ttdeci">double precipitacao</div><div class="ttdoc">precipitacao em mm </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:191</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4276e6b3f778a1094fc70587e15de783"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">CFuncoesClima::retardo</a></div><div class="ttdeci">double retardo</div><div class="ttdoc">retardo térmico em função espessura parede </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:185</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7fe375a68a41d38254dce037016041e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncaoDifusividade.xhtml">CFuncaoDifusividade</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncaoDifusividade.xhtml#afaad04c79391e51f2cd02235c99eb842">CFuncaoDifusividade::cdif</a>.</p>
+<div class="fragment"><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncaoDifusividade:&quot;</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ncdif = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoDifusividade.xhtml#afaad04c79391e51f2cd02235c99eb842">cdif</a>;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;}</div>
+<div class="ttc" id="classCFuncaoDifusividade_xhtml_afaad04c79391e51f2cd02235c99eb842"><div class="ttname"><a href="classCFuncaoDifusividade.xhtml#afaad04c79391e51f2cd02235c99eb842">CFuncaoDifusividade::cdif</a></div><div class="ttdeci">double cdif</div><div class="ttdoc">multiplicador da difusividade </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:483</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5259302a0803834d534a63353f1a0743"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">CFuncaoCondutividade::ak</a> e <a class="el" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">CFuncaoCondutividade::bk</a>.</p>
+<div class="fragment"><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncaoCondutividade:&quot;</span></div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nak = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">ak</a></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nbk = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">bk</a>;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;}</div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a6c5aeb9f6ec94873b08b18888a4899a7"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">CFuncaoCondutividade::ak</a></div><div class="ttdeci">double ak</div><div class="ttdoc">Coeficiente a para cálculo condutividade como função linear. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:545</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_ada1ec0851bbe01c9d3cb987ad9efaee2"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">CFuncaoCondutividade::bk</a></div><div class="ttdeci">double bk</div><div class="ttdoc">Coeficiente b para cálculo condutividade como função linear. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:546</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ade1434c64879279f10c05ce9e01d798e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao::h</a> e <a class="el" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao::temperatura_ensaio_adsorcao</a>.</p>
+<div class="fragment"><div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                                                               {</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncaoAdsorcao:&quot;</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nh (calculado)= &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">h</a></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntemperatura_ensaio_adsorcao = &quot;</span>&lt;&lt; obj.<a class="code" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">temperatura_ensaio_adsorcao</a>;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;}</div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_a154592a0e5a271203d30d6acb0d6132d"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao::temperatura_ensaio_adsorcao</a></div><div class="ttdeci">double temperatura_ensaio_adsorcao</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:601</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_aaf934ee9a5245819fb121f0da038b14b"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao::h</a></div><div class="ttdeci">double h</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:600</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a96e8932c80d6accda56900f7d9d31f1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha::alfa</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha::ct</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha::emis</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha::funcaoCondutividade</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha::funcaoDifusividade</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha::ki</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha::larg</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha::porosidade</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a>, <a class="el" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha::tipo_material</a> e <a class="el" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha::wli</a>.</p>
+<div class="fragment"><div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                                                               {</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha:&quot;</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">funcaoDifusividade</a></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        &lt;&lt; *(obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>)</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha -&gt; Atributos:&quot;</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntipo_material = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a></div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrot = &quot;</span>               &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nct = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a></div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nporosidade = &quot;</span>        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a></div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nalfa = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nemis = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a></div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nlarg = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a></div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nwli = &quot;</span>               &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nki = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a>;</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;}</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad1d5f6561f058a9d80d036be91dbd953"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a></div><div class="ttdeci">double rot</div><div class="ttdoc">densidade (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:771</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a8a457ec06bd9ecb216eeff7be5db540f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha::larg</a></div><div class="ttdeci">double larg</div><div class="ttdoc">largura do objeto (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:778</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a5a72824e391981d90c345675f70b2a5e"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha::tipo_material</a></div><div class="ttdeci">char tipo_material</div><div class="ttdoc">tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou.. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:769</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af8a4f3f5f6cda4246abf76f3d7e2890f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha::emis</a></div><div class="ttdeci">double emis</div><div class="ttdoc">coeficiente emissividade (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:775</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a16d1002ed4e3bc992403c7892700e0f2"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha::funcaoCondutividade</a></div><div class="ttdeci">CFuncaoCondutividade funcaoCondutividade</div><div class="ttdoc">Função usada cálculo condutividade. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:763</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a4b0b29a921c62100176acf85ac338164"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha::funcaoDifusividade</a></div><div class="ttdeci">CFuncaoDifusividade funcaoDifusividade</div><div class="ttdoc">Objetos agregados. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:762</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a20635430e93e2bb54163f971859bd43b"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha::wli</a></div><div class="ttdeci">double wli</div><div class="ttdoc">conteúdo massa mássico wl (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:781</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a904c5469b2be8da82d90c183dddc9b4f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha::ki</a></div><div class="ttdeci">double ki</div><div class="ttdoc">condutividade (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:782</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af44c2c834c50287ec3c361b377178271"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha::ct</a></div><div class="ttdeci">double ct</div><div class="ttdoc">calor específico (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:772</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad19e72c26675fc2fba619b9f6e323916"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha::alfa</a></div><div class="ttdeci">double alfa</div><div class="ttdoc">coeficiente absorção a radiação (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:774</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a89c76f1bdad501acd4461da77721e2e1"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha::porosidade</a></div><div class="ttdeci">double porosidade</div><div class="ttdoc">porosidade (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:773</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a24676d1468ad2d637473e1bdaa20b9c6"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a></div><div class="ttdeci">CFuncaoAdsorcao * funcaoAdsorcao</div><div class="ttdoc">Função usada cálculo adsorção. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:764</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8bd24c1194502b533cefca78d2896199"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFluido.xhtml">CFluido</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+<p><a class="el" href="classCFuncao__wl.xhtml" title="Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol...">CFuncao_wl</a> poderá acessar rol.</p>
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFluido.xhtml#a75e81e9057580bb97e7d9c0856f81094">CFluido::cl</a>, <a class="el" href="classCFluido.xhtml#a4d86a173870eaf1946e6d3d6de635e44">CFluido::lv</a> e <a class="el" href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">CFluido::rol</a>.</p>
+<div class="fragment"><div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                                                     {</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFluido:&quot;</span></div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrol = &quot;</span>               &lt;&lt; obj.<a class="code" href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">rol</a></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ncl = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCFluido.xhtml#a75e81e9057580bb97e7d9c0856f81094">cl</a></div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nlv = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCFluido.xhtml#a4d86a173870eaf1946e6d3d6de635e44">lv</a>;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;}</div>
+<div class="ttc" id="classCFluido_xhtml_a6992602ed67694da0a104f1999126df0"><div class="ttname"><a href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">CFluido::rol</a></div><div class="ttdeci">double rol</div><div class="ttdoc">densidade líquido (água) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:921</div></div>
+<div class="ttc" id="classCFluido_xhtml_a75e81e9057580bb97e7d9c0856f81094"><div class="ttname"><a href="classCFluido.xhtml#a75e81e9057580bb97e7d9c0856f81094">CFluido::cl</a></div><div class="ttdeci">double cl</div><div class="ttdoc">calor especifico liquido (água) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:922</div></div>
+<div class="ttc" id="classCFluido_xhtml_a4d86a173870eaf1946e6d3d6de635e44"><div class="ttname"><a href="classCFluido.xhtml#a4d86a173870eaf1946e6d3d6de635e44">CFluido::lv</a></div><div class="ttdeci">double lv</div><div class="ttdoc">calor latente vaporização (água) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:923</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae1bd321954cfbbf59369684a5d7b5f01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncao__wl.xhtml">CFuncao_wl</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a> e <a class="el" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a>.</p>
+<div class="fragment"><div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;                                                         {</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncao_wl :&quot;</span></div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncao_wl -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        &lt;&lt; *obj.<a class="code" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a></div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        &lt;&lt; *obj.<a class="code" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a>;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;}</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_aad94c97d654aaa4ff1d2f4b7e2631227"><div class="ttname"><a href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a></div><div class="ttdeci">CMeioPoroso_Telha * telha</div><div class="ttdoc">telha </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:983</div></div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a235c16a9f1bd1e4c0999cdd51853298b"><div class="ttname"><a href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a></div><div class="ttdeci">CFluido * fluido</div><div class="ttdoc">fluido </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:982</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4c303bb035ca96a6667a38f4227ebd77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">CTransferenciaCalorMassa::hce</a>, <a class="el" href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">CTransferenciaCalorMassa::hci</a>, <a class="el" href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">CTransferenciaCalorMassa::hme</a> e <a class="el" href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">CTransferenciaCalorMassa::hmi</a>.</p>
+<div class="fragment"><div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;                                                                       {</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CTransferenciaCalorMassa:\n&quot;</span></div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhce = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">hce</a></div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhci = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">hci</a></div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhme = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">hme</a></div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhmi = &quot;</span> &lt;&lt; obj.<a class="code" href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">hmi</a>;</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;}</div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a87115427ab2154fe3ba9c42098906eeb"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">CTransferenciaCalorMassa::hme</a></div><div class="ttdeci">double hme</div><div class="ttdoc">hme coeficiente troca massa externo </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1029</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a438107d7d875bf7f46fd6fe27e115fda"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">CTransferenciaCalorMassa::hce</a></div><div class="ttdeci">double hce</div><div class="ttdoc">coeficiente convecção externo </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1027</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a85cb77cbc3cfae47345d20aa107fe69f"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">CTransferenciaCalorMassa::hmi</a></div><div class="ttdeci">double hmi</div><div class="ttdoc">hmi coeficiente troca massa interno </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1030</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml_a4d25b41fcab0cf54cb38edab55050c1f"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">CTransferenciaCalorMassa::hci</a></div><div class="ttdeci">double hci</div><div class="ttdoc">coeficiente convecção interno </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1028</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abc20db78c9cee19db31eec94355af34f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSolver__TDMA.xhtml">CSolver_TDMA</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA::a</a>, <a class="el" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA::b</a>, <a class="el" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA::c</a>, <a class="el" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA::d</a>, <a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>, <a class="el" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA::p</a> e <a class="el" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA::q</a>.</p>
+<div class="fragment"><div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;                                                          {</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSolver_TDMA:\n&quot;</span>;</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i&lt;= <a class="code" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> ; i++ )</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\ni=&quot;</span> &lt;&lt; i </div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; a=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[i]</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; b=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>[i]</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; c=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>[i]</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; d=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>[i]</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; p=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a>[i]</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; q=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[i];</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;}</div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a55cc83a7fb9d344ef2c217048fe36f5d"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA::a</a></div><div class="ttdeci">double a[nodos+1]</div><div class="ttdoc">Vetor coeficiente a do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1091</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a92745dd6ee16ce25898480b05e8e7500"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA::b</a></div><div class="ttdeci">double b[nodos+1]</div><div class="ttdoc">Vetor coeficiente b do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1092</div></div>
+<div class="ttc" id="Simulat-SimuladorTelhaMestrado-v4_8cpp_xhtml_a0f1d5a27cde55270f226a123bef28efe"><div class="ttname"><a href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a></div><div class="ttdeci">constexpr int nodos</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:127</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a3eaefa4228e5f735d1256f70a45d5fe8"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA::p</a></div><div class="ttdeci">double p[nodos+1]</div><div class="ttdoc">Vetor coeficiente p do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1095</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_afa8f583cd89f9c02e42651608d076d0a"><div class="ttname"><a href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA::q</a></div><div class="ttdeci">double q[nodos+1]</div><div class="ttdoc">Vetor coeficiente q do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1096</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a59cc88d4ca5209359f0f9e7d0addc711"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA::c</a></div><div class="ttdeci">double c[nodos+1]</div><div class="ttdoc">Vetor coeficiente c do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1093</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a135a6c113b773981846d87d91d0a06f3"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA::d</a></div><div class="ttdeci">double d[nodos+1]</div><div class="ttdoc">Vetor coeficiente d do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1094</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a878c9b742de58d6238fe565c8f3a26e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+
+<p>Referências <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">CMeioPoroso_Telha_Discretizada_TDMA::dif</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">CMeioPoroso_Telha_Discretizada_TDMA::dx</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">CMeioPoroso_Telha_Discretizada_TDMA::esp</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">CMeioPoroso_Telha_Discretizada_TDMA::espa</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">CMeioPoroso_Telha_Discretizada_TDMA::espaa</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">CMeioPoroso_Telha_Discretizada_TDMA::h</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">CMeioPoroso_Telha_Discretizada_TDMA::k</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">CMeioPoroso_Telha_Discretizada_TDMA::n</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">CMeioPoroso_Telha_Discretizada_TDMA::ol</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">CMeioPoroso_Telha_Discretizada_TDMA::ola</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">CMeioPoroso_Telha_Discretizada_TDMA::olaa</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">CMeioPoroso_Telha_Discretizada_TDMA::olChuva</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">CMeioPoroso_Telha_Discretizada_TDMA::rov</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">CMeioPoroso_Telha_Discretizada_TDMA::ti</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">CMeioPoroso_Telha_Discretizada_TDMA::tia</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">CMeioPoroso_Telha_Discretizada_TDMA::tiaa</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">CMeioPoroso_Telha_Discretizada_TDMA::tp</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">CMeioPoroso_Telha_Discretizada_TDMA::tpa</a>, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">CMeioPoroso_Telha_Discretizada_TDMA::tpaa</a> e <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">CMeioPoroso_Telha_Discretizada_TDMA::wl</a>.</p>
+<div class="fragment"><div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                                                                                 {</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha_Discretizada_TDMA:\n&quot;</span></div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha_Discretizada_TDMA -&gt; Herdados:&quot;</span>;</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> mp = obj; <span class="comment">// trocar</span></div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    os &lt;&lt; mp;</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;<span class="comment">//  os &lt;&lt; const_cast&lt;CMeioPoroso_Telha&gt; (&amp;obj);</span></div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;<span class="comment">//  os  &lt;&lt; static_cast&lt;CMeioPoroso_Telha&gt;(obj);</span></div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha_Discretizada_TDMA -&gt; Atributos:&quot;</span></div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nesp = &quot;</span>       &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">esp</a></div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nespa = &quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">espa</a></div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nespaa = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">espaa</a></div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndx = &quot;</span>        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">dx</a></div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nolChuva = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">olChuva</a></div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        <span class="comment">//&lt;&lt; &quot;\nm = &quot;       &lt;&lt; obj.m //m</span></div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nn (nodos) = &quot;</span> &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">n</a>;</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        </div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt;= obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">n</a> ; i++ )</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\ni=&quot;</span>       &lt;&lt; i</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; dif=&quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">dif</a>[i]</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; k=&quot;</span>        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">k</a>[i]</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; wl=&quot;</span>       &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">wl</a>[i]</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; h=&quot;</span>        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">h</a>[i]</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; rov=&quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">rov</a>[i]</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ol=&quot;</span>       &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">ol</a>[i]</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tp=&quot;</span>       &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">tp</a>[i]</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      <span class="comment">// Propriedades telha impermeável</span></div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ti=&quot;</span>       &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">ti</a>[i]</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ola=&quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">ola</a>[i]</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tpa=&quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">tpa</a>[i]</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tia=&quot;</span>      &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">tia</a>[i]</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; olaa=&quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">olaa</a>[i]</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tpaa=&quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">tpaa</a>[i]</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tiaa=&quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">tiaa</a>[i];</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;}</div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_af17110be4150db655bedf16eda3be0bd"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">CMeioPoroso_Telha_Discretizada_TDMA::espaa</a></div><div class="ttdeci">double espaa</div><div class="ttdoc">espessura filme líquido sobre a telha (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1179</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a8b9f2a36b52a534a0111caea7722574d"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">CMeioPoroso_Telha_Discretizada_TDMA::k</a></div><div class="ttdeci">double k[nodos+1]</div><div class="ttdoc">vetor condutividade (de cada nó) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1162</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aa6df7dec9094099eb467c14f30132991"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">CMeioPoroso_Telha_Discretizada_TDMA::ol</a></div><div class="ttdeci">double ol[nodos+1]</div><div class="ttdoc">conteúdo massa (instante atual) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1168</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ac5c26fe0cd20d7b14ec7031b35f17589"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">CMeioPoroso_Telha_Discretizada_TDMA::espa</a></div><div class="ttdeci">double espa</div><div class="ttdoc">espessura filme líquido sobre a telha (no instante anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1173</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ac7c8b127a92cab4677ea5d126755e910"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">CMeioPoroso_Telha_Discretizada_TDMA::tpa</a></div><div class="ttdeci">double tpa[nodos+1]</div><div class="ttdoc">temperatura telha permeabel (no instante anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1175</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a10c1c15a23e2174c179381bdc9acd032"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">CMeioPoroso_Telha_Discretizada_TDMA::wl</a></div><div class="ttdeci">double wl[nodos+1]</div><div class="ttdoc">vetor conteúdo massa mássico (de cada nó) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1163</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a7239f098feac26dbb03aa08d3fb6bd03"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">CMeioPoroso_Telha_Discretizada_TDMA::ola</a></div><div class="ttdeci">double ola[nodos+1]</div><div class="ttdoc">conteúdo de massa (no instante anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1174</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a2fa537dad81d9817d0c769210b4a01e9"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">CMeioPoroso_Telha_Discretizada_TDMA::olaa</a></div><div class="ttdeci">double olaa[nodos+1]</div><div class="ttdoc">conteúdo massa (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1180</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ae8258d72903e25df26ed0aaec00e2416"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">CMeioPoroso_Telha_Discretizada_TDMA::dx</a></div><div class="ttdeci">double dx</div><div class="ttdoc">intervalo de espaço, função da largura da telha e do número de nós. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1187</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a></div><div class="ttdoc">Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te...</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:756</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a277cd40297aaadd354e70afcb593252a"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">CMeioPoroso_Telha_Discretizada_TDMA::esp</a></div><div class="ttdeci">double esp</div><div class="ttdoc">espessura filme líquido sobre a telha (instante atual)[mm?] </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1167</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_abbcb0349b58923503f81036dd46afb60"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">CMeioPoroso_Telha_Discretizada_TDMA::tpaa</a></div><div class="ttdeci">double tpaa[nodos+1]</div><div class="ttdoc">temperatura telha permeabel (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1181</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a049536e47f3886c2ff2078f453bb5d74"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">CMeioPoroso_Telha_Discretizada_TDMA::olChuva</a></div><div class="ttdeci">double olChuva</div><div class="ttdoc">conteúdo mássico de umidade relativo a chuva </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1185</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aad4f9c085bee82fe960ed4928a9d6da7"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">CMeioPoroso_Telha_Discretizada_TDMA::tp</a></div><div class="ttdeci">double tp[nodos+1]</div><div class="ttdoc">temperatura telha permeável (no instante atual) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1169</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a26d9abae5613034687ddba54a3086578"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">CMeioPoroso_Telha_Discretizada_TDMA::ti</a></div><div class="ttdeci">double ti[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante atual) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1171</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a075fca285e570779428aafad9e445ba2"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">CMeioPoroso_Telha_Discretizada_TDMA::tia</a></div><div class="ttdeci">double tia[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1177</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ae5f943b2b8c9b290aa31b76da2b39cf7"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">CMeioPoroso_Telha_Discretizada_TDMA::dif</a></div><div class="ttdeci">double dif[nodos+1]</div><div class="ttdoc">vetor difusividade (de cada nó) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1161</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aa5d6a77222653bbc55b19a10736694ed"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">CMeioPoroso_Telha_Discretizada_TDMA::h</a></div><div class="ttdeci">double h[nodos+1]</div><div class="ttdoc">vetor umidade relativa (de cada nó) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1164</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aff2b0a9eb18dc65ea255b2e0a14f8608"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">CMeioPoroso_Telha_Discretizada_TDMA::n</a></div><div class="ttdeci">const int n</div><div class="ttdoc">Número de nós (volumes de controles) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1190</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a269d6e37aaa98a05f0939aadacd8cfc6"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">CMeioPoroso_Telha_Discretizada_TDMA::rov</a></div><div class="ttdeci">double rov[nodos+1]</div><div class="ttdoc">vetor concentração vapor nos nodos (de cada nó) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1165</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a620b49cc78979bc13f0de98b94378617"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">CMeioPoroso_Telha_Discretizada_TDMA::tiaa</a></div><div class="ttdeci">double tiaa[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad9d93556e5a8cbc3c2aefe913dc649a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referências <a class="el" href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">CSimulador_Telha::dt</a>, <a class="el" href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">CSimulador_Telha::dta</a>, <a class="el" href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">CSimulador_Telha::dtmax</a>, <a class="el" href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">CSimulador_Telha::dtmin</a>, <a class="el" href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">CSimulador_Telha::fluido</a>, <a class="el" href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">CSimulador_Telha::funcoesClima</a>, <a class="el" href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">CSimulador_Telha::recorrencia</a>, <a class="el" href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">CSimulador_Telha::tempo</a> e <a class="el" href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">CSimulador_Telha::tempoDecorrido</a>.</p>
+<div class="fragment"><div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;                                                              {</div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha:&quot;</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha -&gt; Herdados&quot;</span>;</div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CMeioPoroso_Telha_Discretizada_TDMA&gt; (obj);</span></div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;    <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a> meioPoroso = obj;</div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;    os &lt;&lt; meioPoroso;</div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CTransferenciaCalorMassa&gt; (obj);</span></div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;    <a class="code" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> tc = obj;</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;    os &lt;&lt; tc;</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CSolver_TDMA&gt; (obj);</span></div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">funcoesClima</a></div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">fluido</a>;</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;      <span class="comment">//&lt;&lt; obj.funcao_wl</span></div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\ndt = &quot;</span>        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">dt</a></div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndta = &quot;</span>       &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">dta</a></div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndtmax = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">dtmax</a></div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndtmin = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">dtmin</a></div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntempo = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">tempo</a></div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrecorrencia = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">recorrencia</a></div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;<span class="comment">//      &lt;&lt; &quot;\ntempoInicioSimulacao = &quot;  &lt;&lt; obj.tempoInicioSimulacao</span></div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntempoDecorrido = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">tempoDecorrido</a>;</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="comment">//      &lt;&lt; &quot;\ntempoFimSimulacao = &quot;     &lt;&lt; obj.tempoFimSimulacao</span></div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;}</div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a72921445e3aa8752029d75e5b5564a78"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">CSimulador_Telha::dtmin</a></div><div class="ttdeci">double dtmin</div><div class="ttdoc">intervalo de tempo mínimo da simulação </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1381</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a4dd637b349d8819ad044d9626600722f"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">CSimulador_Telha::tempoDecorrido</a></div><div class="ttdeci">double tempoDecorrido</div><div class="ttdoc">tempo decorrido da simulação dias </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1388</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a21246123117845ab9b79e7187252b773"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">CSimulador_Telha::funcoesClima</a></div><div class="ttdeci">CFuncoesClima funcoesClima</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1357</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a08042c4ed9a9002078f2ab4c3ab25aa6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">CSimulador_Telha::dt</a></div><div class="ttdeci">double dt</div><div class="ttdoc">intervalo de tempo da simulação </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1378</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a></div><div class="ttdoc">Representa o conjunto de todos os nós de um meio poroso unidimensional discretizado (como uma telha)...</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1150</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a></div><div class="ttdoc">Inclui atributos associados a conceitos de transferência de calor e massa. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1023</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ad34b06b7e57f628a53f8ee675bbdbd19"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">CSimulador_Telha::recorrencia</a></div><div class="ttdeci">int recorrencia</div><div class="ttdoc">número de recorrências cálculo acoplamento conteúdos e temperaturas. </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1384</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a123c8c013324a254f08fb79a67436be6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">CSimulador_Telha::dtmax</a></div><div class="ttdeci">double dtmax</div><div class="ttdoc">intervalo de tempo máximo da simulação </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1380</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a8875e284bec4990b2609d5c790066847"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">CSimulador_Telha::fluido</a></div><div class="ttdeci">CFluido fluido</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1358</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ab5b9492f5212374d81a8d116f06778ed"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">CSimulador_Telha::dta</a></div><div class="ttdeci">double dta</div><div class="ttdoc">intervalo de tempo da simulação no instante anterior </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1379</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_aa8de6e5c6e2eddac2134e5762ed8b3ff"><div class="ttname"><a href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">CSimulador_Telha::tempo</a></div><div class="ttdeci">double tempo</div><div class="ttdoc">tempo/hora atual da simulação (varia entre 0-&gt;24h) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1382</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4950d7eea4f7cfd7d9ca597f41cb69ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referências <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">CSimulador_Telha_GanhosEnergia::be</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">CSimulador_Telha_GanhosEnergia::bm</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">CSimulador_Telha_GanhosEnergia::gec</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">CSimulador_Telha_GanhosEnergia::geci</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">CSimulador_Telha_GanhosEnergia::gecl</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">CSimulador_Telha_GanhosEnergia::geroc</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">CSimulador_Telha_GanhosEnergia::geroci</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">CSimulador_Telha_GanhosEnergia::gerol</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">CSimulador_Telha_GanhosEnergia::geroli</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">CSimulador_Telha_GanhosEnergia::gesp</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">CSimulador_Telha_GanhosEnergia::gev</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">CSimulador_Telha_GanhosEnergia::gic</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">CSimulador_Telha_GanhosEnergia::gici</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">CSimulador_Telha_GanhosEnergia::gicl</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">CSimulador_Telha_GanhosEnergia::gir</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">CSimulador_Telha_GanhosEnergia::giri</a>, <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">CSimulador_Telha_GanhosEnergia::giv</a>, <a class="el" href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">CSimulador_Telha::hm</a>, <a class="el" href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">CSimulador_Telha::km</a>, <a class="el" href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">CSimulador_Telha::olm</a>, <a class="el" href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">CSimulador_Telha::tim</a>, <a class="el" href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">CSimulador_Telha::tpm</a> e <a class="el" href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">CSimulador_Telha::wlm</a>.</p>
+<div class="fragment"><div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;                                                                             {</div>
+<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha_GanhosEnergia:&quot;</span></div>
+<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha_GanhosEnergia-&gt; Herdados&quot;</span>;</div>
+<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;<span class="comment">//   os &lt;&lt; static_cast&lt;CSimulador_Telha &gt; (obj);</span></div>
+<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;    <a class="code" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> st = obj;</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;    os &lt;&lt; st;</div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\nwlm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">wlm</a></div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nhm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">hm</a></div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nkm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">km</a></div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nolm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">olm</a></div>
+<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntpm = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">tpm</a></div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntim = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">tim</a></div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngev = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">gev</a></div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngiv = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">giv</a></div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngesp = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">gesp</a></div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngec = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">gec</a></div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngic = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">gic</a></div>
+<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngecl = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">gecl</a></div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngicl = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">gicl</a></div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroc = &quot;</span> &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">geroc</a></div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngerol = &quot;</span> &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">gerol</a></div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngir = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">gir</a></div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nbm = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">bm</a></div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nbe = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">be</a></div>
+<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeci = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">geci</a></div>
+<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngici = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">gici</a></div>
+<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroci = &quot;</span>&lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">geroci</a></div>
+<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngeroli = &quot;</span>&lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">geroli</a></div>
+<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ngiri = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">giri</a>;</div>
+<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;}</div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a3a8825a48e601257befc2ff6c3b64bab"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">CSimulador_Telha_GanhosEnergia::gec</a></div><div class="ttdeci">double gec</div><div class="ttdoc">ganho externo convecção </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1972</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a906fb37eb0d54fde58112bdb58cb410c"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">CSimulador_Telha_GanhosEnergia::geroli</a></div><div class="ttdeci">double geroli</div><div class="ttdoc">ganho externo radiação onda longa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1984</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a355713c8427b443c472c5c7fc7bce43c"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">CSimulador_Telha_GanhosEnergia::gesp</a></div><div class="ttdeci">double gesp</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1971</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml"><div class="ttname"><a href="classCSimulador__Telha.xhtml">CSimulador_Telha</a></div><div class="ttdoc">Representa um simulador de um meio poroso unidimensional discretizado (acrescenta conceitos simulação...</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1350</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a88105eb897c5b671b28e7b52e86ca442"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">CSimulador_Telha_GanhosEnergia::geroci</a></div><div class="ttdeci">double geroci</div><div class="ttdoc">ganho externo radiação onda curta </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1983</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_adaa5d5a6eb7641857882a6deebdd3c26"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">CSimulador_Telha_GanhosEnergia::gev</a></div><div class="ttdeci">double gev</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1969</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a78a210c7af9486f28421da1783ccf45a"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">CSimulador_Telha_GanhosEnergia::gerol</a></div><div class="ttdeci">double gerol</div><div class="ttdoc">ganho externo radiação onda longa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1977</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a4a65241ac994cadaedc95ce87243a803"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">CSimulador_Telha::km</a></div><div class="ttdeci">double km</div><div class="ttdoc">condutividade média ? </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1370</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ad8d3780940e5214e01fd410a2e2b35c0"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">CSimulador_Telha_GanhosEnergia::gici</a></div><div class="ttdeci">double gici</div><div class="ttdoc">ganho interno convecção </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1982</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af8cf7c614d44bd6cdcd9f51c94d02e88"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">CSimulador_Telha_GanhosEnergia::gicl</a></div><div class="ttdeci">double gicl</div><div class="ttdoc">ganho interno calor latente </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1975</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a45dfbfc358771cc7e35da528de729069"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">CSimulador_Telha_GanhosEnergia::gecl</a></div><div class="ttdeci">double gecl</div><div class="ttdoc">ganho externo calor latente </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1974</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a7453feee3c47cccd7c0851cf30a3dcf3"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">CSimulador_Telha::tim</a></div><div class="ttdeci">double tim</div><div class="ttdoc">temperatura média telha impermeável ? </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1373</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ae67f600265152d494037c2a082ad1baa"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">CSimulador_Telha_GanhosEnergia::geci</a></div><div class="ttdeci">double geci</div><div class="ttdoc">ganho externo convecção </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1981</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_af33c6495a7304de5e3070f374e5a55c1"><div class="ttname"><a href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">CSimulador_Telha::olm</a></div><div class="ttdeci">double olm</div><div class="ttdoc">conteúdo massa médio ? </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1371</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a211a876a2f0d608c8a6118d92bb95258"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">CSimulador_Telha_GanhosEnergia::bm</a></div><div class="ttdeci">double bm</div><div class="ttdoc">balanco massa </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1979</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af27d2e405d47f36849ce7345d025531a"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">CSimulador_Telha_GanhosEnergia::gir</a></div><div class="ttdeci">double gir</div><div class="ttdoc">ganho interno radicao </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1978</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a8eeee50e6948dc9e76d9188416455cb6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">CSimulador_Telha::wlm</a></div><div class="ttdeci">double wlm</div><div class="ttdoc">double errorecorrenciaol,errorecorrenciatp,errorecorrenciaola,errorecorrenciatpa; ...</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1368</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ab0e2b84b8b1b8b3580f857886724122c"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">CSimulador_Telha::tpm</a></div><div class="ttdeci">double tpm</div><div class="ttdoc">temperatura média telha permeável ? </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1372</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a4be5101232f4cd6e58a045c29ccd563d"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">CSimulador_Telha_GanhosEnergia::giri</a></div><div class="ttdeci">double giri</div><div class="ttdoc">ganho interno radicao </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1985</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a03c4f31c4fdb7414494141b2478389da"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">CSimulador_Telha_GanhosEnergia::geroc</a></div><div class="ttdeci">double geroc</div><div class="ttdoc">ganho externo radiação onda curta </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1976</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_a48c934fecfd0e0d541811f52eb664fe9"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">CSimulador_Telha_GanhosEnergia::giv</a></div><div class="ttdeci">double giv</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1970</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a877772b0ec353f3cd31a8fdf1d9f74d0"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">CSimulador_Telha::hm</a></div><div class="ttdeci">double hm</div><div class="ttdoc">coeficiente transferência massa médio ? </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1369</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_ae655b9826b4a32d093e738ccbd10f308"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">CSimulador_Telha_GanhosEnergia::be</a></div><div class="ttdeci">double be</div><div class="ttdoc">balanco energia </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1980</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml_af5a61b3f0172d0fd5c02e703e7786c6d"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">CSimulador_Telha_GanhosEnergia::gic</a></div><div class="ttdeci">double gic</div><div class="ttdoc">ganho interno convecção </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:1973</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4e2195ca5090062d41c94338131fb338"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCInterfaceSimuladorTelha.xhtml">CInterfaceSimuladorTelha</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referências <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a769d835b8647b555d3744e5419389a24">CInterfaceSimuladorTelha::tempoFimSimulacao</a> e <a class="el" href="classCInterfaceSimuladorTelha.xhtml#a59693665e1d1b7b888f056580ab3a6b0">CInterfaceSimuladorTelha::tempoInicioSimulacao</a>.</p>
+<div class="fragment"><div class="line"><a name="l02403"></a><span class="lineno"> 2403</span>&#160;{</div>
+<div class="line"><a name="l02404"></a><span class="lineno"> 2404</span>&#160;     os &lt;&lt; <span class="stringliteral">&quot;\ntempoInicioSimulacao = &quot;</span>  &lt;&lt; obj.<a class="code" href="classCInterfaceSimuladorTelha.xhtml#a59693665e1d1b7b888f056580ab3a6b0">tempoInicioSimulacao</a></div>
+<div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntempoFimSimulacao = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCInterfaceSimuladorTelha.xhtml#a769d835b8647b555d3744e5419389a24">tempoFimSimulacao</a>;</div>
+<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;}</div>
+<div class="ttc" id="classCInterfaceSimuladorTelha_xhtml_a59693665e1d1b7b888f056580ab3a6b0"><div class="ttname"><a href="classCInterfaceSimuladorTelha.xhtml#a59693665e1d1b7b888f056580ab3a6b0">CInterfaceSimuladorTelha::tempoInicioSimulacao</a></div><div class="ttdeci">double tempoInicioSimulacao</div><div class="ttdoc">hora inicial da simulação </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:2127</div></div>
+<div class="ttc" id="classCInterfaceSimuladorTelha_xhtml_a769d835b8647b555d3744e5419389a24"><div class="ttname"><a href="classCInterfaceSimuladorTelha.xhtml#a769d835b8647b555d3744e5419389a24">CInterfaceSimuladorTelha::tempoFimSimulacao</a></div><div class="ttdeci">double tempoFimSimulacao</div><div class="ttdoc">hora de encerramento da simulação (ex: 24 1 dia, 48 2 dias, 72 3 </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:2128</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a class="anchor" id="a0f1d5a27cde55270f226a123bef28efe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int nodos {10}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>------------&mdash; Valores padrão alterar e recompilar --------------------&mdash; O número de nodos representa o número de pontos em que a telha é dividida para o desenvolvimento do método numérico adotado. O número de nodos deve ser um múltiplo de 3; multiplicar por 3 e somar 1 exemplos: 3*1+1=4 3*3+1=10 3*6+1=19 3*33+1=100 para que só apareça os resultados de 4 pontos o passo dos laços for foi definido por nodos/3. desta forma a saída padrão apresenta quatro pontos, que são: ponto 1 superfície externa, ponto 4 e 7 internos e ponto 10 superfície interna. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">CSolver_TDMA::DadosDefault()</a>, <a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a> e <a class="el" href="classCSolver__TDMA.xhtml#a2125fa8d251d0ae53098d1840ea8485c">CSolver_TDMA::ResolverSistemaEquacoes_TDMA_piqi()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 08:27:28 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

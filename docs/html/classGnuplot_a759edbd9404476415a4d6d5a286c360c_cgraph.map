@@ -1,0 +1,5 @@
+<map id="Gnuplot::PlotFileXYErrorBar" name="Gnuplot::PlotFileXYErrorBar">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a33ab4bb031fa6a6b798c90a9089648e9" title="Plota pares x,y com barra de erro dy a partir de um arquivo. " alt="" coords="241,31,397,57"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="463,5,563,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="446,56,581,83"/>
+</map>

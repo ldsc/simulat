@@ -1,0 +1,16 @@
+<map id="src/CInterface_SimuladorTelha.h" name="src/CInterface_SimuladorTelha.h">
+<area shape="rect" id="node2" href="$CInterface_8h.xhtml" title="CInterface.h" alt="" coords="275,336,369,363"/>
+<area shape="rect" id="node4" href="$CSimulador__Telha__GanhosEnergia_8h.xhtml" title="CSimulador_Telha_GanhosEnergia.h" alt="" coords="44,96,280,123"/>
+<area shape="rect" id="node5" href="$CSimulador__Telha_8h.xhtml" title="CSimulador_Telha.h" alt="" coords="878,171,1017,197"/>
+<area shape="rect" id="node7" href="$CMeioPoroso__Telha__Discretizada__TDMA_8h.xhtml" title="CMeioPoroso_Telha_Discretizada\l_TDMA.h" alt="" coords="506,246,725,287"/>
+<area shape="rect" id="node12" href="$CTransferenciaCalorMassa_8h.xhtml" title="CTransferenciaCalorMassa.h" alt="" coords="461,411,653,437"/>
+<area shape="rect" id="node13" href="$CSolver__TDMA_8h.xhtml" title="CSolver_TDMA.h" alt="" coords="356,253,481,280"/>
+<area shape="rect" id="node14" href="$CFuncoesClima_8h.xhtml" title="CFuncoesClima.h" alt="" coords="1374,411,1500,437"/>
+<area shape="rect" id="node15" href="$CFluido_8h.xhtml" title="CFluido.h" alt="" coords="1288,336,1366,363"/>
+<area shape="rect" id="node16" href="$CFuncaoConteudoMassicoWl_8h.xhtml" title="CFuncaoConteudoMassicoWl.h" alt="" coords="928,253,1134,280"/>
+<area shape="rect" id="node17" href="$CGnuplot_8h.xhtml" title="CGnuplot.h" alt="" coords="1501,253,1589,280"/>
+<area shape="rect" id="node8" href="$CMeioPoroso__Telha_8h.xhtml" title="CMeioPoroso_Telha.h" alt="" coords="948,336,1098,363"/>
+<area shape="rect" id="node9" href="$CFuncaoDifusividade_8h.xhtml" title="CFuncaoDifusividade.h" alt="" coords="1088,411,1246,437"/>
+<area shape="rect" id="node10" href="$CFuncaoCondutividade_8h.xhtml" title="CFuncaoCondutividade.h" alt="" coords="678,411,846,437"/>
+<area shape="rect" id="node11" href="$CFuncaoAdsorcao_8h.xhtml" title="CFuncaoAdsorcao.h" alt="" coords="872,411,1013,437"/>
+</map>

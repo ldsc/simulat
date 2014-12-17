@@ -1,0 +1,6 @@
+<map id="Gnuplot::plot_x" name="Gnuplot::plot_x">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a8ced9e766e0677b938178dafe9264ff7" title="Cria arquivo temporario. " alt="" coords="165,5,323,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a4ca35415fa5560764597cfdfa46c6c40" title="Plota dados de um arquivo de disco. " alt="" coords="181,56,307,83"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="371,31,506,57"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="389,81,489,108"/>
+</map>

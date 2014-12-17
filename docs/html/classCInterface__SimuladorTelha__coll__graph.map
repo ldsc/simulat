@@ -1,0 +1,23 @@
+<map id="CInterface_SimuladorTelha" name="CInterface_SimuladorTelha">
+<area shape="rect" id="node2" href="$classCInterface.xhtml" title="por causa rotinas entrada saída " alt="" coords="817,2076,908,2153"/>
+<area shape="rect" id="node5" href="$classCSimulador__Telha__GanhosEnergia.xhtml" title="por causa rotinas entrada saída " alt="" coords="1887,1995,2132,2234"/>
+<area shape="rect" id="node6" href="$classCSimulador__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="1294,1603,1484,1944"/>
+<area shape="rect" id="node7" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="600,1153,885,1450"/>
+<area shape="rect" id="node8" href="$classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="592,687,760,809"/>
+<area shape="rect" id="node9" href="$classCFuncaoCondutividade.xhtml" title="por causa rotinas entrada saída " alt="" coords="443,237,629,387"/>
+<area shape="rect" id="node10" href="$classCFuncaoDifusividade.xhtml" title="por causa rotinas entrada saída " alt="" coords="773,237,947,387"/>
+<area shape="rect" id="node11" href="$classCFuncaoAdsorcao.xhtml" title="por causa rotinas entrada saída " alt="" coords="254,222,417,402"/>
+<area shape="rect" id="node13" href="$classCTransferenciaCalorMassa.xhtml" title="por causa rotinas entrada saída " alt="" coords="1538,447,1747,569"/>
+<area shape="rect" id="node14" href="$classCSolver__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="5,913,195,1063"/>
+<area shape="rect" id="node16" href="$classCFluido.xhtml" title="por causa rotinas entrada saída " alt="" coords="1451,687,1604,809"/>
+<area shape="rect" id="node24" href="$classCFuncoesClima.xhtml" title="por causa rotinas entrada saída " alt="" coords="1248,614,1427,882"/>
+<area shape="rect" id="node15" href="$classCFuncaoConteudoMassicoWl.xhtml" title="por causa rotinas entrada saída " alt="" coords="1067,1211,1291,1391"/>
+<area shape="rect" id="node17" href="$classGnuplot.xhtml" title="Classe de interface para acesso ao programa gnuplot. " alt="" coords="1748,1094,1895,1509"/>
+<area shape="rect" id="node20" title="STL class. " alt="" coords="2145,273,2225,351"/>
+<area shape="rect" id="node21" title="STL class. " alt="" coords="2310,6,2436,98"/>
+<area shape="rect" id="node26" title="STL class. " alt="" coords="2467,2076,2565,2153"/>
+<area shape="rect" id="node27" title="STL class. " alt="" coords="2514,1727,2651,1819"/>
+<area shape="rect" id="node28" title="STL class. " alt="" coords="2587,1255,2720,1347"/>
+<area shape="rect" id="node29" title="STL class. " alt="" coords="2576,709,2731,787"/>
+<area shape="rect" id="node30" title="STL class. " alt="" coords="2603,273,2703,351"/>
+</map>

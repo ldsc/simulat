@@ -1,0 +1,6 @@
+<map id="Gnuplot::get_program_path" name="Gnuplot::get_program_path">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a08d1e4ec069ec1cb82bb96427d1e0d7f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="238,31,330,57"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a8b2a2073044fd58cc6084bf4954e07bc" title="Retorna verdadeiro se a path esta presente. " alt="" coords="233,81,335,108"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a187eb517b362cf379492fe7f1621ee50" title="Construtor, seta o estilo do grafico na construcao. " alt="" coords="384,5,504,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a1f0052a04c1259e2c008435de407959f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="397,56,491,83"/>
+</map>

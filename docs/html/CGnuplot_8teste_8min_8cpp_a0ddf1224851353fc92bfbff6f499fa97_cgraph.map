@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#aec3037a558d26535e3847c52d1b120aa" title="Ativa/Desativa a legenda (a legenda é setada por padrao). " alt="" coords="120,5,237,32"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a901b030726d78e791f7005acf987bc44" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="104,56,253,83"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#ae32093aa955bc31938d9cb266085ae4b" title="Gnuplot::Reset" alt="" coords="123,107,234,133"/>
+<area shape="rect" id="node9" href="$classGnuplot.xhtml#ae64e911770994ba05cc2f6dcbfe31540" title="Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. " alt="" coords="126,157,231,184"/>
+<area shape="rect" id="node11" href="$classGnuplot.xhtml#a4039b0fdcf0e3fbf97dac187825138fb" title="Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (def..." alt="" coords="116,208,241,235"/>
+<area shape="rect" id="node13" href="$classGnuplot.xhtml#a73bb8c97a946cafea0eca683450a6a62" title="Ativa/Desativa o titulo da secao do gnuplot. " alt="" coords="129,259,229,285"/>
+<area shape="rect" id="node15" href="$CGnuplot_8teste_8min_8cpp.xhtml#a621288a08ecc9633729935737256e831" title="wait_for_key" alt="" coords="131,309,227,336"/>
+<area shape="rect" id="node16" href="$classGnuplot.xhtml#ac36ea75f0759c98da946389e60c12278" title="Seta o rotulo (nome) do eixo x. " alt="" coords="121,360,236,387"/>
+<area shape="rect" id="node18" href="$classGnuplot.xhtml#a3fb5c7726e954739d847edd2670705fe" title="Seta intervalo do eixo x. " alt="" coords="117,411,240,437"/>
+<area shape="rect" id="node20" href="$classGnuplot.xhtml#ab4cdb8c1abd919b9851ca9a81667f2a4" title="Seta o rotulo (nome) do eixo y. " alt="" coords="121,461,236,488"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#ad64a717dac18167f656c4f09239973f8" title="Ativa a legenda (a legenda é setada por padrao). Posicao: inside/outside, left/center/right, top/center/bottom, nobox/box. " alt="" coords="317,5,456,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="521,301,621,328"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a42dfb8c9d4636745c7be277ed818e849" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="311,56,463,83"/>
+<area shape="rect" id="node8" href="$classGnuplot.xhtml#a6797761712d3c311e3685bcccba65dd4" title="Gnuplot::reset_plot" alt="" coords="321,107,453,133"/>
+<area shape="rect" id="node10" href="$classGnuplot.xhtml#acfdcda292650775ebed4683e8e1515b5" title="Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. " alt="" coords="323,157,451,184"/>
+<area shape="rect" id="node12" href="$classGnuplot.xhtml#a21feba7a3916708b742c3dc25850ab2f" title="Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (def..." alt="" coords="301,208,472,235"/>
+<area shape="rect" id="node14" href="$classGnuplot.xhtml#aa693e806a115af1e2776a15078e75b46" title="Ativa o titulo da secao do gnuplot. " alt="" coords="326,263,447,289"/>
+<area shape="rect" id="node17" href="$classGnuplot.xhtml#a58808028aec03a22b5c19693b14baeef" title="Seta o rotulo (nome) do eixo x. " alt="" coords="319,339,454,365"/>
+<area shape="rect" id="node19" href="$classGnuplot.xhtml#a726232ac7226b9fc8811eaefa87c902b" title="Seta intervalo do eixo x. " alt="" coords="317,401,456,428"/>
+<area shape="rect" id="node21" href="$classGnuplot.xhtml#a7654b86e3873aec4c5101abb466fe4ab" title="Seta o rotulo (nome) do eixo y. " alt="" coords="319,459,454,485"/>
+</map>

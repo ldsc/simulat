@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência da Classe CSolver_TDMA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.xhtml"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.xhtml"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.xhtml"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.xhtml"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pro-methods">Métodos Protegidos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a> &#124;
+<a href="#friends">Amigas</a> &#124;
+<a href="classCSolver__TDMA-members.xhtml">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe CSolver_TDMA</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>por causa rotinas entrada saída  
+ <a href="classCSolver__TDMA.xhtml#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CSolver__TDMA_8h_source.xhtml">CSolver_TDMA.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagrama de Hierarquia para CSolver_TDMA:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCSolver__TDMA__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Diagrama de colaboração para CSolver_TDMA:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCSolver__TDMA__coll__graph.svg" width="200" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:adb6b7d08702dbdbae0d16e518957dddb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#adb6b7d08702dbdbae0d16e518957dddb">CSolver_TDMA</a> ()=default</td></tr>
+<tr class="memdesc:adb6b7d08702dbdbae0d16e518957dddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor.  <a href="#adb6b7d08702dbdbae0d16e518957dddb">Mais...</a><br/></td></tr>
+<tr class="separator:adb6b7d08702dbdbae0d16e518957dddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a295eced768573ac9f24bc1588b04f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a50a295eced768573ac9f24bc1588b04f">~CSolver_TDMA</a> ()=default</td></tr>
+<tr class="memdesc:a50a295eced768573ac9f24bc1588b04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor.  <a href="#a50a295eced768573ac9f24bc1588b04f">Mais...</a><br/></td></tr>
+<tr class="separator:a50a295eced768573ac9f24bc1588b04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cfc18536df7e616efed8262809f99c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault</a> ()</td></tr>
+<tr class="memdesc:a06cfc18536df7e616efed8262809f99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dados default.  <a href="#a06cfc18536df7e616efed8262809f99c">Mais...</a><br/></td></tr>
+<tr class="separator:a06cfc18536df7e616efed8262809f99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb33d54ac8591907073930707ff7cf66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#adb33d54ac8591907073930707ff7cf66">EntrarDadosObjeto</a> ()</td></tr>
+<tr class="memdesc:adb33d54ac8591907073930707ff7cf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entrada de dados.  <a href="#adb33d54ac8591907073930707ff7cf66">Mais...</a><br/></td></tr>
+<tr class="separator:adb33d54ac8591907073930707ff7cf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Métodos Protegidos</h2></td></tr>
+<tr class="memitem:a2125fa8d251d0ae53098d1840ea8485c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a2125fa8d251d0ae53098d1840ea8485c">ResolverSistemaEquacoes_TDMA_piqi</a> ()</td></tr>
+<tr class="memdesc:a2125fa8d251d0ae53098d1840ea8485c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cálculo dos coeficientes do método de Thomas.  <a href="#a2125fa8d251d0ae53098d1840ea8485c">Mais...</a><br/></td></tr>
+<tr class="separator:a2125fa8d251d0ae53098d1840ea8485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a55cc83a7fb9d344ef2c217048fe36f5d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:a55cc83a7fb9d344ef2c217048fe36f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente a do método numérico TDMA.  <a href="#a55cc83a7fb9d344ef2c217048fe36f5d">Mais...</a><br/></td></tr>
+<tr class="separator:a55cc83a7fb9d344ef2c217048fe36f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92745dd6ee16ce25898480b05e8e7500"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:a92745dd6ee16ce25898480b05e8e7500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente b do método numérico TDMA.  <a href="#a92745dd6ee16ce25898480b05e8e7500">Mais...</a><br/></td></tr>
+<tr class="separator:a92745dd6ee16ce25898480b05e8e7500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cc88d4ca5209359f0f9e7d0addc711"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:a59cc88d4ca5209359f0f9e7d0addc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente c do método numérico TDMA.  <a href="#a59cc88d4ca5209359f0f9e7d0addc711">Mais...</a><br/></td></tr>
+<tr class="separator:a59cc88d4ca5209359f0f9e7d0addc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135a6c113b773981846d87d91d0a06f3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:a135a6c113b773981846d87d91d0a06f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente d do método numérico TDMA.  <a href="#a135a6c113b773981846d87d91d0a06f3">Mais...</a><br/></td></tr>
+<tr class="separator:a135a6c113b773981846d87d91d0a06f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaefa4228e5f735d1256f70a45d5fe8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:a3eaefa4228e5f735d1256f70a45d5fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente p do método numérico TDMA.  <a href="#a3eaefa4228e5f735d1256f70a45d5fe8">Mais...</a><br/></td></tr>
+<tr class="separator:a3eaefa4228e5f735d1256f70a45d5fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8f583cd89f9c02e42651608d076d0a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a> [<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td></tr>
+<tr class="memdesc:afa8f583cd89f9c02e42651608d076d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vetor coeficiente q do método numérico TDMA.  <a href="#afa8f583cd89f9c02e42651608d076d0a">Mais...</a><br/></td></tr>
+<tr class="separator:afa8f583cd89f9c02e42651608d076d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:abc20db78c9cee19db31eec94355af34f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSolver__TDMA.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSolver__TDMA.xhtml">CSolver_TDMA</a> &amp;obj)</td></tr>
+<tr class="memdesc:abc20db78c9cee19db31eec94355af34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#abc20db78c9cee19db31eec94355af34f">Mais...</a><br/></td></tr>
+<tr class="separator:abc20db78c9cee19db31eec94355af34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>por causa rotinas entrada saída </p>
+<p>----------&mdash;&mdash;&mdash; Bibliotecas -----------------------&mdash;&mdash;&mdash;----------------------&mdash; Classe <a class="el" href="classCSolver__TDMA.xhtml" title="por causa rotinas entrada saída ">CSolver_TDMA</a> ------------------------------------&mdash; representa um solver TDMA - Tri-Diagonal Matriz Algorithm (unidimensional). </p>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="adb6b7d08702dbdbae0d16e518957dddb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSolver_TDMA::CSolver_TDMA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construtor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a50a295eced768573ac9f24bc1588b04f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSolver_TDMA::~CSolver_TDMA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a06cfc18536df7e616efed8262809f99c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSolver_TDMA::DadosDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dados default. </p>
+
+<p>Referências <a class="el" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>, <a class="el" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>, <a class="el" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>, <a class="el" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>, <a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>, <a class="el" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a> e <a class="el" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>.</p>
+
+<p>Referenciado por <a class="el" href="classCSimulador__Telha.xhtml#aa2592b5ca7cce1ac595cc3a658a17c85">CSimulador_Telha::DadosDefault()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                       {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="keywordflow">for</span>( <span class="keywordtype">int</span>  i = 0; i &lt;= <a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>; i++ )</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[i] = <a class="code" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>[i] = <a class="code" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>[i] = <a class="code" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>[i] = <a class="code" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a>[i] = <a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[i] = 0.00;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a55cc83a7fb9d344ef2c217048fe36f5d"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA::a</a></div><div class="ttdeci">double a[nodos+1]</div><div class="ttdoc">Vetor coeficiente a do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:16</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a92745dd6ee16ce25898480b05e8e7500"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA::b</a></div><div class="ttdeci">double b[nodos+1]</div><div class="ttdoc">Vetor coeficiente b do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:17</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a3eaefa4228e5f735d1256f70a45d5fe8"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA::p</a></div><div class="ttdeci">double p[nodos+1]</div><div class="ttdoc">Vetor coeficiente p do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:20</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_afa8f583cd89f9c02e42651608d076d0a"><div class="ttname"><a href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA::q</a></div><div class="ttdeci">double q[nodos+1]</div><div class="ttdoc">Vetor coeficiente q do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:21</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a59cc88d4ca5209359f0f9e7d0addc711"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA::c</a></div><div class="ttdeci">double c[nodos+1]</div><div class="ttdoc">Vetor coeficiente c do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:18</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a135a6c113b773981846d87d91d0a06f3"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA::d</a></div><div class="ttdeci">double d[nodos+1]</div><div class="ttdoc">Vetor coeficiente d do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:19</div></div>
+<div class="ttc" id="CInterface_8h_xhtml_a0f1d5a27cde55270f226a123bef28efe"><div class="ttname"><a href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a></div><div class="ttdeci">constexpr int nodos</div><div class="ttdef"><b>Definition:</b> CInterface.h:12</div></div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções que utilizam esta função:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCSolver__TDMA_a06cfc18536df7e616efed8262809f99c_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adb33d54ac8591907073930707ff7cf66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSolver_TDMA::EntrarDadosObjeto </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Entrada de dados. </p>
+
+<p>Referenciado por <a class="el" href="classCSimulador__Telha.xhtml#ad3ec0d6df9f0f7325de23d6a04e3b76a">CSimulador_Telha::EntrarDadosObjeto()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{};</div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções que utilizam esta função:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCSolver__TDMA_adb33d54ac8591907073930707ff7cf66_icgraph.svg" width="427" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2125fa8d251d0ae53098d1840ea8485c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSolver_TDMA::ResolverSistemaEquacoes_TDMA_piqi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cálculo dos coeficientes do método de Thomas. </p>
+<hr/>
+<p> Implementação função ResolverSistemaEquacoes_TDMA_piqi folpiqi calcula coeficientes piqi do método implicito (Método de Thomas) </p>
+<p>pode ser incluido dentro do for, porque c=0</p>
+<p>e p[i-1] i=1 , p[0] e p[0] foi definido=0 </p>
+
+<p>Referências <a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                     {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   <span class="keywordtype">double</span> temp;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <a class="code" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a>[1] = <a class="code" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>[1] / <a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[1];      </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[1] = <a class="code" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>[1] / <a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[1];      </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 2; i &lt;= <a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>; i++ ) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;         temp = <a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[i] - <a class="code" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>[i] * <a class="code" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a>[i - 1];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;         p[i] = <a class="code" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>[i] / ( temp );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;         <a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[i] = ( <a class="code" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>[i] * <a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[i - 1] + <a class="code" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>[i] ) / ( temp );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a55cc83a7fb9d344ef2c217048fe36f5d"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA::a</a></div><div class="ttdeci">double a[nodos+1]</div><div class="ttdoc">Vetor coeficiente a do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:16</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a92745dd6ee16ce25898480b05e8e7500"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA::b</a></div><div class="ttdeci">double b[nodos+1]</div><div class="ttdoc">Vetor coeficiente b do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:17</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a3eaefa4228e5f735d1256f70a45d5fe8"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA::p</a></div><div class="ttdeci">double p[nodos+1]</div><div class="ttdoc">Vetor coeficiente p do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:20</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_afa8f583cd89f9c02e42651608d076d0a"><div class="ttname"><a href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA::q</a></div><div class="ttdeci">double q[nodos+1]</div><div class="ttdoc">Vetor coeficiente q do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:21</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a59cc88d4ca5209359f0f9e7d0addc711"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA::c</a></div><div class="ttdeci">double c[nodos+1]</div><div class="ttdoc">Vetor coeficiente c do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:18</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a135a6c113b773981846d87d91d0a06f3"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA::d</a></div><div class="ttdeci">double d[nodos+1]</div><div class="ttdoc">Vetor coeficiente d do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:19</div></div>
+<div class="ttc" id="CInterface_8h_xhtml_a0f1d5a27cde55270f226a123bef28efe"><div class="ttname"><a href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a></div><div class="ttdeci">constexpr int nodos</div><div class="ttdef"><b>Definition:</b> CInterface.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Amigas e Funções Relacionadas</h2>
+<a class="anchor" id="abc20db78c9cee19db31eec94355af34f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSolver__TDMA.xhtml">CSolver_TDMA</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                          {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSolver_TDMA:\n&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i=0; i&lt;= <a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> ; i++ )</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\ni=&quot;</span> &lt;&lt; i </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; a=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">a</a>[i]</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; b=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">b</a>[i]</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; c=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">c</a>[i]</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; d=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">d</a>[i]</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; p=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">p</a>[i]</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; q=&quot;</span> &lt;&lt; obj.<a class="code" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">q</a>[i];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a55cc83a7fb9d344ef2c217048fe36f5d"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA::a</a></div><div class="ttdeci">double a[nodos+1]</div><div class="ttdoc">Vetor coeficiente a do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:16</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a92745dd6ee16ce25898480b05e8e7500"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA::b</a></div><div class="ttdeci">double b[nodos+1]</div><div class="ttdoc">Vetor coeficiente b do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:17</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a3eaefa4228e5f735d1256f70a45d5fe8"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA::p</a></div><div class="ttdeci">double p[nodos+1]</div><div class="ttdoc">Vetor coeficiente p do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:20</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_afa8f583cd89f9c02e42651608d076d0a"><div class="ttname"><a href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA::q</a></div><div class="ttdeci">double q[nodos+1]</div><div class="ttdoc">Vetor coeficiente q do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:21</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a59cc88d4ca5209359f0f9e7d0addc711"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA::c</a></div><div class="ttdeci">double c[nodos+1]</div><div class="ttdoc">Vetor coeficiente c do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:18</div></div>
+<div class="ttc" id="classCSolver__TDMA_xhtml_a135a6c113b773981846d87d91d0a06f3"><div class="ttname"><a href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA::d</a></div><div class="ttdeci">double d[nodos+1]</div><div class="ttdoc">Vetor coeficiente d do método numérico TDMA. </div><div class="ttdef"><b>Definition:</b> CSolver_TDMA.h:19</div></div>
+<div class="ttc" id="CInterface_8h_xhtml_a0f1d5a27cde55270f226a123bef28efe"><div class="ttname"><a href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a></div><div class="ttdeci">constexpr int nodos</div><div class="ttdef"><b>Definition:</b> CInterface.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a55cc83a7fb9d344ef2c217048fe36f5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::a[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente a do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a> e <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92745dd6ee16ce25898480b05e8e7500"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::b[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente b do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a>, <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a> e <a class="el" href="classGnuplot.xhtml#a51ea5105eb87285820bb93910f8d346c">Gnuplot::plot_slope()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59cc88d4ca5209359f0f9e7d0addc711"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::c[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente c do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a> e <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a135a6c113b773981846d87d91d0a06f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::d[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente d do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a> e <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3eaefa4228e5f735d1256f70a45d5fe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::p[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente p do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a> e <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa8f583cd89f9c02e42651608d076d0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CSolver_TDMA::q[<a class="el" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vetor coeficiente q do método numérico TDMA. </p>
+
+<p>Referenciado por <a class="el" href="classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c">DadosDefault()</a> e <a class="el" href="CSolver__TDMA_8cpp.xhtml#abc20db78c9cee19db31eec94355af34f">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>src/<a class="el" href="CSolver__TDMA_8h_source.xhtml">CSolver_TDMA.h</a></li>
+<li>src/<a class="el" href="CSolver__TDMA_8cpp.xhtml">CSolver_TDMA.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

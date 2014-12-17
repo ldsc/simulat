@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Código-Fonte de src/CFuncoesClima.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CFuncoesClima.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CFuncoesClima_8h.xhtml">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CFuncoesClima_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CFuncoesClima_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>         </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// redefinivel</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCFuncoesClima.xhtml">CFuncoesClima</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="comment">// Propriedades climáticas</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">   16</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">text</a>{25.0};                       </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">   17</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">tint</a>{25.0};                       </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">   18</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">hext</a>{0.95};                       </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">   19</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">hint</a>{0.75};                       </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">   20</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">rove</a>{0.017};                      </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">   21</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">rovi</a>{0.017};                      </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">   22</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">radoc</a>{0.0};                       </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">   23</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">radol</a>{0.0};                       </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="comment">// Para cálculo da temperatura interna, que pode ser função da temperatura externa, usa um retardo e um amortecimento</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">   26</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">retardo</a>{0.0};                     </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">   27</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">amortecimento</a>{1.0};               </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="comment">// Propriedades climáticas associadas ao cálculo da chuva</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">   30</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">horaInicioChuva</a>{0.0};             </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">   31</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">horaFimChuva</a>{0.0};                </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">   32</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">precipitacao</a>{0.0};                </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   <span class="comment">// Propriedades/atributos associados a interface em modo texto</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   <span class="comment">// O usuário pode definir a temperatura interna e umidades externa e interna</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="comment">// como constantes ou como função da temperatura externa</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">   37</a></span>&#160;   <span class="keywordtype">char</span> <a class="code" href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">respTemperaturaInterna</a>{<span class="charliteral">&#39;c&#39;</span>};        </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">   38</a></span>&#160;   <span class="keywordtype">char</span> <a class="code" href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">respHumidadeExterna</a>{<span class="charliteral">&#39;c&#39;</span>};           </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">   39</a></span>&#160;   <span class="keywordtype">char</span> <a class="code" href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">respHumidadeInterna</a>{<span class="charliteral">&#39;c&#39;</span>};           </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//--------------------------------------------------------------------------------------Métodos</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#aa5a957d0b3ab212fd5b1ecd471068b12">   45</a></span>&#160;  <a class="code" href="classCFuncoesClima.xhtml#aa5a957d0b3ab212fd5b1ecd471068b12">CFuncoesClima</a>()                   {   <a class="code" href="classCFuncoesClima.xhtml#adbb305c4199c55873aefeb0e22e0a5e4">DadosDefault</a>();  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classCFuncoesClima.xhtml#a3c8252e860599f573ad4e3e3e86b9faf">~CFuncoesClima</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#adbb305c4199c55873aefeb0e22e0a5e4">DadosDefault</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936">EntrarDadosObjeto</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#a64e6dc948deb1d9481b45ea2a6cb6c15">ExecutarFuncoesClima</a>(<span class="keywordtype">double</span> hora);</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#ae5e9416ada714340dc87fd95b4c9898b">   57</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#ae5e9416ada714340dc87fd95b4c9898b">operator()</a>( <span class="keywordtype">double</span> hora)   { <a class="code" href="classCFuncoesClima.xhtml#a64e6dc948deb1d9481b45ea2a6cb6c15">ExecutarFuncoesClima</a>(hora); <span class="keywordflow">return</span> hora; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCFuncoesClima.xhtml#ae286387dbd3c83cb80229a5bd0cba818">TemperaturaExterna</a>( <span class="keywordtype">double</span> hora );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#ab0a19c5750cc49ceb58154fd4fa8aade">TemperaturaInterna</a>( <span class="keywordtype">double</span> hora );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#a9302f5970d4d1c0d3ed56647cc802c38">UmidadeExterna</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#a3b6075363cae1e90d3a0f6e3a4ad7b85">UmidadeInterna</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#a8cd3c484d7f8eb814a4fed19de791e0d">RadiacaoOndaCurta</a>( <span class="keywordtype">double</span> hora );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classCFuncoesClima.xhtml#ab31d5b2e65eb6c431c0fbaf58cd70a7a">RadiacaoOndaLonga</a>( <span class="keywordtype">double</span> hora );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classCFuncoesClima.xhtml#a9343a89b48930f9f8e6731b28b2f1c9f">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classCFuncoesClima.xhtml">CFuncoesClima</a>&amp; obj);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#aa57cc5f09deceefa571f258cb960fb24">   77</a></span>&#160;   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classCFuncoesClima.xhtml#a8be999fed30d1327b1b592d278b52ada">   78</a></span>&#160;   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ab31d5b2e65eb6c431c0fbaf58cd70a7a"><div class="ttname"><a href="classCFuncoesClima.xhtml#ab31d5b2e65eb6c431c0fbaf58cd70a7a">CFuncoesClima::RadiacaoOndaLonga</a></div><div class="ttdeci">void RadiacaoOndaLonga(double hora)</div><div class="ttdoc">Cálculo da radiação de onda longa. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:219</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ad42592234730be560773e418008e5600"><div class="ttname"><a href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">CFuncoesClima::radol</a></div><div class="ttdeci">double radol</div><div class="ttdoc">radiação onda longa </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:23</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml"><div class="ttname"><a href="classCSimulador__Telha.xhtml">CSimulador_Telha</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:18</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ae286387dbd3c83cb80229a5bd0cba818"><div class="ttname"><a href="classCFuncoesClima.xhtml#ae286387dbd3c83cb80229a5bd0cba818">CFuncoesClima::TemperaturaExterna</a></div><div class="ttdeci">double TemperaturaExterna(double hora)</div><div class="ttdoc">Cálculo da temperatura externa (função do tempo - hora) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:159</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a7f03fe9f4313e2a03e36f33b54a71936"><div class="ttname"><a href="classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936">CFuncoesClima::EntrarDadosObjeto</a></div><div class="ttdeci">void EntrarDadosObjeto()</div><div class="ttdoc">Entrada de dados. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:40</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:10</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ae045fe9c5a2108a7eddef8e1cfe35b05"><div class="ttname"><a href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">CFuncoesClima::amortecimento</a></div><div class="ttdeci">double amortecimento</div><div class="ttdoc">amortecimento térmico em função espessura parede </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:27</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_aba60e21adf269084e43707aac4b157d0"><div class="ttname"><a href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">CFuncoesClima::hext</a></div><div class="ttdeci">double hext</div><div class="ttdoc">umidade externa </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:18</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a3b6075363cae1e90d3a0f6e3a4ad7b85"><div class="ttname"><a href="classCFuncoesClima.xhtml#a3b6075363cae1e90d3a0f6e3a4ad7b85">CFuncoesClima::UmidadeInterna</a></div><div class="ttdeci">void UmidadeInterna()</div><div class="ttdoc">Cálculo da umidade interna (função da temperatura interna) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:191</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4ce585b6d41a32c73b830613ab0f4bdc"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">CFuncoesClima::rove</a></div><div class="ttdeci">double rove</div><div class="ttdoc">concentração vapor externo (calculado) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:20</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_af1a7ee8fe06285423d05461d7efc42a6"><div class="ttname"><a href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">CFuncoesClima::radoc</a></div><div class="ttdeci">double radoc</div><div class="ttdoc">radiação onda curta </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:22</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a9302f5970d4d1c0d3ed56647cc802c38"><div class="ttname"><a href="classCFuncoesClima.xhtml#a9302f5970d4d1c0d3ed56647cc802c38">CFuncoesClima::UmidadeExterna</a></div><div class="ttdeci">void UmidadeExterna()</div><div class="ttdoc">Cálculo da umidade externa (função da temperatura externa) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:179</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml"><div class="ttname"><a href="classCFuncoesClima.xhtml">CFuncoesClima</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:12</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a0c629461f59dbd4822306492b5acfd74"><div class="ttname"><a href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">CFuncoesClima::respTemperaturaInterna</a></div><div class="ttdeci">char respTemperaturaInterna</div><div class="ttdoc">temperatura interna constante ou calculada </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:37</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a1742f3b532412a2fed2618df39e169e0"><div class="ttname"><a href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">CFuncoesClima::text</a></div><div class="ttdeci">double text</div><div class="ttdoc">temperatura externa </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:16</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_abf5352ebd555ac36f94eeaa8d8880433"><div class="ttname"><a href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">CFuncoesClima::respHumidadeInterna</a></div><div class="ttdeci">char respHumidadeInterna</div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:39</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ae5e9416ada714340dc87fd95b4c9898b"><div class="ttname"><a href="classCFuncoesClima.xhtml#ae5e9416ada714340dc87fd95b4c9898b">CFuncoesClima::operator()</a></div><div class="ttdeci">double operator()(double hora)</div><div class="ttdoc">Executa funções clima. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:57</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a3c8252e860599f573ad4e3e3e86b9faf"><div class="ttname"><a href="classCFuncoesClima.xhtml#a3c8252e860599f573ad4e3e3e86b9faf">CFuncoesClima::~CFuncoesClima</a></div><div class="ttdeci">~CFuncoesClima()=default</div><div class="ttdoc">Destrutor. </div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4ec2885d1b3a564e9c2eb20c8fd1166f"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">CFuncoesClima::respHumidadeExterna</a></div><div class="ttdeci">char respHumidadeExterna</div><div class="ttdoc">umidade externa constante ou calculada </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:38</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a1cea96ddc70c9bd7f6033a5f33c2369d"><div class="ttname"><a href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">CFuncoesClima::horaInicioChuva</a></div><div class="ttdeci">double horaInicioChuva</div><div class="ttdoc">hora início da chuva </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:30</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_aabe2b0cf2225c86241f9b788df3b5c03"><div class="ttname"><a href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">CFuncoesClima::horaFimChuva</a></div><div class="ttdeci">double horaFimChuva</div><div class="ttdoc">hora fim da chuva </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:31</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a61dcce7b581dd784874a4e650d84ac85"><div class="ttname"><a href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">CFuncoesClima::tint</a></div><div class="ttdeci">double tint</div><div class="ttdoc">temperatura interna </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:17</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_aa5a957d0b3ab212fd5b1ecd471068b12"><div class="ttname"><a href="classCFuncoesClima.xhtml#aa5a957d0b3ab212fd5b1ecd471068b12">CFuncoesClima::CFuncoesClima</a></div><div class="ttdeci">CFuncoesClima()</div><div class="ttdoc">Construtor. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:45</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_ab0a19c5750cc49ceb58154fd4fa8aade"><div class="ttname"><a href="classCFuncoesClima.xhtml#ab0a19c5750cc49ceb58154fd4fa8aade">CFuncoesClima::TemperaturaInterna</a></div><div class="ttdeci">void TemperaturaInterna(double hora)</div><div class="ttdoc">Cálculo da temperatura interna. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:168</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a8cd3c484d7f8eb814a4fed19de791e0d"><div class="ttname"><a href="classCFuncoesClima.xhtml#a8cd3c484d7f8eb814a4fed19de791e0d">CFuncoesClima::RadiacaoOndaCurta</a></div><div class="ttdeci">void RadiacaoOndaCurta(double hora)</div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:205</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a6c1843312f69c15be4602c67c5871604"><div class="ttname"><a href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">CFuncoesClima::hint</a></div><div class="ttdeci">double hint</div><div class="ttdoc">umidade interna </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:19</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a9343a89b48930f9f8e6731b28b2f1c9f"><div class="ttname"><a href="classCFuncoesClima.xhtml#a9343a89b48930f9f8e6731b28b2f1c9f">CFuncoesClima::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, CFuncoesClima &amp;obj)</div><div class="ttdoc">Saída de dados do objeto para os (tela) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:225</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a768d57abaf81b764d039e163bbc058d5"><div class="ttname"><a href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">CFuncoesClima::rovi</a></div><div class="ttdeci">double rovi</div><div class="ttdoc">concentração vapor interno (calculado) </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:21</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a039bb905b47666394f91969a2bdea476"><div class="ttname"><a href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">CFuncoesClima::precipitacao</a></div><div class="ttdeci">double precipitacao</div><div class="ttdoc">precipitacao em mm </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:32</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_adbb305c4199c55873aefeb0e22e0a5e4"><div class="ttname"><a href="classCFuncoesClima.xhtml#adbb305c4199c55873aefeb0e22e0a5e4">CFuncoesClima::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:15</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a4276e6b3f778a1094fc70587e15de783"><div class="ttname"><a href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">CFuncoesClima::retardo</a></div><div class="ttdeci">double retardo</div><div class="ttdoc">retardo térmico em função espessura parede </div><div class="ttdef"><b>Definition:</b> CFuncoesClima.h:26</div></div>
+<div class="ttc" id="classCFuncoesClima_xhtml_a64e6dc948deb1d9481b45ea2a6cb6c15"><div class="ttname"><a href="classCFuncoesClima.xhtml#a64e6dc948deb1d9481b45ea2a6cb6c15">CFuncoesClima::ExecutarFuncoesClima</a></div><div class="ttdeci">void ExecutarFuncoesClima(double hora)</div><div class="ttdef"><b>Definition:</b> CFuncoesClima.cpp:134</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

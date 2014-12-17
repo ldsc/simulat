@@ -1,0 +1,7 @@
+<map id="CSimulador_Telha_GanhosEnergia::DadosDefault" name="CSimulador_Telha_GanhosEnergia::DadosDefault">
+<area shape="rect" id="node2" href="$classCSimulador__Telha.xhtml#aa2592b5ca7cce1ac595cc3a658a17c85" title="Dados default. " alt="" coords="281,71,498,97"/>
+<area shape="rect" id="node3" href="$classCTransferenciaCalorMassa.xhtml#a2c400d0fbb10492c2b940e6251c2011e" title="Dados default. " alt="" coords="567,5,748,46"/>
+<area shape="rect" id="node4" href="$classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c" title="Dados default. " alt="" coords="556,71,759,97"/>
+<area shape="rect" id="node5" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4" title="Dados default. " alt="" coords="547,122,767,163"/>
+<area shape="rect" id="node6" href="$classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c" title="Dados default. " alt="" coords="817,122,965,163"/>
+</map>

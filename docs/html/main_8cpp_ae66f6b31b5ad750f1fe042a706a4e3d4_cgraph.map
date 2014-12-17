@@ -1,0 +1,5 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classCInterface__SimuladorTelha.xhtml#a780ad4db8e166f172a51790f58cbf0ff" title="CInterface_SimuladorTelha\l::ExecutarSimulador" alt="" coords="105,5,285,46"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a4039b0fdcf0e3fbf97dac187825138fb" title="Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (def..." alt="" coords="132,71,257,97"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a21feba7a3916708b742c3dc25850ab2f" title="Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (def..." alt="" coords="333,71,504,97"/>
+</map>

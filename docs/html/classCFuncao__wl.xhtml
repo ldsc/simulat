@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência da Classe CFuncao_wl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.xhtml"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.xhtml"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.xhtml"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.xhtml"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a> &#124;
+<a href="#friends">Amigas</a> &#124;
+<a href="classCFuncao__wl-members.xhtml">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe CFuncao_wl</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol, rol e rot. Note que é uma classe de associação, que calcula uma informaçao com base nas informações de duas classes associadas, a <a class="el" href="classCFluido.xhtml" title="Representa um fluido com atributos: rol, cl, lv. ">CFluido</a> e a <a class="el" href="classCMeioPoroso__Telha.xhtml" title="Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te...">CMeioPoroso_Telha</a>.  
+ <a href="classCFuncao__wl.xhtml#details">Mais...</a></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagrama de colaboração para CFuncao_wl:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCFuncao__wl__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a4c41b4b9aa2c96d26b4232608496e176"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a4c41b4b9aa2c96d26b4232608496e176">CFuncao_wl</a> (<a class="el" href="classCFluido.xhtml">CFluido</a> *_fluido=nullptr, <a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> *_telha=nullptr)</td></tr>
+<tr class="memdesc:a4c41b4b9aa2c96d26b4232608496e176"><td class="mdescLeft">&#160;</td><td class="mdescRight">funções  <a href="#a4c41b4b9aa2c96d26b4232608496e176">Mais...</a><br/></td></tr>
+<tr class="separator:a4c41b4b9aa2c96d26b4232608496e176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c32dc57c01424bafc2836a567ba861"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#ae4c32dc57c01424bafc2836a567ba861">~CFuncao_wl</a> ()=default</td></tr>
+<tr class="memdesc:ae4c32dc57c01424bafc2836a567ba861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor.  <a href="#ae4c32dc57c01424bafc2836a567ba861">Mais...</a><br/></td></tr>
+<tr class="separator:ae4c32dc57c01424bafc2836a567ba861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfb21399e0787b84f273c4e669a62cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a1bfb21399e0787b84f273c4e669a62cc">DadosDefault</a> ()</td></tr>
+<tr class="memdesc:a1bfb21399e0787b84f273c4e669a62cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dados default.  <a href="#a1bfb21399e0787b84f273c4e669a62cc">Mais...</a><br/></td></tr>
+<tr class="separator:a1bfb21399e0787b84f273c4e669a62cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0154ecd6affa71f72967f0c51f1cc782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a0154ecd6affa71f72967f0c51f1cc782">EntrarDadosFuncao</a> ()</td></tr>
+<tr class="memdesc:a0154ecd6affa71f72967f0c51f1cc782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entrada de dados (associados aos ensaios)  <a href="#a0154ecd6affa71f72967f0c51f1cc782">Mais...</a><br/></td></tr>
+<tr class="separator:a0154ecd6affa71f72967f0c51f1cc782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dc35e58d02e636e82bb2a63dd2e3d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a60dc35e58d02e636e82bb2a63dd2e3d7">Wl</a> (double ol)</td></tr>
+<tr class="separator:a60dc35e58d02e636e82bb2a63dd2e3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8412fffbdd5db964cb6114d9213fcb1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a8412fffbdd5db964cb6114d9213fcb1b">Fluido</a> (<a class="el" href="classCFluido.xhtml">CFluido</a> *f)</td></tr>
+<tr class="memdesc:a8412fffbdd5db964cb6114d9213fcb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seta ponteiro para fluido.  <a href="#a8412fffbdd5db964cb6114d9213fcb1b">Mais...</a><br/></td></tr>
+<tr class="separator:a8412fffbdd5db964cb6114d9213fcb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd3335c3fa3746477d08cf495028030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a6cd3335c3fa3746477d08cf495028030">Telha</a> (<a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> *t)</td></tr>
+<tr class="memdesc:a6cd3335c3fa3746477d08cf495028030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seta ponteiro para telha.  <a href="#a6cd3335c3fa3746477d08cf495028030">Mais...</a><br/></td></tr>
+<tr class="separator:a6cd3335c3fa3746477d08cf495028030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd40eb03bda45aaaae5335d44890f96"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a2cd40eb03bda45aaaae5335d44890f96">operator()</a> (double ol)</td></tr>
+<tr class="separator:a2cd40eb03bda45aaaae5335d44890f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a235c16a9f1bd1e4c0999cdd51853298b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFluido.xhtml">CFluido</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a></td></tr>
+<tr class="memdesc:a235c16a9f1bd1e4c0999cdd51853298b"><td class="mdescLeft">&#160;</td><td class="mdescRight">fluido  <a href="#a235c16a9f1bd1e4c0999cdd51853298b">Mais...</a><br/></td></tr>
+<tr class="separator:a235c16a9f1bd1e4c0999cdd51853298b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad94c97d654aaa4ff1d2f4b7e2631227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a></td></tr>
+<tr class="memdesc:aad94c97d654aaa4ff1d2f4b7e2631227"><td class="mdescLeft">&#160;</td><td class="mdescRight">telha  <a href="#aad94c97d654aaa4ff1d2f4b7e2631227">Mais...</a><br/></td></tr>
+<tr class="separator:aad94c97d654aaa4ff1d2f4b7e2631227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:ae1bd321954cfbbf59369684a5d7b5f01"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFuncao__wl.xhtml#ae1bd321954cfbbf59369684a5d7b5f01">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCFuncao__wl.xhtml">CFuncao_wl</a> &amp;obj)</td></tr>
+<tr class="memdesc:ae1bd321954cfbbf59369684a5d7b5f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#ae1bd321954cfbbf59369684a5d7b5f01">Mais...</a><br/></td></tr>
+<tr class="separator:ae1bd321954cfbbf59369684a5d7b5f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol, rol e rot. Note que é uma classe de associação, que calcula uma informaçao com base nas informações de duas classes associadas, a <a class="el" href="classCFluido.xhtml" title="Representa um fluido com atributos: rol, cl, lv. ">CFluido</a> e a <a class="el" href="classCMeioPoroso__Telha.xhtml" title="Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te...">CMeioPoroso_Telha</a>. </p>
+<p>----------------&mdash; classe <a class="el" href="classCFuncao__wl.xhtml" title="Classe de associação, usada para cálculo do conteúdo de massa mássico wl, a partir ol...">CFuncao_wl</a> ----------------------------------&mdash; </p>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="a4c41b4b9aa2c96d26b4232608496e176"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFuncao_wl::CFuncao_wl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCFluido.xhtml">CFluido</a> *&#160;</td>
+          <td class="paramname"><em>_fluido</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> *&#160;</td>
+          <td class="paramname"><em>_telha</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>funções </p>
+<p>Construtor </p>
+<div class="fragment"><div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;: <a class="code" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a>(_fluido), <a class="code" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a>(_telha) {};</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_aad94c97d654aaa4ff1d2f4b7e2631227"><div class="ttname"><a href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a></div><div class="ttdeci">CMeioPoroso_Telha * telha</div><div class="ttdoc">telha </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:983</div></div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a235c16a9f1bd1e4c0999cdd51853298b"><div class="ttname"><a href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a></div><div class="ttdeci">CFluido * fluido</div><div class="ttdoc">fluido </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:982</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae4c32dc57c01424bafc2836a567ba861"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFuncao_wl::~CFuncao_wl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a1bfb21399e0787b84f273c4e669a62cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFuncao_wl::DadosDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dados default. </p>
+<div class="fragment"><div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0154ecd6affa71f72967f0c51f1cc782"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFuncao_wl::EntrarDadosFuncao </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Entrada de dados (associados aos ensaios) </p>
+<div class="fragment"><div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;{};</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8412fffbdd5db964cb6114d9213fcb1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFuncao_wl::Fluido </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCFluido.xhtml">CFluido</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Seta ponteiro para fluido. </p>
+<div class="fragment"><div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;{ <a class="code" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a> = f;}</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a235c16a9f1bd1e4c0999cdd51853298b"><div class="ttname"><a href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a></div><div class="ttdeci">CFluido * fluido</div><div class="ttdoc">fluido </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:982</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2cd40eb03bda45aaaae5335d44890f96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CFuncao_wl::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calcula o conteúdo de massa mássico wl em função do conteúdo de massa volumétrico ol. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ol</td><td>conteúdo de massa volumétrico </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classCFuncao__wl.xhtml#a60dc35e58d02e636e82bb2a63dd2e3d7">Wl</a>(ol); }</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a60dc35e58d02e636e82bb2a63dd2e3d7"><div class="ttname"><a href="classCFuncao__wl.xhtml#a60dc35e58d02e636e82bb2a63dd2e3d7">CFuncao_wl::Wl</a></div><div class="ttdeci">double Wl(double ol)</div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:998</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6cd3335c3fa3746477d08cf495028030"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFuncao_wl::Telha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Seta ponteiro para telha. </p>
+<div class="fragment"><div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;{ <a class="code" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a> = t;}</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_aad94c97d654aaa4ff1d2f4b7e2631227"><div class="ttname"><a href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a></div><div class="ttdeci">CMeioPoroso_Telha * telha</div><div class="ttdoc">telha </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:983</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a60dc35e58d02e636e82bb2a63dd2e3d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CFuncao_wl::Wl </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calcula o conteúdo de massa mássico wl em função do conteúdo de massa volumétrico ol. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ol</td><td>conteúdo de massa volumétrico </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                                 {          <span class="comment">//return ( ol * rol / rot );</span></div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <span class="keywordflow">return</span> ( ol * <a class="code" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a>-&gt;<a class="code" href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">rol</a> / <a class="code" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a>-&gt;<a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> );</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;    }</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad1d5f6561f058a9d80d036be91dbd953"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a></div><div class="ttdeci">double rot</div><div class="ttdoc">densidade (telha) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:771</div></div>
+<div class="ttc" id="classCFuncao__wl_xhtml_aad94c97d654aaa4ff1d2f4b7e2631227"><div class="ttname"><a href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a></div><div class="ttdeci">CMeioPoroso_Telha * telha</div><div class="ttdoc">telha </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:983</div></div>
+<div class="ttc" id="classCFluido_xhtml_a6992602ed67694da0a104f1999126df0"><div class="ttname"><a href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">CFluido::rol</a></div><div class="ttdeci">double rol</div><div class="ttdoc">densidade líquido (água) </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:921</div></div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a235c16a9f1bd1e4c0999cdd51853298b"><div class="ttname"><a href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a></div><div class="ttdeci">CFluido * fluido</div><div class="ttdoc">fluido </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:982</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Amigas e Funções Relacionadas</h2>
+<a class="anchor" id="ae1bd321954cfbbf59369684a5d7b5f01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCFuncao__wl.xhtml">CFuncao_wl</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+<div class="fragment"><div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;                                                         {</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncao_wl :&quot;</span></div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CFuncao_wl -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;        &lt;&lt; *obj.<a class="code" href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">fluido</a></div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;        &lt;&lt; *obj.<a class="code" href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">telha</a>;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;}</div>
+<div class="ttc" id="classCFuncao__wl_xhtml_aad94c97d654aaa4ff1d2f4b7e2631227"><div class="ttname"><a href="classCFuncao__wl.xhtml#aad94c97d654aaa4ff1d2f4b7e2631227">CFuncao_wl::telha</a></div><div class="ttdeci">CMeioPoroso_Telha * telha</div><div class="ttdoc">telha </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:983</div></div>
+<div class="ttc" id="classCFuncao__wl_xhtml_a235c16a9f1bd1e4c0999cdd51853298b"><div class="ttname"><a href="classCFuncao__wl.xhtml#a235c16a9f1bd1e4c0999cdd51853298b">CFuncao_wl::fluido</a></div><div class="ttdeci">CFluido * fluido</div><div class="ttdoc">fluido </div><div class="ttdef"><b>Definition:</b> Simulat-SimuladorTelhaMestrado-v4.cpp:982</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="a235c16a9f1bd1e4c0999cdd51853298b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCFluido.xhtml">CFluido</a>* CFuncao_wl::fluido</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fluido </p>
+
+<p>Referenciado por <a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ae1bd321954cfbbf59369684a5d7b5f01">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad94c97d654aaa4ff1d2f4b7e2631227"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a>* CFuncao_wl::telha</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>telha </p>
+
+<p>Referenciado por <a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml#ae1bd321954cfbbf59369684a5d7b5f01">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li>src/<a class="el" href="Simulat-SimuladorTelhaMestrado-v4_8cpp.xhtml">Simulat-SimuladorTelhaMestrado-v4.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 08:27:28 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

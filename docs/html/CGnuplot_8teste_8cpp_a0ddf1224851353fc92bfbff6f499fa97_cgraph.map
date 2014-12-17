@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#ab5b863b17dcc767214e472330bceedca" title="Seta intervalo da palette (autoscale por padrao). " alt="" coords="139,5,271,32"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#af9ffb5b4c18cdf7c56e5c446f72e515d" title="Envia comando para o gnuplot. " alt="" coords="387,56,490,83"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a0d6db1521e789d7b73415ce85b723046" title="Envia comando para o gnuplot. " alt="" coords="371,107,506,133"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#a826a0f860cd984748f8c7ee80228fce7" title="Ativa/Desativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="145,195,266,221"/>
+<area shape="rect" id="node9" href="$classGnuplot.xhtml#a67e669cdac3b09ae16678f5211dda786" title="Ativa/Desativa o grid (padrao = desativado). " alt="" coords="156,259,255,285"/>
+<area shape="rect" id="node12" href="$classGnuplot.xhtml#a9004d7b6d322be1eeb32eb8eb0c25487" title="Ativa/Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d)..." alt="" coords="140,309,271,336"/>
+<area shape="rect" id="node15" href="$classGnuplot.xhtml#a215f314f3bcc2c869e7379a9728e5f95" title="Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d)..." alt="" coords="133,360,277,387"/>
+<area shape="rect" id="node17" href="$classGnuplot.xhtml#aec3037a558d26535e3847c52d1b120aa" title="Ativa/Desativa a legenda (a legenda é setada por padrao). " alt="" coords="147,411,264,437"/>
+<area shape="rect" id="node19" href="$classGnuplot.xhtml#ab71117b8fa74d53ea20c313717d86b5c" title="Plota uma imagem. " alt="" coords="136,461,275,488"/>
+<area shape="rect" id="node21" href="$classGnuplot.xhtml#a901b030726d78e791f7005acf987bc44" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="131,512,280,539"/>
+<area shape="rect" id="node23" href="$classGnuplot.xhtml#a545ea6339c234d277339ab148cd11dba" title="Plota uma equacao fornecida na forma de uma std::string z=f(x,y). Escrever somente a funcao f(x..." alt="" coords="124,563,287,589"/>
+<area shape="rect" id="node25" href="$classGnuplot.xhtml#af4c2215781aa7a32ba73caa26941407c" title="Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. " alt="" coords="140,613,271,640"/>
+<area shape="rect" id="node26" href="$classGnuplot.xhtml#ab478d91039848a22733fc7a0f7c25f04" title="Plota dados de um vector. " alt="" coords="137,664,273,691"/>
+<area shape="rect" id="node27" href="$classGnuplot.xhtml#a6d3863c1b14d93c14b50df0a11dfdbd8" title="Plota pares x,y com barra de erro dy a partir de vetores. " alt="" coords="104,715,307,741"/>
+<area shape="rect" id="node28" href="$classGnuplot.xhtml#adb4a794cf81d9b615f133feca1e917e8" title="Escala o tamanho do ponto usado na plotagem. " alt="" coords="140,765,271,792"/>
+<area shape="rect" id="node29" href="$classGnuplot.xhtml#ae4f110479cfd8dc9b1b3d45809fb05e0" title="Gnuplot::replot" alt="" coords="385,816,492,843"/>
+<area shape="rect" id="node30" href="$classGnuplot.xhtml#a565fb1504cd88277e3c2092ad2234234" title="Gnuplot::Replot" alt="" coords="149,867,262,893"/>
+<area shape="rect" id="node31" href="$classGnuplot.xhtml#ae32093aa955bc31938d9cb266085ae4b" title="Gnuplot::Reset" alt="" coords="150,917,261,944"/>
+<area shape="rect" id="node32" href="$classGnuplot.xhtml#ae9e88b397cc6ddd052f6378a58373b0c" title="Gnuplot::ResetAll" alt="" coords="143,968,268,995"/>
+<area shape="rect" id="node33" href="$classGnuplot.xhtml#a5180044de81d85bcd81aa7e9376eb9d1" title="Gnuplot::ResetPlot" alt="" coords="139,1019,272,1045"/>
+<area shape="rect" id="node34" href="$classGnuplot.xhtml#a0be7d1bfb41fd1e44969361ab02320b9" title="Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. " alt="" coords="142,1069,269,1096"/>
+<area shape="rect" id="node35" href="$classGnuplot.xhtml#a5adf74dfda6d9d70a16c435fedf07625" title="Salva sessao do gnuplot para um arquivo postscript, nome do arquivo sem extensao. ..." alt="" coords="138,1120,273,1147"/>
+<area shape="rect" id="node36" href="$classGnuplot.xhtml#af621a43664a07523f098ffc3fb5a99b0" title="Seta intervalo do eixo y. " alt="" coords="369,1019,508,1045"/>
+<area shape="rect" id="node37" href="$classGnuplot.xhtml#aee70cb6dfc893d6f19976fa9042c8e7c" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="122,1221,289,1248"/>
+<area shape="rect" id="node38" href="$classGnuplot.xhtml#aedd7a473c34c83b3b9ec1cea9891d0f2" title="Ativa suavizacao. Argumentos para interpolacoes e aproximacoes. csplines, bezier, acsplines (para dad..." alt="" coords="145,1272,265,1299"/>
+<area shape="rect" id="node39" href="$classGnuplot.xhtml#ae64e911770994ba05cc2f6dcbfe31540" title="Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. " alt="" coords="153,1323,258,1349"/>
+<area shape="rect" id="node40" href="$classGnuplot.xhtml#a7b338ff4ec6c49659cd2022b68c0e861" title="Ativa/Desativa a visualizacao da superficie (para plotagen 3d). " alt="" coords="145,1373,265,1400"/>
+<area shape="rect" id="node41" href="$classGnuplot.xhtml#a4039b0fdcf0e3fbf97dac187825138fb" title="Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (def..." alt="" coords="143,1424,268,1451"/>
+<area shape="rect" id="node42" href="$classGnuplot.xhtml#a73bb8c97a946cafea0eca683450a6a62" title="Ativa/Desativa o titulo da secao do gnuplot. " alt="" coords="155,1475,255,1501"/>
+<area shape="rect" id="node43" href="$CGnuplot_8teste_8cpp.xhtml#a621288a08ecc9633729935737256e831" title="O programa para ate o pressionamento de uma tecla. " alt="" coords="157,1525,253,1552"/>
+<area shape="rect" id="node44" href="$classGnuplot.xhtml#a4260baaa8fa1c269dd6eec31dcada605" title="Seta escalonamento automatico do eixo x (default). " alt="" coords="134,1576,277,1603"/>
+<area shape="rect" id="node45" href="$classGnuplot.xhtml#ac36ea75f0759c98da946389e60c12278" title="Seta o rotulo (nome) do eixo x. " alt="" coords="148,1627,263,1653"/>
+<area shape="rect" id="node46" href="$classGnuplot.xhtml#a3fb5c7726e954739d847edd2670705fe" title="Seta intervalo do eixo x. " alt="" coords="144,1677,267,1704"/>
+<area shape="rect" id="node47" href="$classGnuplot.xhtml#ab4cdb8c1abd919b9851ca9a81667f2a4" title="Seta o rotulo (nome) do eixo y. " alt="" coords="148,1728,263,1755"/>
+<area shape="rect" id="node48" href="$classGnuplot.xhtml#ac926d0513fa38b316be4c6acfc65ca80" title="Seta escalonamento automatico do eixo z (default). " alt="" coords="135,1779,276,1805"/>
+<area shape="rect" id="node49" href="$classGnuplot.xhtml#ace776aa2b273c0ec934e856cb28416eb" title="Seta o rotulo (nome) do eixo z. " alt="" coords="148,1829,263,1856"/>
+<area shape="rect" id="node50" href="$classGnuplot.xhtml#a8331c7ee5d65be5f4d88922a0b2f5d35" title="Seta intervalo do eixo z. " alt="" coords="145,1880,266,1907"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a2c8c8ae0441f54dd728bc6594051c137" title="Seta intervalo da palette (autoscale por padrao). " alt="" coords="365,5,512,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="571,360,671,387"/>
+<area shape="rect" id="node8" href="$classGnuplot.xhtml#af845efc728a90d7e10de764eff0b2423" title="Ativa desenho do contorno em superficies (para plotagen 3d). " alt="" coords="367,157,510,184"/>
+<area shape="rect" id="node10" href="$classGnuplot.xhtml#a4b7245b12dad1c0ef326e5f59eb83001" title="Ativa o grid (padrao = desativado). " alt="" coords="378,208,499,235"/>
+<area shape="rect" id="node11" href="$classGnuplot.xhtml#a8b9a16d5793c3f4939b917b2c263860c" title="Desativa o grid (padrao = desativado). " alt="" coords="371,259,506,285"/>
+<area shape="rect" id="node13" href="$classGnuplot.xhtml#a5ada5c76db0a735d3d331caa0eb4968a" title="Ativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). " alt="" coords="363,309,515,336"/>
+<area shape="rect" id="node14" href="$classGnuplot.xhtml#a763ff17df1679cc2b1463b024aa89ebc" title="Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). ..." alt="" coords="355,360,522,387"/>
+<area shape="rect" id="node16" href="$classGnuplot.xhtml#ab810fa4c02fb49ae197786c305b78702" title="Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d)..." alt="" coords="355,411,522,437"/>
+<area shape="rect" id="node18" href="$classGnuplot.xhtml#ad64a717dac18167f656c4f09239973f8" title="Ativa a legenda (a legenda é setada por padrao). Posicao: inside/outside, left/center/right, top/center/bottom, nobox/box. " alt="" coords="369,461,508,488"/>
+<area shape="rect" id="node20" href="$classGnuplot.xhtml#a8ced9e766e0677b938178dafe9264ff7" title="Cria arquivo temporario. " alt="" coords="360,563,517,589"/>
+<area shape="rect" id="node22" href="$classGnuplot.xhtml#a42dfb8c9d4636745c7be277ed818e849" title="Plota uma equacao fornecida como uma std::string y=f(x). Escrever somente a funcao f(x) e nao y= A va..." alt="" coords="363,613,515,640"/>
+<area shape="rect" id="node24" href="$classGnuplot.xhtml#a79aed3a6927f7d1d3497cba441e8a943" title="Plota uma equacao fornecida na forma de uma std::string z=f(x,y). Escrever somente a funcao f(x..." alt="" coords="355,664,522,691"/>
+</map>

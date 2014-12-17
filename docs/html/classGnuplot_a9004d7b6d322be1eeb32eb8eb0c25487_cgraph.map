@@ -1,0 +1,5 @@
+<map id="Gnuplot::Hidden3d" name="Gnuplot::Hidden3d">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a5ada5c76db0a735d3d331caa0eb4968a" title="Ativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). " alt="" coords="192,5,344,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a763ff17df1679cc2b1463b024aa89ebc" title="Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). ..." alt="" coords="185,56,351,83"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="401,31,501,57"/>
+</map>

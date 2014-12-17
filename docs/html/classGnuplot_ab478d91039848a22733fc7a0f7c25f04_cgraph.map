@@ -1,0 +1,7 @@
+<map id="Gnuplot::PlotVector" name="Gnuplot::PlotVector">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a9400d43204b9df62851c063aee604f0d" title="Plota dados de um vector. " alt="" coords="190,31,301,57"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a8ced9e766e0677b938178dafe9264ff7" title="Cria arquivo temporario. " alt="" coords="349,5,507,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a4ca35415fa5560764597cfdfa46c6c40" title="Plota dados de um arquivo de disco. " alt="" coords="365,56,491,83"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="573,31,673,57"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="555,81,690,108"/>
+</map>

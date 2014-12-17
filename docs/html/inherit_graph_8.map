@@ -1,0 +1,8 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="node1" href="$classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="6,5,146,32"/>
+<area shape="rect" id="node2" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="195,5,461,32"/>
+<area shape="rect" id="node3" href="$classCSimulador__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="510,56,639,83"/>
+<area shape="rect" id="node4" href="$classCSimulador__Telha__GanhosEnergia.xhtml" title="por causa rotinas entrada saída " alt="" coords="689,56,914,83"/>
+<area shape="rect" id="node5" href="$classCSolver__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="271,56,385,83"/>
+<area shape="rect" id="node6" href="$classCTransferenciaCalorMassa.xhtml" title="por causa rotinas entrada saída " alt="" coords="237,107,419,133"/>
+</map>

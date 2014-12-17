@@ -1,0 +1,15 @@
+<map id="CSimulador_Telha" name="CSimulador_Telha">
+<area shape="rect" id="node2" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="51,1153,336,1450"/>
+<area shape="rect" id="node3" href="$classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída " alt="" coords="319,687,487,809"/>
+<area shape="rect" id="node12" href="$classCFuncaoConteudoMassicoWl.xhtml" title="por causa rotinas entrada saída " alt="" coords="855,1211,1079,1391"/>
+<area shape="rect" id="node5" href="$classCFuncaoCondutividade.xhtml" title="por causa rotinas entrada saída " alt="" coords="283,237,469,387"/>
+<area shape="rect" id="node7" href="$classCFuncaoDifusividade.xhtml" title="por causa rotinas entrada saída " alt="" coords="682,237,856,387"/>
+<area shape="rect" id="node8" href="$classCFuncaoAdsorcao.xhtml" title="por causa rotinas entrada saída " alt="" coords="494,222,657,402"/>
+<area shape="rect" id="node10" href="$classCTransferenciaCalorMassa.xhtml" title="por causa rotinas entrada saída " alt="" coords="1417,447,1625,569"/>
+<area shape="rect" id="node11" href="$classCSolver__TDMA.xhtml" title="por causa rotinas entrada saída " alt="" coords="1107,913,1297,1063"/>
+<area shape="rect" id="node13" href="$classCFluido.xhtml" title="por causa rotinas entrada saída " alt="" coords="1010,687,1163,809"/>
+<area shape="rect" id="node21" href="$classCFuncoesClima.xhtml" title="por causa rotinas entrada saída " alt="" coords="721,614,900,882"/>
+<area shape="rect" id="node14" href="$classGnuplot.xhtml" title="Classe de interface para acesso ao programa gnuplot. " alt="" coords="1728,1094,1875,1509"/>
+<area shape="rect" id="node17" title="STL class. " alt="" coords="1813,273,1893,351"/>
+<area shape="rect" id="node18" title="STL class. " alt="" coords="1790,6,1916,98"/>
+</map>

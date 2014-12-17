@@ -1,0 +1,7 @@
+<map id="CFuncao_wl" name="CFuncao_wl">
+<area shape="rect" id="node2" href="$classCFluido.xhtml" title="Representa um fluido com atributos: rol, cl, lv. " alt="" coords="5,382,157,503"/>
+<area shape="rect" id="node4" href="$classCMeioPoroso__Telha.xhtml" title="Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo te..." alt="" coords="395,529,563,650"/>
+<area shape="rect" id="node5" href="$classCFuncaoCondutividade.xhtml" title="Calcula a condutividade a partir de correlações fornecidas pelo usuário. " alt="" coords="273,191,460,342"/>
+<area shape="rect" id="node7" href="$classCFuncaoDifusividade.xhtml" title="Representa a função de difusidade ao vapor de um meio poroso; no caso específico, a telha de cerâmica..." alt="" coords="485,191,659,342"/>
+<area shape="rect" id="node8" href="$classCFuncaoAdsorcao.xhtml" title="Calcula a umidade a partir das curvas de adsorção do material (correlações fornecidas pelo usuário)..." alt="" coords="683,177,847,357"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CSimulador_Telha::CSimulador_Telha" name="CSimulador_Telha::CSimulador_Telha">
+<area shape="rect" id="node2" href="$classCSimulador__Telha.xhtml#aa2592b5ca7cce1ac595cc3a658a17c85" title="Dados default. " alt="" coords="259,77,477,104"/>
+<area shape="rect" id="node7" href="$classCFuncaoConteudoMassicoWl.xhtml#ad0485b0cfceadae594c9f7dbe3e92ea2" title="Seta ponteiro para fluido. " alt="" coords="270,129,466,170"/>
+<area shape="rect" id="node8" href="$classCFuncaoConteudoMassicoWl.xhtml#a38d3306cbf1c7fe80143f4efccc4ca63" title="Seta ponteiro para telha. " alt="" coords="270,194,466,235"/>
+<area shape="rect" id="node3" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4" title="Dados default. " alt="" coords="526,5,746,46"/>
+<area shape="rect" id="node5" href="$classCTransferenciaCalorMassa.xhtml#a2c400d0fbb10492c2b940e6251c2011e" title="Dados default. " alt="" coords="545,70,727,111"/>
+<area shape="rect" id="node6" href="$classCSolver__TDMA.xhtml#a06cfc18536df7e616efed8262809f99c" title="Dados default. " alt="" coords="535,136,737,163"/>
+<area shape="rect" id="node4" href="$classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c" title="Dados default. " alt="" coords="795,5,943,46"/>
+</map>

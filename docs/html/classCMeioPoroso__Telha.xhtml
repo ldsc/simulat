@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência da Classe CMeioPoroso_Telha</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.xhtml"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.xhtml"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.xhtml"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li><a href="functions.xhtml"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pub-attribs">Atributos Públicos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="#friends">Amigas</a> &#124;
+<a href="classCMeioPoroso__Telha-members.xhtml">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe CMeioPoroso_Telha</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>por causa rotinas entrada saída  
+ <a href="classCMeioPoroso__Telha.xhtml#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CMeioPoroso__Telha_8h_source.xhtml">CMeioPoroso_Telha.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagrama de Hierarquia para CMeioPoroso_Telha:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Diagrama de colaboração para CMeioPoroso_Telha:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a0f4ddb7e7d00257dbaa340a4e8c4df42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a0f4ddb7e7d00257dbaa340a4e8c4df42">CMeioPoroso_Telha</a> (char _tipo_material= 'c')</td></tr>
+<tr class="memdesc:a0f4ddb7e7d00257dbaa340a4e8c4df42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor default/sobrecarregado, recebe o tipo de material.  <a href="#a0f4ddb7e7d00257dbaa340a4e8c4df42">Mais...</a><br/></td></tr>
+<tr class="separator:a0f4ddb7e7d00257dbaa340a4e8c4df42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbece66a47131f034c5338c6ad805ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a6fbece66a47131f034c5338c6ad805ae">~CMeioPoroso_Telha</a> ()</td></tr>
+<tr class="memdesc:a6fbece66a47131f034c5338c6ad805ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor.  <a href="#a6fbece66a47131f034c5338c6ad805ae">Mais...</a><br/></td></tr>
+<tr class="separator:a6fbece66a47131f034c5338c6ad805ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50594076983c72b8963c80bd9483239c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c">DadosDefault</a> ()</td></tr>
+<tr class="memdesc:a50594076983c72b8963c80bd9483239c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dados default.  <a href="#a50594076983c72b8963c80bd9483239c">Mais...</a><br/></td></tr>
+<tr class="separator:a50594076983c72b8963c80bd9483239c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70735fb3dc927168aca84bb0cecb0023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a70735fb3dc927168aca84bb0cecb0023">EntrarDadosObjeto</a> ()</td></tr>
+<tr class="memdesc:a70735fb3dc927168aca84bb0cecb0023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entrada de dados.  <a href="#a70735fb3dc927168aca84bb0cecb0023">Mais...</a><br/></td></tr>
+<tr class="separator:a70735fb3dc927168aca84bb0cecb0023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:a4b0b29a921c62100176acf85ac338164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFuncaoDifusividade.xhtml">CFuncaoDifusividade</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">funcaoDifusividade</a></td></tr>
+<tr class="memdesc:a4b0b29a921c62100176acf85ac338164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objetos agregados.  <a href="#a4b0b29a921c62100176acf85ac338164">Mais...</a><br/></td></tr>
+<tr class="separator:a4b0b29a921c62100176acf85ac338164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d1002ed4e3bc992403c7892700e0f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a></td></tr>
+<tr class="memdesc:a16d1002ed4e3bc992403c7892700e0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função usada cálculo condutividade.  <a href="#a16d1002ed4e3bc992403c7892700e0f2">Mais...</a><br/></td></tr>
+<tr class="separator:a16d1002ed4e3bc992403c7892700e0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24676d1468ad2d637473e1bdaa20b9c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a></td></tr>
+<tr class="memdesc:a24676d1468ad2d637473e1bdaa20b9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função usada cálculo adsorção.  <a href="#a24676d1468ad2d637473e1bdaa20b9c6">Mais...</a><br/></td></tr>
+<tr class="separator:a24676d1468ad2d637473e1bdaa20b9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a5a72824e391981d90c345675f70b2a5e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> {'c'}</td></tr>
+<tr class="memdesc:a5a72824e391981d90c345675f70b2a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou..  <a href="#a5a72824e391981d90c345675f70b2a5e">Mais...</a><br/></td></tr>
+<tr class="separator:a5a72824e391981d90c345675f70b2a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d5f6561f058a9d80d036be91dbd953"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> {1730}</td></tr>
+<tr class="memdesc:ad1d5f6561f058a9d80d036be91dbd953"><td class="mdescLeft">&#160;</td><td class="mdescRight">densidade (telha)  <a href="#ad1d5f6561f058a9d80d036be91dbd953">Mais...</a><br/></td></tr>
+<tr class="separator:ad1d5f6561f058a9d80d036be91dbd953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44c2c834c50287ec3c361b377178271"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a> {1000.0}</td></tr>
+<tr class="memdesc:af44c2c834c50287ec3c361b377178271"><td class="mdescLeft">&#160;</td><td class="mdescRight">calor específico (telha)  <a href="#af44c2c834c50287ec3c361b377178271">Mais...</a><br/></td></tr>
+<tr class="separator:af44c2c834c50287ec3c361b377178271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c76f1bdad501acd4461da77721e2e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a> {0.31}</td></tr>
+<tr class="memdesc:a89c76f1bdad501acd4461da77721e2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">porosidade (telha)  <a href="#a89c76f1bdad501acd4461da77721e2e1">Mais...</a><br/></td></tr>
+<tr class="separator:a89c76f1bdad501acd4461da77721e2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19e72c26675fc2fba619b9f6e323916"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a> {0.63}</td></tr>
+<tr class="memdesc:ad19e72c26675fc2fba619b9f6e323916"><td class="mdescLeft">&#160;</td><td class="mdescRight">coeficiente absorção a radiação (telha)  <a href="#ad19e72c26675fc2fba619b9f6e323916">Mais...</a><br/></td></tr>
+<tr class="separator:ad19e72c26675fc2fba619b9f6e323916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a4f3f5f6cda4246abf76f3d7e2890f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a> {1.0}</td></tr>
+<tr class="memdesc:af8a4f3f5f6cda4246abf76f3d7e2890f"><td class="mdescLeft">&#160;</td><td class="mdescRight">coeficiente emissividade (telha)  <a href="#af8a4f3f5f6cda4246abf76f3d7e2890f">Mais...</a><br/></td></tr>
+<tr class="separator:af8a4f3f5f6cda4246abf76f3d7e2890f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a457ec06bd9ecb216eeff7be5db540f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a> {0.03}</td></tr>
+<tr class="memdesc:a8a457ec06bd9ecb216eeff7be5db540f"><td class="mdescLeft">&#160;</td><td class="mdescRight">largura do objeto (telha)  <a href="#a8a457ec06bd9ecb216eeff7be5db540f">Mais...</a><br/></td></tr>
+<tr class="separator:a8a457ec06bd9ecb216eeff7be5db540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20635430e93e2bb54163f971859bd43b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a></td></tr>
+<tr class="memdesc:a20635430e93e2bb54163f971859bd43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">conteúdo massa mássico wl (fixo para telha impermeável)  <a href="#a20635430e93e2bb54163f971859bd43b">Mais...</a><br/></td></tr>
+<tr class="separator:a20635430e93e2bb54163f971859bd43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904c5469b2be8da82d90c183dddc9b4f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a></td></tr>
+<tr class="memdesc:a904c5469b2be8da82d90c183dddc9b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">condutividade (fixo para telha impermeável)  <a href="#a904c5469b2be8da82d90c183dddc9b4f">Mais...</a><br/></td></tr>
+<tr class="separator:a904c5469b2be8da82d90c183dddc9b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a0a8502f9e2c3cfba17f8562558d87e4f"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a0a8502f9e2c3cfba17f8562558d87e4f">wl_inicial</a> = 0.0134</td></tr>
+<tr class="memdesc:a0a8502f9e2c3cfba17f8562558d87e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">conteúdo de massa inicial  <a href="#a0a8502f9e2c3cfba17f8562558d87e4f">Mais...</a><br/></td></tr>
+<tr class="separator:a0a8502f9e2c3cfba17f8562558d87e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:a5ba6c09b8ede0cc56bda3fcac54091ee"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a5ba6c09b8ede0cc56bda3fcac54091ee">CFuncaoConteudoMassicoWl</a></td></tr>
+<tr class="separator:a5ba6c09b8ede0cc56bda3fcac54091ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e8932c80d6accda56900f7d9d31f1d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCMeioPoroso__Telha.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> &amp;obj)</td></tr>
+<tr class="memdesc:a96e8932c80d6accda56900f7d9d31f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saída de dados do objeto para os (tela)  <a href="#a96e8932c80d6accda56900f7d9d31f1d">Mais...</a><br/></td></tr>
+<tr class="separator:a96e8932c80d6accda56900f7d9d31f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>por causa rotinas entrada saída </p>
+<p>----------&mdash;&mdash;&mdash; Bibliotecas -----------------------&mdash;&mdash;&mdash;----------------&mdash; classe <a class="el" href="classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída ">CMeioPoroso_Telha</a> ----------------------------------&mdash; Representa meio poroso agregando funções difusidade, condutividade e adsorção. Representa ao mesmo tempo uma telha permeável e uma telha impermeável, ou seja, vai calcular as informações para os dois casos, permitindo a comparação dos valores. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.xhtml#_todo000004">Futuras Atividades:</a></b></dt><dd>: verificar vantagens de separar em duas classes, uma para impermeável e outra para permeável. </dd></dl>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a class="anchor" id="a0f4ddb7e7d00257dbaa340a4e8c4df42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMeioPoroso_Telha::CMeioPoroso_Telha </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>_tipo_material</em> = <code>'c'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construtor default/sobrecarregado, recebe o tipo de material. </p>
+
+<p>Referências <a class="el" href="classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c">DadosDefault()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                  :<a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a>(_tipo_material) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     <a class="code" href="classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c">DadosDefault</a>(  );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   }</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a5a72824e391981d90c345675f70b2a5e"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha::tipo_material</a></div><div class="ttdeci">char tipo_material</div><div class="ttdoc">tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou.. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:29</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a50594076983c72b8963c80bd9483239c"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c">CMeioPoroso_Telha::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.cpp:17</div></div>
+</div><!-- fragment -->
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções utilizadas por esta função:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha_a0f4ddb7e7d00257dbaa340a4e8c4df42_cgraph.svg" width="358" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fbece66a47131f034c5338c6ad805ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMeioPoroso_Telha::~CMeioPoroso_Telha </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destrutor. </p>
+
+<p>Referências <a class="el" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{  <span class="keywordflow">if</span>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> ) <span class="keyword">delete</span> <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>;  }</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a24676d1468ad2d637473e1bdaa20b9c6"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a></div><div class="ttdeci">CFuncaoAdsorcao * funcaoAdsorcao</div><div class="ttdoc">Função usada cálculo adsorção. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a class="anchor" id="a50594076983c72b8963c80bd9483239c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMeioPoroso_Telha::DadosDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dados default. </p>
+<hr/>
+<p> Implementação função <a class="el" href="classCMeioPoroso__Telha.xhtml#a50594076983c72b8963c80bd9483239c" title="Dados default. ">DadosDefault()</a> inicia os dados físicos da classe <a class="el" href="classCMeioPoroso__Telha.xhtml" title="por causa rotinas entrada saída ">CMeioPoroso_Telha</a>, os com valores default. </p>
+<p>2070.0;</p>
+<p>2070.0; </p>
+
+<p>Referenciado por <a class="el" href="classCMeioPoroso__Telha.xhtml#a0f4ddb7e7d00257dbaa340a4e8c4df42">CMeioPoroso_Telha()</a> e <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4">CMeioPoroso_Telha_Discretizada_TDMA::DadosDefault()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                      {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Vai criar objeto função adsorção de acordo com tipo passado no construtor.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;     <span class="keywordflow">if</span>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> )</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;         <span class="keyword">delete</span> <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;     <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <span class="keywordflow">switch</span> ( <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> )</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;     {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;P&#39;</span> :</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span> : <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> = <span class="keyword">new</span> <a class="code" href="classCFuncaoAdsorcao__Pablo.xhtml">CFuncaoAdsorcao_Pablo</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;C&#39;</span> :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span> : <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> = <span class="keyword">new</span> <a class="code" href="classCFuncaoAdsorcao__Celso.xhtml">CFuncaoAdsorcao_Celso</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;A&#39;</span> :</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;         <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span> :</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;         <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> = <span class="keyword">new</span> <a class="code" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  assert( <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a> );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">funcaoDifusividade</a>.<a class="code" href="classCFuncaoDifusividade.xhtml#a0d7c2a3d194d485d5292254336f87ca9">DadosDefault</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a>.<a class="code" href="classCFuncaoCondutividade.xhtml#aef846dfe5249c1e8047def962c1d0e8d">DadosDefault</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>-&gt;<a class="code" href="classCFuncaoAdsorcao.xhtml#a68efd7f62d17ec0330f5bad343589e4a">DadosDefault</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">if</span>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> == <span class="charliteral">&#39;c&#39;</span> or <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> == <span class="charliteral">&#39;C&#39;</span> ) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> = 1730;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a> = 1000.0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a> = 0.31;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> == <span class="charliteral">&#39;p&#39;</span> or <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> == <span class="charliteral">&#39;P&#39;</span> ) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> = 1710;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a> = 1000.0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a> = 0.31;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> != <span class="charliteral">&#39;c&#39;</span> and <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> != <span class="charliteral">&#39;C&#39;</span> and <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> != <span class="charliteral">&#39;p&#39;</span> and <a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a> != <span class="charliteral">&#39;P&#39;</span> ) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> = 1875;      </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a> = 920.0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a> = 0.33098;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a> = 0.63;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a> =1.0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a> = 0.03;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a> = <a class="code" href="classCMeioPoroso__Telha.xhtml#a0a8502f9e2c3cfba17f8562558d87e4f">wl_inicial</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a> = <a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a>( <a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad1d5f6561f058a9d80d036be91dbd953"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a></div><div class="ttdeci">double rot</div><div class="ttdoc">densidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:31</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a8a457ec06bd9ecb216eeff7be5db540f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha::larg</a></div><div class="ttdeci">double larg</div><div class="ttdoc">largura do objeto (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:38</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a5a72824e391981d90c345675f70b2a5e"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha::tipo_material</a></div><div class="ttdeci">char tipo_material</div><div class="ttdoc">tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou.. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:29</div></div>
+<div class="ttc" id="classCFuncaoDifusividade_xhtml_a0d7c2a3d194d485d5292254336f87ca9"><div class="ttname"><a href="classCFuncaoDifusividade.xhtml#a0d7c2a3d194d485d5292254336f87ca9">CFuncaoDifusividade::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncaoDifusividade.h:24</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af8a4f3f5f6cda4246abf76f3d7e2890f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha::emis</a></div><div class="ttdeci">double emis</div><div class="ttdoc">coeficiente emissividade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:35</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a16d1002ed4e3bc992403c7892700e0f2"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha::funcaoCondutividade</a></div><div class="ttdeci">CFuncaoCondutividade funcaoCondutividade</div><div class="ttdoc">Função usada cálculo condutividade. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:23</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a4b0b29a921c62100176acf85ac338164"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha::funcaoDifusividade</a></div><div class="ttdeci">CFuncaoDifusividade funcaoDifusividade</div><div class="ttdoc">Objetos agregados. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:22</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a20635430e93e2bb54163f971859bd43b"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha::wli</a></div><div class="ttdeci">double wli</div><div class="ttdoc">conteúdo massa mássico wl (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:41</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_a68efd7f62d17ec0330f5bad343589e4a"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#a68efd7f62d17ec0330f5bad343589e4a">CFuncaoAdsorcao::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:22</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a904c5469b2be8da82d90c183dddc9b4f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha::ki</a></div><div class="ttdeci">double ki</div><div class="ttdoc">condutividade (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:42</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af44c2c834c50287ec3c361b377178271"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha::ct</a></div><div class="ttdeci">double ct</div><div class="ttdoc">calor específico (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:32</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_aef846dfe5249c1e8047def962c1d0e8d"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#aef846dfe5249c1e8047def962c1d0e8d">CFuncaoCondutividade::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.h:24</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a0a8502f9e2c3cfba17f8562558d87e4f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a0a8502f9e2c3cfba17f8562558d87e4f">CMeioPoroso_Telha::wl_inicial</a></div><div class="ttdeci">const double wl_inicial</div><div class="ttdoc">conteúdo de massa inicial </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:18</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad19e72c26675fc2fba619b9f6e323916"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha::alfa</a></div><div class="ttdeci">double alfa</div><div class="ttdoc">coeficiente absorção a radiação (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:34</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.h:11</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a89c76f1bdad501acd4461da77721e2e1"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha::porosidade</a></div><div class="ttdeci">double porosidade</div><div class="ttdoc">porosidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:33</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a24676d1468ad2d637473e1bdaa20b9c6"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a></div><div class="ttdeci">CFuncaoAdsorcao * funcaoAdsorcao</div><div class="ttdoc">Função usada cálculo adsorção. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:24</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Pablo_xhtml"><div class="ttname"><a href="classCFuncaoAdsorcao__Pablo.xhtml">CFuncaoAdsorcao_Pablo</a></div><div class="ttdoc">-------------—— Bibliotecas --------------------------—— </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Pablo.h:9</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao__Celso_xhtml"><div class="ttname"><a href="classCFuncaoAdsorcao__Celso.xhtml">CFuncaoAdsorcao_Celso</a></div><div class="ttdoc">-------------—— Bibliotecas --------------------------—— </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao_Celso.h:9</div></div>
+</div><!-- fragment -->
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções que utilizam esta função:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha_a50594076983c72b8963c80bd9483239c_icgraph.svg" width="100%" height="409"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a70735fb3dc927168aca84bb0cecb0023"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMeioPoroso_Telha::EntrarDadosObjeto </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entrada de dados. </p>
+<hr/>
+<p> Implementação função leitura dos dados EntrarDadosObjeto permite a entrada, pelo teclado, das variáveis básicas da telha. </p>
+<p>2070</p>
+<p>fonte Rivero</p>
+<p>cout &lt;&lt; "\nalfa (0.6) para telha sem adsorcao: "; cin &gt;&gt; alfai;</p>
+<p>pega o retorno de carro -&gt; enter!</p>
+<p>calcula ki em função wli </p>
+
+<p>Referências <a class="el" href="classCInterface.xhtml#a34d1e9acbf3da248890eaa8a8a309384">CInterface::Carimbo()</a>.</p>
+
+<p>Referenciado por <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9">CMeioPoroso_Telha_Discretizada_TDMA::EntrarDadosObjeto()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                          {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classCInterface.xhtml#a34d1e9acbf3da248890eaa8a8a309384">CInterface::Carimbo</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    cout &lt;&lt; *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   <span class="keywordtype">char</span> resp;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\n\nUsar funcaoDifusividade, funcaoCondutividade, funcaoAdsorcao default (d) ou novos (n): &quot;</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   cin.get( resp );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   cin.get();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <span class="keywordflow">if</span>( resp == <span class="charliteral">&#39;n&#39;</span> or resp == <span class="charliteral">&#39;N&#39;</span> ) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">funcaoDifusividade</a>.<a class="code" href="classCFuncaoDifusividade.xhtml#a47f0332d0eee64d26382f55ad82d09f2">EntrarDadosFuncao</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a>.<a class="code" href="classCFuncaoCondutividade.xhtml#a2cbe70afdd9eef1cdc237904710ee751">EntrarDadosFuncao</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>-&gt;<a class="code" href="classCFuncaoAdsorcao.xhtml#a361e4302a433b5604ec1f97a83e425ef">EntrarDadosFuncao</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   cout &lt;&lt; <span class="stringliteral">&quot;\nUsar rot, ct, porosidade, alfa, emis, larg, wli, ki, default (d) ou novos (n): &quot;</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   cin.get( resp );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   cin.get();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <span class="keywordflow">if</span>( resp == <span class="charliteral">&#39;n&#39;</span> or resp == <span class="charliteral">&#39;N&#39;</span> ) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\ndensidade da telha (arg=1730 telha=1880) (rot = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span>; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\ncalor específico da telha (arg=1000 telha=920) (ct = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span>; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nporosidade da telha (arg=0.310 ceramica=0.331) (porosidade = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nCoeficiente de absorção a radiação solar (alfa = &quot;</span> &lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nCoeficiente de emissividade (emis = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nLargura da telha (larg = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a> &lt;&lt; <span class="stringliteral">&quot; metros): &quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        cin.get();  </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nEntrada dados associados a telha impermeável&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;\nEntre com o novo valor do conteúdo de massa mássico da telha impermeável (wli = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a> &lt;&lt; <span class="stringliteral">&quot;) : &quot;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        cin &gt;&gt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        cin.get();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a> = <a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a>( wli );    </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Valor ki = funcaoCondutividade(&quot;</span> &lt;&lt; wli &lt;&lt; <span class="stringliteral">&quot;) = &quot;</span>&lt;&lt; <a class="code" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad1d5f6561f058a9d80d036be91dbd953"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a></div><div class="ttdeci">double rot</div><div class="ttdoc">densidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:31</div></div>
+<div class="ttc" id="classCFuncaoAdsorcao_xhtml_a361e4302a433b5604ec1f97a83e425ef"><div class="ttname"><a href="classCFuncaoAdsorcao.xhtml#a361e4302a433b5604ec1f97a83e425ef">CFuncaoAdsorcao::EntrarDadosFuncao</a></div><div class="ttdeci">void EntrarDadosFuncao()</div><div class="ttdoc">Entrada de dados (associados aos ensaios) </div><div class="ttdef"><b>Definition:</b> CFuncaoAdsorcao.cpp:13</div></div>
+<div class="ttc" id="classCFuncaoDifusividade_xhtml_a47f0332d0eee64d26382f55ad82d09f2"><div class="ttname"><a href="classCFuncaoDifusividade.xhtml#a47f0332d0eee64d26382f55ad82d09f2">CFuncaoDifusividade::EntrarDadosFuncao</a></div><div class="ttdeci">void EntrarDadosFuncao()</div><div class="ttdoc">Entrada de dados (associados aos ensaios) </div><div class="ttdef"><b>Definition:</b> CFuncaoDifusividade.cpp:13</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a8a457ec06bd9ecb216eeff7be5db540f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha::larg</a></div><div class="ttdeci">double larg</div><div class="ttdoc">largura do objeto (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:38</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af8a4f3f5f6cda4246abf76f3d7e2890f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha::emis</a></div><div class="ttdeci">double emis</div><div class="ttdoc">coeficiente emissividade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:35</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a16d1002ed4e3bc992403c7892700e0f2"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha::funcaoCondutividade</a></div><div class="ttdeci">CFuncaoCondutividade funcaoCondutividade</div><div class="ttdoc">Função usada cálculo condutividade. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:23</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a4b0b29a921c62100176acf85ac338164"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha::funcaoDifusividade</a></div><div class="ttdeci">CFuncaoDifusividade funcaoDifusividade</div><div class="ttdoc">Objetos agregados. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:22</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a20635430e93e2bb54163f971859bd43b"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha::wli</a></div><div class="ttdeci">double wli</div><div class="ttdoc">conteúdo massa mássico wl (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:41</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a904c5469b2be8da82d90c183dddc9b4f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha::ki</a></div><div class="ttdeci">double ki</div><div class="ttdoc">condutividade (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:42</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af44c2c834c50287ec3c361b377178271"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha::ct</a></div><div class="ttdeci">double ct</div><div class="ttdoc">calor específico (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:32</div></div>
+<div class="ttc" id="classCFuncaoCondutividade_xhtml_a2cbe70afdd9eef1cdc237904710ee751"><div class="ttname"><a href="classCFuncaoCondutividade.xhtml#a2cbe70afdd9eef1cdc237904710ee751">CFuncaoCondutividade::EntrarDadosFuncao</a></div><div class="ttdeci">void EntrarDadosFuncao()</div><div class="ttdoc">Entrada de dados (associados aos ensaios) </div><div class="ttdef"><b>Definition:</b> CFuncaoCondutividade.cpp:14</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad19e72c26675fc2fba619b9f6e323916"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha::alfa</a></div><div class="ttdeci">double alfa</div><div class="ttdoc">coeficiente absorção a radiação (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:34</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a89c76f1bdad501acd4461da77721e2e1"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha::porosidade</a></div><div class="ttdeci">double porosidade</div><div class="ttdoc">porosidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:33</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a24676d1468ad2d637473e1bdaa20b9c6"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a></div><div class="ttdeci">CFuncaoAdsorcao * funcaoAdsorcao</div><div class="ttdoc">Função usada cálculo adsorção. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:24</div></div>
+<div class="ttc" id="classCInterface_xhtml_a34d1e9acbf3da248890eaa8a8a309384"><div class="ttname"><a href="classCInterface.xhtml#a34d1e9acbf3da248890eaa8a8a309384">CInterface::Carimbo</a></div><div class="ttdeci">static void Carimbo()</div><div class="ttdef"><b>Definition:</b> CInterface.h:23</div></div>
+</div><!-- fragment -->
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções utilizadas por esta função:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha_a70735fb3dc927168aca84bb0cecb0023_cgraph.svg" width="350" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Este é o diagrama das funções que utilizam esta função:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCMeioPoroso__Telha_a70735fb3dc927168aca84bb0cecb0023_icgraph.svg" width="651" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Amigas e Funções Relacionadas</h2>
+<a class="anchor" id="a5ba6c09b8ede0cc56bda3fcac54091ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classCFuncaoConteudoMassicoWl.xhtml">CFuncaoConteudoMassicoWl</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96e8932c80d6accda56900f7d9d31f1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saída de dados do objeto para os (tela) </p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                               {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  os    &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha:&quot;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">funcaoDifusividade</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">funcaoCondutividade</a></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        &lt;&lt; *(obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">funcaoAdsorcao</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CMeioPoroso_Telha -&gt; Atributos:&quot;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntipo_material = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">tipo_material</a></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrot = &quot;</span>               &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">rot</a></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nct = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">ct</a></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nporosidade = &quot;</span>        &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">porosidade</a></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nalfa = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">alfa</a></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nemis = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">emis</a></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nlarg = &quot;</span>              &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">larg</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nwli = &quot;</span>               &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">wli</a></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nki = &quot;</span>                &lt;&lt; obj.<a class="code" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">ki</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad1d5f6561f058a9d80d036be91dbd953"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha::rot</a></div><div class="ttdeci">double rot</div><div class="ttdoc">densidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:31</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a8a457ec06bd9ecb216eeff7be5db540f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha::larg</a></div><div class="ttdeci">double larg</div><div class="ttdoc">largura do objeto (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:38</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a5a72824e391981d90c345675f70b2a5e"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha::tipo_material</a></div><div class="ttdeci">char tipo_material</div><div class="ttdoc">tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou.. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:29</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af8a4f3f5f6cda4246abf76f3d7e2890f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha::emis</a></div><div class="ttdeci">double emis</div><div class="ttdoc">coeficiente emissividade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:35</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a16d1002ed4e3bc992403c7892700e0f2"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha::funcaoCondutividade</a></div><div class="ttdeci">CFuncaoCondutividade funcaoCondutividade</div><div class="ttdoc">Função usada cálculo condutividade. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:23</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a4b0b29a921c62100176acf85ac338164"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha::funcaoDifusividade</a></div><div class="ttdeci">CFuncaoDifusividade funcaoDifusividade</div><div class="ttdoc">Objetos agregados. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:22</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a20635430e93e2bb54163f971859bd43b"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha::wli</a></div><div class="ttdeci">double wli</div><div class="ttdoc">conteúdo massa mássico wl (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:41</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a904c5469b2be8da82d90c183dddc9b4f"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha::ki</a></div><div class="ttdeci">double ki</div><div class="ttdoc">condutividade (fixo para telha impermeável) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:42</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_af44c2c834c50287ec3c361b377178271"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha::ct</a></div><div class="ttdeci">double ct</div><div class="ttdoc">calor específico (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:32</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_ad19e72c26675fc2fba619b9f6e323916"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha::alfa</a></div><div class="ttdeci">double alfa</div><div class="ttdoc">coeficiente absorção a radiação (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:34</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a89c76f1bdad501acd4461da77721e2e1"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha::porosidade</a></div><div class="ttdeci">double porosidade</div><div class="ttdoc">porosidade (telha) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:33</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml_a24676d1468ad2d637473e1bdaa20b9c6"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha::funcaoAdsorcao</a></div><div class="ttdeci">CFuncaoAdsorcao * funcaoAdsorcao</div><div class="ttdoc">Função usada cálculo adsorção. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a class="anchor" id="ad19e72c26675fc2fba619b9f6e323916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::alfa {0.63}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>coeficiente absorção a radiação (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af44c2c834c50287ec3c361b377178271"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::ct {1000.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>calor específico (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8a4f3f5f6cda4246abf76f3d7e2890f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::emis {1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>coeficiente emissividade (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24676d1468ad2d637473e1bdaa20b9c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCFuncaoAdsorcao.xhtml">CFuncaoAdsorcao</a>* CMeioPoroso_Telha::funcaoAdsorcao</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função usada cálculo adsorção. </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a> e <a class="el" href="classCMeioPoroso__Telha.xhtml#a6fbece66a47131f034c5338c6ad805ae">~CMeioPoroso_Telha()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16d1002ed4e3bc992403c7892700e0f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCFuncaoCondutividade.xhtml">CFuncaoCondutividade</a> CMeioPoroso_Telha::funcaoCondutividade</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função usada cálculo condutividade. </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b0b29a921c62100176acf85ac338164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCFuncaoDifusividade.xhtml">CFuncaoDifusividade</a> CMeioPoroso_Telha::funcaoDifusividade</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Objetos agregados. </p>
+<p>Função usada cálculo difusividade. </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a904c5469b2be8da82d90c183dddc9b4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::ki</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>condutividade (fixo para telha impermeável) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a457ec06bd9ecb216eeff7be5db540f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::larg {0.03}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>largura do objeto (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89c76f1bdad501acd4461da77721e2e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::porosidade {0.31}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>porosidade (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1d5f6561f058a9d80d036be91dbd953"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::rot {1730}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>densidade (telha) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a> e <a class="el" href="classCFuncaoConteudoMassicoWl.xhtml#ab8f79d35ba12183d98b77b5f3dff7c1a">CFuncaoConteudoMassicoWl::Wl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a72824e391981d90c345675f70b2a5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char CMeioPoroso_Telha::tipo_material {'c'}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>tipo_material se refere ao tipo de material se argamassa, ou cerâmica, ou.. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.xhtml#_todo000005">Futuras Atividades:</a></b></dt><dd>: trocar por enum ETipoMaterial &lt; uint8 &gt; { argamassa_celso, argamassa_pablo, ceramica_bueno }; </dd></dl>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a8502f9e2c3cfba17f8562558d87e4f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double CMeioPoroso_Telha::wl_inicial = 0.0134</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>conteúdo de massa inicial </p>
+
+</div>
+</div>
+<a class="anchor" id="a20635430e93e2bb54163f971859bd43b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CMeioPoroso_Telha::wli</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>conteúdo massa mássico wl (fixo para telha impermeável) </p>
+
+<p>Referenciado por <a class="el" href="CMeioPoroso__Telha_8cpp.xhtml#a96e8932c80d6accda56900f7d9d31f1d">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>src/<a class="el" href="CMeioPoroso__Telha_8h_source.xhtml">CMeioPoroso_Telha.h</a></li>
+<li>src/<a class="el" href="CMeioPoroso__Telha_8cpp.xhtml">CMeioPoroso_Telha.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

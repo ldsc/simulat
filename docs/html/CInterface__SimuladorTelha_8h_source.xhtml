@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Código-Fonte de src/CInterface_SimuladorTelha.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CInterface_SimuladorTelha.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CInterface__SimuladorTelha_8h.xhtml">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CInterface_SimuladorTelha_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CInterface_SimuladorTelha_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CInterface_8h.xhtml">CInterface.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CSimulador__Telha__GanhosEnergia_8h.xhtml">CSimulador_Telha_GanhosEnergia.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ios&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>         </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span>          </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCInterface__SimuladorTelha.xhtml">CInterface_SimuladorTelha</a> : <span class="keyword">public</span> <a class="code" href="classCInterface.xhtml">CInterface</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//  CSimulador_Telha    simuladorTelha;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a55fa4532f2e1cc56804a14d7c8c795f4">   29</a></span>&#160;    <a class="code" href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a>  <a class="code" href="classCInterface__SimuladorTelha.xhtml#a55fa4532f2e1cc56804a14d7c8c795f4">simuladorTelha</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//  CSolver_TDMA                solver_tdma;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//  CMeioPoroso_Telha           telha;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//  CTransferenciaCalorMassa    transcal;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//  CFuncao_wl                  funcao_wl;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#aa6a5bbe5c367d5e5b20375064de94538">   36</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#aa6a5bbe5c367d5e5b20375064de94538">tempoInicioSimulacao</a>{0.0};            </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#ab52159585e3e39f7ea2cf0946f4c12d7">   37</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#ab52159585e3e39f7ea2cf0946f4c12d7">tempoFimSimulacao</a>{96.0};              </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   <span class="comment">// Propriedades/atributos associados a interface em modo texto</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a950e4e3eb06a2e3077a3a1da58839b59">   40</a></span>&#160;   std::ofstream <a class="code" href="classCInterface__SimuladorTelha.xhtml#a950e4e3eb06a2e3077a3a1da58839b59">fout</a>;                          </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a0c40824ccd7bd9f5d33c1afe7e99379a">   41</a></span>&#160;   <span class="keywordtype">char</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a0c40824ccd7bd9f5d33c1afe7e99379a">tipoSaida</a>{<span class="charliteral">&#39;g&#39;</span>};                         </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a87f3b12b8e08f29233ee2650dfa1032f">   42</a></span>&#160;   std::string <a class="code" href="classCInterface__SimuladorTelha.xhtml#a87f3b12b8e08f29233ee2650dfa1032f">nomeArquivoSaidaDisco</a>{<span class="stringliteral">&quot;simulat.saida&quot;</span>};</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a8875697da7dd82e08a8b5bd6f1505464">   43</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a8875697da7dd82e08a8b5bd6f1505464">tempoInicioSaida</a>{0.0};                </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a9beecee9a05e58ca5764031a4a0a5342">   44</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a9beecee9a05e58ca5764031a4a0a5342">intervaloSaidaResultados</a>{600.0};      </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a238ae82c5563bfac7c3e0dd82c9a518e">   45</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a238ae82c5563bfac7c3e0dd82c9a518e">contadorPassoSaida</a>{7200000.0};        </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//--------------------------------------------------------------------------------------Métodos</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//    CInterface_SimuladorTelha(CFuncoesClima&amp; _fc, CFluido&amp; _f )</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//    : funcoesClima(_fc), fluido(_f) {</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//    CSimulador_Telha(double&amp; _dt, double&amp; _dta, double&amp; _dtmax, double&amp; _dtmin, </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//                                    double&amp; _tempo, CFuncoesClima _fc, CFluido _f)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#a41185ceb5a44eb796ac4672083f5f82e">   55</a></span>&#160;   <a class="code" href="classCInterface__SimuladorTelha.xhtml#a41185ceb5a44eb796ac4672083f5f82e">CInterface_SimuladorTelha</a>( ) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::cout.precision( 4 );  </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classCInterface__SimuladorTelha.xhtml#a950e4e3eb06a2e3077a3a1da58839b59">fout</a>.setf( std::ios::fixed | std::ios::left | std::ios::dec );</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classCInterface__SimuladorTelha.xhtml#aaeaad0080daf4c219eecab93f31f5509">DadosDefault</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;   }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <a class="code" href="classCInterface__SimuladorTelha.xhtml#a52bccaf4dd1f0c068eb0b58053c9f199">~CInterface_SimuladorTelha</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#aaeaad0080daf4c219eecab93f31f5509">DadosDefault</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a7a7081b60b6f542d64bbea8a63d7723a">EntrarDadosObjeto</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a780ad4db8e166f172a51790f58cbf0ff">ExecutarSimulador</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   <span class="comment">//int c_break( void );</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//static void Carimbo();                ///&lt; Carimbo titulo tese</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classCInterface__SimuladorTelha.xhtml#acca304a2adb622115bf53c544fb20fb6">   77</a></span>&#160;   <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#acca304a2adb622115bf53c544fb20fb6">LimparTela</a>() {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;     std::cout &lt;&lt; <span class="stringliteral">&quot;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#abf80112e56d50563bd9b17b16d483b6d">Leiame</a>();                       </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a13127a0f77224d423c2ec01fb8054438">FolhaRosto</a>();                   </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   <span class="comment">//void Carimbo();                    ///&lt; Carimbo titulo tese</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <span class="comment">//void EntrarDadosObjeto();          ///&lt; Entrada dados do objeto</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a9c71d881e05b4715ce7d8786818f2315">InicioSaida</a>();                  </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a62763690e8d5afefbdbbae49d29cb8c4">Saida</a>();                        </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#ac82449ce621d4244aa9dec7db3d59025">SaidaTela</a>();                    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCInterface__SimuladorTelha.xhtml#a90f663903e6553b1131dfb418eca56e5">FimSaida</a>();                     </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classCInterface__SimuladorTelha.xhtml#a2d380f1c09ed79528c28a553d26f89c3">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classCInterface__SimuladorTelha.xhtml">CInterface_SimuladorTelha</a>&amp; obj);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_acca304a2adb622115bf53c544fb20fb6"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#acca304a2adb622115bf53c544fb20fb6">CInterface_SimuladorTelha::LimparTela</a></div><div class="ttdeci">void LimparTela()</div><div class="ttdoc">Função para encerramento do programa. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:77</div></div>
+<div class="ttc" id="classCSimulador__Telha__GanhosEnergia_xhtml"><div class="ttname"><a href="classCSimulador__Telha__GanhosEnergia.xhtml">CSimulador_Telha_GanhosEnergia</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha_GanhosEnergia.h:10</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a55fa4532f2e1cc56804a14d7c8c795f4"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a55fa4532f2e1cc56804a14d7c8c795f4">CInterface_SimuladorTelha::simuladorTelha</a></div><div class="ttdeci">CSimulador_Telha_GanhosEnergia simuladorTelha</div><div class="ttdoc">Objetos agregados. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:29</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_aaeaad0080daf4c219eecab93f31f5509"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#aaeaad0080daf4c219eecab93f31f5509">CInterface_SimuladorTelha::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:16</div></div>
+<div class="ttc" id="CInterface_8h_xhtml"><div class="ttname"><a href="CInterface_8h.xhtml">CInterface.h</a></div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml">CInterface_SimuladorTelha</a></div><div class="ttdoc">----------——— Bibliotecas -----------------------——— </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:23</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_ab52159585e3e39f7ea2cf0946f4c12d7"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#ab52159585e3e39f7ea2cf0946f4c12d7">CInterface_SimuladorTelha::tempoFimSimulacao</a></div><div class="ttdeci">double tempoFimSimulacao</div><div class="ttdoc">hora de encerramento da simulação (ex: 24 1 dia, 48 2 dias, 72 3 </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:37</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a13127a0f77224d423c2ec01fb8054438"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a13127a0f77224d423c2ec01fb8054438">CInterface_SimuladorTelha::FolhaRosto</a></div><div class="ttdeci">void FolhaRosto()</div><div class="ttdoc">Tela inicial. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:66</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a2d380f1c09ed79528c28a553d26f89c3"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a2d380f1c09ed79528c28a553d26f89c3">CInterface_SimuladorTelha::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, CInterface_SimuladorTelha &amp;obj)</div><div class="ttdoc">Saída de dados do objeto para os (tela) </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:239</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a9beecee9a05e58ca5764031a4a0a5342"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a9beecee9a05e58ca5764031a4a0a5342">CInterface_SimuladorTelha::intervaloSaidaResultados</a></div><div class="ttdeci">double intervaloSaidaResultados</div><div class="ttdoc">intervalo de tempo em que a saída é apresentada </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:44</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_aa6a5bbe5c367d5e5b20375064de94538"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#aa6a5bbe5c367d5e5b20375064de94538">CInterface_SimuladorTelha::tempoInicioSimulacao</a></div><div class="ttdeci">double tempoInicioSimulacao</div><div class="ttdoc">hora inicial da simulação </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:36</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_abf80112e56d50563bd9b17b16d483b6d"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#abf80112e56d50563bd9b17b16d483b6d">CInterface_SimuladorTelha::Leiame</a></div><div class="ttdeci">void Leiame()</div><div class="ttdoc">Função de help/ajuda. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:179</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a90f663903e6553b1131dfb418eca56e5"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a90f663903e6553b1131dfb418eca56e5">CInterface_SimuladorTelha::FimSaida</a></div><div class="ttdeci">void FimSaida()</div><div class="ttdoc">Finaliza apresentacao resultados. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:164</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a7a7081b60b6f542d64bbea8a63d7723a"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a7a7081b60b6f542d64bbea8a63d7723a">CInterface_SimuladorTelha::EntrarDadosObjeto</a></div><div class="ttdeci">void EntrarDadosObjeto()</div><div class="ttdoc">Entrada de dados. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:82</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_ac82449ce621d4244aa9dec7db3d59025"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#ac82449ce621d4244aa9dec7db3d59025">CInterface_SimuladorTelha::SaidaTela</a></div><div class="ttdeci">void SaidaTela()</div><div class="ttdoc">Apresenta saída dados parciais. </div></div>
+<div class="ttc" id="CSimulador__Telha__GanhosEnergia_8h_xhtml"><div class="ttname"><a href="CSimulador__Telha__GanhosEnergia_8h.xhtml">CSimulador_Telha_GanhosEnergia.h</a></div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a780ad4db8e166f172a51790f58cbf0ff"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a780ad4db8e166f172a51790f58cbf0ff">CInterface_SimuladorTelha::ExecutarSimulador</a></div><div class="ttdeci">void ExecutarSimulador()</div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:34</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a0c40824ccd7bd9f5d33c1afe7e99379a"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a0c40824ccd7bd9f5d33c1afe7e99379a">CInterface_SimuladorTelha::tipoSaida</a></div><div class="ttdeci">char tipoSaida</div><div class="ttdoc">definição tipo saída </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:41</div></div>
+<div class="ttc" id="classCInterface_xhtml"><div class="ttname"><a href="classCInterface.xhtml">CInterface</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CInterface.h:17</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a52bccaf4dd1f0c068eb0b58053c9f199"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a52bccaf4dd1f0c068eb0b58053c9f199">CInterface_SimuladorTelha::~CInterface_SimuladorTelha</a></div><div class="ttdeci">~CInterface_SimuladorTelha()=default</div><div class="ttdoc">Destrutor. </div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a950e4e3eb06a2e3077a3a1da58839b59"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a950e4e3eb06a2e3077a3a1da58839b59">CInterface_SimuladorTelha::fout</a></div><div class="ttdeci">std::ofstream fout</div><div class="ttdoc">acesso arquivo saída </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:40</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a9c71d881e05b4715ce7d8786818f2315"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a9c71d881e05b4715ce7d8786818f2315">CInterface_SimuladorTelha::InicioSaida</a></div><div class="ttdeci">void InicioSaida()</div><div class="ttdoc">Inicia apresentacao resultados. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:131</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a62763690e8d5afefbdbbae49d29cb8c4"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a62763690e8d5afefbdbbae49d29cb8c4">CInterface_SimuladorTelha::Saida</a></div><div class="ttdeci">void Saida()</div><div class="ttdoc">Verifica se é para chamar SaidaTela. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.cpp:141</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a41185ceb5a44eb796ac4672083f5f82e"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a41185ceb5a44eb796ac4672083f5f82e">CInterface_SimuladorTelha::CInterface_SimuladorTelha</a></div><div class="ttdeci">CInterface_SimuladorTelha()</div><div class="ttdoc">Construtor. </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:55</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a87f3b12b8e08f29233ee2650dfa1032f"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a87f3b12b8e08f29233ee2650dfa1032f">CInterface_SimuladorTelha::nomeArquivoSaidaDisco</a></div><div class="ttdeci">std::string nomeArquivoSaidaDisco</div><div class="ttdoc">definição nome arquivo saída disco </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:42</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a8875697da7dd82e08a8b5bd6f1505464"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a8875697da7dd82e08a8b5bd6f1505464">CInterface_SimuladorTelha::tempoInicioSaida</a></div><div class="ttdeci">double tempoInicioSaida</div><div class="ttdoc">hora em que a saída começa a ser apresentada na tela </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:43</div></div>
+<div class="ttc" id="classCInterface__SimuladorTelha_xhtml_a238ae82c5563bfac7c3e0dd82c9a518e"><div class="ttname"><a href="classCInterface__SimuladorTelha.xhtml#a238ae82c5563bfac7c3e0dd82c9a518e">CInterface_SimuladorTelha::contadorPassoSaida</a></div><div class="ttdeci">double contadorPassoSaida</div><div class="ttdoc">contador que controle passo de saída </div><div class="ttdef"><b>Definition:</b> CInterface_SimuladorTelha.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

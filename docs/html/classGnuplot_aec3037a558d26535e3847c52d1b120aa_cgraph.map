@@ -1,0 +1,4 @@
+<map id="Gnuplot::Legend" name="Gnuplot::Legend">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#ad64a717dac18167f656c4f09239973f8" title="Ativa a legenda (a legenda é setada por padrao). Posicao: inside/outside, left/center/right, top/center/bottom, nobox/box. " alt="" coords="171,5,309,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="358,5,458,32"/>
+</map>

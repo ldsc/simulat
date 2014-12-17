@@ -1,0 +1,5 @@
+<map id="Gnuplot::ResetAll" name="Gnuplot::ResetAll">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a9aedfe8371083a1a3ac2b9493810049c" title="Gnuplot::reset_all" alt="" coords="179,5,303,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="561,5,661,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a356d2faaa79f08d13fec9718b776b28d" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="353,31,511,57"/>
+</map>

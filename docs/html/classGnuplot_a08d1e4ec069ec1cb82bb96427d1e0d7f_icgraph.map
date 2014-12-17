@@ -1,0 +1,4 @@
+<map id="Gnuplot::init" name="Gnuplot::init">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a187eb517b362cf379492fe7f1621ee50" title="Construtor, seta o estilo do grafico na construcao. " alt="" coords="147,5,267,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a1f0052a04c1259e2c008435de407959f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="160,56,253,83"/>
+</map>

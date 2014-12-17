@@ -1,0 +1,4 @@
+<map id="Gnuplot::plot_xy" name="Gnuplot::plot_xy">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a24327b6116c71acdc195eadf665c67cb" title="Construtor, plota um grafico do tipo x_y a partir de vetores, diretamente na construcao. " alt="" coords="179,5,299,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#ae282636936128008b2c82f569f607820" title="Plota pares x,y a partir de vetores. " alt="" coords="171,56,307,83"/>
+</map>

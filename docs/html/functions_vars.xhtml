@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Componentes Membros - Variáveis</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.xhtml"><span>Lista&#160;de&#160;Componentes</span></a></li>
+      <li><a href="classes.xhtml"><span>Índice&#160;dos&#160;Componentes</span></a></li>
+      <li><a href="inherits.xhtml"><span>Hierarquia&#160;de&#160;Classes</span></a></li>
+      <li class="current"><a href="functions.xhtml"><span>Componentes&#160;Membros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="functions.xhtml"><span>Todos</span></a></li>
+      <li><a href="functions_func.xhtml"><span>Funções</span></a></li>
+      <li class="current"><a href="functions_vars.xhtml"><span>Variáveis</span></a></li>
+      <li><a href="functions_rela.xhtml"><span>Funções&#160;Relacionadas</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>a
+: <a class="el" href="classCSolver__TDMA.xhtml#a55cc83a7fb9d344ef2c217048fe36f5d">CSolver_TDMA</a>
+</li>
+<li>ak
+: <a class="el" href="classCFuncaoCondutividade.xhtml#a6c5aeb9f6ec94873b08b18888a4899a7">CFuncaoCondutividade</a>
+</li>
+<li>alfa
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#ad19e72c26675fc2fba619b9f6e323916">CMeioPoroso_Telha</a>
+</li>
+<li>amortecimento
+: <a class="el" href="classCFuncoesClima.xhtml#ae045fe9c5a2108a7eddef8e1cfe35b05">CFuncoesClima</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>b
+: <a class="el" href="classCSolver__TDMA.xhtml#a92745dd6ee16ce25898480b05e8e7500">CSolver_TDMA</a>
+</li>
+<li>be
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae655b9826b4a32d093e738ccbd10f308">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>bk
+: <a class="el" href="classCFuncaoCondutividade.xhtml#ada1ec0851bbe01c9d3cb987ad9efaee2">CFuncaoCondutividade</a>
+</li>
+<li>bm
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a211a876a2f0d608c8a6118d92bb95258">CSimulador_Telha_GanhosEnergia</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>c
+: <a class="el" href="classCSolver__TDMA.xhtml#a59cc88d4ca5209359f0f9e7d0addc711">CSolver_TDMA</a>
+</li>
+<li>cdif
+: <a class="el" href="classCFuncaoDifusividade.xhtml#afaad04c79391e51f2cd02235c99eb842">CFuncaoDifusividade</a>
+</li>
+<li>cl
+: <a class="el" href="classCFluido.xhtml#a75e81e9057580bb97e7d9c0856f81094">CFluido</a>
+</li>
+<li>contadorPassoSaida
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a238ae82c5563bfac7c3e0dd82c9a518e">CInterface_SimuladorTelha</a>
+</li>
+<li>ct
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#af44c2c834c50287ec3c361b377178271">CMeioPoroso_Telha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>d
+: <a class="el" href="classCSolver__TDMA.xhtml#a135a6c113b773981846d87d91d0a06f3">CSolver_TDMA</a>
+</li>
+<li>dif
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>dt
+: <a class="el" href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">CSimulador_Telha</a>
+</li>
+<li>dta
+: <a class="el" href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">CSimulador_Telha</a>
+</li>
+<li>dtmax
+: <a class="el" href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">CSimulador_Telha</a>
+</li>
+<li>dtmin
+: <a class="el" href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">CSimulador_Telha</a>
+</li>
+<li>dx
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>emis
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#af8a4f3f5f6cda4246abf76f3d7e2890f">CMeioPoroso_Telha</a>
+</li>
+<li>esp
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>espa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>espaa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>fcontour
+: <a class="el" href="classGnuplot.xhtml#a2d59d8bbb58f5374f5f369f1590c0f6c">Gnuplot</a>
+</li>
+<li>fgrid
+: <a class="el" href="classGnuplot.xhtml#ae17e497490d99ed1b3b33f29a14a770a">Gnuplot</a>
+</li>
+<li>fhidden3d
+: <a class="el" href="classGnuplot.xhtml#a8559a2e664379c293959aa5bd120a804">Gnuplot</a>
+</li>
+<li>flegend
+: <a class="el" href="classGnuplot.xhtml#af911798376f51c50a74898bcf2987f4f">Gnuplot</a>
+</li>
+<li>fluido
+: <a class="el" href="classCFuncaoConteudoMassicoWl.xhtml#ace647cc79a81a32846fc6a755a4e2862">CFuncaoConteudoMassicoWl</a>
+, <a class="el" href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">CSimulador_Telha</a>
+</li>
+<li>fout
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a950e4e3eb06a2e3077a3a1da58839b59">CInterface_SimuladorTelha</a>
+</li>
+<li>fsmooth
+: <a class="el" href="classGnuplot.xhtml#ad0d4d4bfbd38756ad3f0252e34bebfcf">Gnuplot</a>
+</li>
+<li>fsurface
+: <a class="el" href="classGnuplot.xhtml#aede7e482623580b95b0927c8f14364eb">Gnuplot</a>
+</li>
+<li>ftitle
+: <a class="el" href="classGnuplot.xhtml#a93679f2e2cfc5be5617e733895730641">Gnuplot</a>
+</li>
+<li>funcaoAdsorcao
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a24676d1468ad2d637473e1bdaa20b9c6">CMeioPoroso_Telha</a>
+</li>
+<li>funcaoCondutividade
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a16d1002ed4e3bc992403c7892700e0f2">CMeioPoroso_Telha</a>
+</li>
+<li>funcaoConteudoMassicoWl
+: <a class="el" href="classCSimulador__Telha.xhtml#af1aeaa90abff03f5a8bd364d66121b74">CSimulador_Telha</a>
+</li>
+<li>funcaoDifusividade
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a4b0b29a921c62100176acf85ac338164">CMeioPoroso_Telha</a>
+</li>
+<li>funcoesClima
+: <a class="el" href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">CSimulador_Telha</a>
+</li>
+<li>fxlogscale
+: <a class="el" href="classGnuplot.xhtml#a1df812c47b8fadfc58d72f8824db9b97">Gnuplot</a>
+</li>
+<li>fylogscale
+: <a class="el" href="classGnuplot.xhtml#a4fd4f64a9518a4f7188be0b930086171">Gnuplot</a>
+</li>
+<li>fzlogscale
+: <a class="el" href="classGnuplot.xhtml#a1526797cdf3cc7849c4f8d531ddcfdb4">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>gec
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a3a8825a48e601257befc2ff6c3b64bab">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>geci
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ae67f600265152d494037c2a082ad1baa">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gecl
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a45dfbfc358771cc7e35da528de729069">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>geroc
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a03c4f31c4fdb7414494141b2478389da">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>geroci
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a88105eb897c5b671b28e7b52e86ca442">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gerol
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a78a210c7af9486f28421da1783ccf45a">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>geroli
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a906fb37eb0d54fde58112bdb58cb410c">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gesp
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a355713c8427b443c472c5c7fc7bce43c">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gev
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#adaa5d5a6eb7641857882a6deebdd3c26">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gic
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af5a61b3f0172d0fd5c02e703e7786c6d">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gici
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#ad8d3780940e5214e01fd410a2e2b35c0">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gicl
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af8cf7c614d44bd6cdcd9f51c94d02e88">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gir
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#af27d2e405d47f36849ce7345d025531a">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>giri
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a4be5101232f4cd6e58a045c29ccd563d">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>giv
+: <a class="el" href="classCSimulador__Telha__GanhosEnergia.xhtml#a48c934fecfd0e0d541811f52eb664fe9">CSimulador_Telha_GanhosEnergia</a>
+</li>
+<li>gnucmd
+: <a class="el" href="classGnuplot.xhtml#a93e59138d3e192ffa2a4f0d7c310d61d">Gnuplot</a>
+</li>
+<li>grafico_ol
+: <a class="el" href="classCSimulador__Telha.xhtml#a682c5e07628cb4ff489703e27eccc472">CSimulador_Telha</a>
+</li>
+<li>grafico_ti
+: <a class="el" href="classCSimulador__Telha.xhtml#ac920eb4c444530676d03448b2c78c92e">CSimulador_Telha</a>
+</li>
+<li>grafico_tp
+: <a class="el" href="classCSimulador__Telha.xhtml#a139f3790906e4647d50ff60dc23ed624">CSimulador_Telha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>h
+: <a class="el" href="classCFuncaoAdsorcao.xhtml#aaf934ee9a5245819fb121f0da038b14b">CFuncaoAdsorcao</a>
+, <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>hce
+: <a class="el" href="classCTransferenciaCalorMassa.xhtml#a438107d7d875bf7f46fd6fe27e115fda">CTransferenciaCalorMassa</a>
+</li>
+<li>hci
+: <a class="el" href="classCTransferenciaCalorMassa.xhtml#a4d25b41fcab0cf54cb38edab55050c1f">CTransferenciaCalorMassa</a>
+</li>
+<li>hext
+: <a class="el" href="classCFuncoesClima.xhtml#aba60e21adf269084e43707aac4b157d0">CFuncoesClima</a>
+</li>
+<li>hint
+: <a class="el" href="classCFuncoesClima.xhtml#a6c1843312f69c15be4602c67c5871604">CFuncoesClima</a>
+</li>
+<li>hm
+: <a class="el" href="classCSimulador__Telha.xhtml#a877772b0ec353f3cd31a8fdf1d9f74d0">CSimulador_Telha</a>
+</li>
+<li>hme
+: <a class="el" href="classCTransferenciaCalorMassa.xhtml#a87115427ab2154fe3ba9c42098906eeb">CTransferenciaCalorMassa</a>
+</li>
+<li>hmi
+: <a class="el" href="classCTransferenciaCalorMassa.xhtml#a85cb77cbc3cfae47345d20aa107fe69f">CTransferenciaCalorMassa</a>
+</li>
+<li>horaFimChuva
+: <a class="el" href="classCFuncoesClima.xhtml#aabe2b0cf2225c86241f9b788df3b5c03">CFuncoesClima</a>
+</li>
+<li>horaInicioChuva
+: <a class="el" href="classCFuncoesClima.xhtml#a1cea96ddc70c9bd7f6033a5f33c2369d">CFuncoesClima</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>intervaloSaidaResultados
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a9beecee9a05e58ca5764031a4a0a5342">CInterface_SimuladorTelha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
+<li>k
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>ki
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a904c5469b2be8da82d90c183dddc9b4f">CMeioPoroso_Telha</a>
+</li>
+<li>km
+: <a class="el" href="classCSimulador__Telha.xhtml#a4a65241ac994cadaedc95ce87243a803">CSimulador_Telha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>larg
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a8a457ec06bd9ecb216eeff7be5db540f">CMeioPoroso_Telha</a>
+</li>
+<li>lv
+: <a class="el" href="classCFluido.xhtml#a4d86a173870eaf1946e6d3d6de635e44">CFluido</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m_sGNUPlotFileName
+: <a class="el" href="classGnuplot.xhtml#ae71e004ab7266f34d270cf76ea143e2b">Gnuplot</a>
+</li>
+<li>m_sGNUPlotPath
+: <a class="el" href="classGnuplot.xhtml#a3c5949b04c54833eb685c30322c816e6">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>n
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>nomeArquivoSaidaDisco
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a87f3b12b8e08f29233ee2650dfa1032f">CInterface_SimuladorTelha</a>
+</li>
+<li>nplots
+: <a class="el" href="classGnuplot.xhtml#acceb0a453297bb0ec7b26ec1dafbcec2">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>ol
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>ol0
+: <a class="el" href="classCSimulador__Telha.xhtml#ae364d225b9d9b0deafee5cb2dc7a594c">CSimulador_Telha</a>
+</li>
+<li>ol_inicial
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ab7cbca1e56c9b6d195e13216cc300dd0">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>ola
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>olaa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>olChuva
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>olm
+: <a class="el" href="classCSimulador__Telha.xhtml#af33c6495a7304de5e3070f374e5a55c1">CSimulador_Telha</a>
+</li>
+<li>oln_1
+: <a class="el" href="classCSimulador__Telha.xhtml#abbd1307e9f3145d1356c4cea373e71e6">CSimulador_Telha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>p
+: <a class="el" href="classCSolver__TDMA.xhtml#a3eaefa4228e5f735d1256f70a45d5fe8">CSolver_TDMA</a>
+</li>
+<li>porosidade
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a89c76f1bdad501acd4461da77721e2e1">CMeioPoroso_Telha</a>
+</li>
+<li>precipitacao
+: <a class="el" href="classCFuncoesClima.xhtml#a039bb905b47666394f91969a2bdea476">CFuncoesClima</a>
+</li>
+<li>pstyle
+: <a class="el" href="classGnuplot.xhtml#a418930ab9ec992bcf1b9257e4c2bf6a9">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>q
+: <a class="el" href="classCSolver__TDMA.xhtml#afa8f583cd89f9c02e42651608d076d0a">CSolver_TDMA</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>radoc
+: <a class="el" href="classCFuncoesClima.xhtml#af1a7ee8fe06285423d05461d7efc42a6">CFuncoesClima</a>
+</li>
+<li>radol
+: <a class="el" href="classCFuncoesClima.xhtml#ad42592234730be560773e418008e5600">CFuncoesClima</a>
+</li>
+<li>recorrencia
+: <a class="el" href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">CSimulador_Telha</a>
+</li>
+<li>respHumidadeExterna
+: <a class="el" href="classCFuncoesClima.xhtml#a4ec2885d1b3a564e9c2eb20c8fd1166f">CFuncoesClima</a>
+</li>
+<li>respHumidadeInterna
+: <a class="el" href="classCFuncoesClima.xhtml#abf5352ebd555ac36f94eeaa8d8880433">CFuncoesClima</a>
+</li>
+<li>respTemperaturaInterna
+: <a class="el" href="classCFuncoesClima.xhtml#a0c629461f59dbd4822306492b5acfd74">CFuncoesClima</a>
+</li>
+<li>retardo
+: <a class="el" href="classCFuncoesClima.xhtml#a4276e6b3f778a1094fc70587e15de783">CFuncoesClima</a>
+</li>
+<li>rol
+: <a class="el" href="classCFluido.xhtml#a6992602ed67694da0a104f1999126df0">CFluido</a>
+</li>
+<li>rot
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#ad1d5f6561f058a9d80d036be91dbd953">CMeioPoroso_Telha</a>
+</li>
+<li>rov
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>rove
+: <a class="el" href="classCFuncoesClima.xhtml#a4ce585b6d41a32c73b830613ab0f4bdc">CFuncoesClima</a>
+</li>
+<li>rovi
+: <a class="el" href="classCFuncoesClima.xhtml#a768d57abaf81b764d039e163bbc058d5">CFuncoesClima</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>sigma
+: <a class="el" href="classCTransferenciaCalorMassa.xhtml#a4d96ddac454d8548cd8f154fa7661ff2">CTransferenciaCalorMassa</a>
+</li>
+<li>simuladorTelha
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a55fa4532f2e1cc56804a14d7c8c795f4">CInterface_SimuladorTelha</a>
+</li>
+<li>smooth
+: <a class="el" href="classGnuplot.xhtml#a492b77047e8a79ef760e54ceb89de539">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>telha
+: <a class="el" href="classCFuncaoConteudoMassicoWl.xhtml#a33c0a7677d60c8a4b080b50a7d0074e2">CFuncaoConteudoMassicoWl</a>
+</li>
+<li>temperatura_ensaio_adsorcao
+: <a class="el" href="classCFuncaoAdsorcao.xhtml#a154592a0e5a271203d30d6acb0d6132d">CFuncaoAdsorcao</a>
+</li>
+<li>tempo
+: <a class="el" href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">CSimulador_Telha</a>
+</li>
+<li>tempoDecorrido
+: <a class="el" href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">CSimulador_Telha</a>
+</li>
+<li>tempoFimSimulacao
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#ab52159585e3e39f7ea2cf0946f4c12d7">CInterface_SimuladorTelha</a>
+</li>
+<li>tempoInicioSaida
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a8875697da7dd82e08a8b5bd6f1505464">CInterface_SimuladorTelha</a>
+</li>
+<li>tempoInicioSimulacao
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#aa6a5bbe5c367d5e5b20375064de94538">CInterface_SimuladorTelha</a>
+</li>
+<li>terminal_std
+: <a class="el" href="classGnuplot.xhtml#ad763c98e6b2f51bef05f0b2da522fef4">Gnuplot</a>
+</li>
+<li>text
+: <a class="el" href="classCFuncoesClima.xhtml#a1742f3b532412a2fed2618df39e169e0">CFuncoesClima</a>
+</li>
+<li>ti
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>ti0
+: <a class="el" href="classCSimulador__Telha.xhtml#a7111b0517d3046f7e3254504de2e9af6">CSimulador_Telha</a>
+</li>
+<li>ti_inicial
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aeb95fdc24b24ba79912d314ac7c6e9ae">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tia
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tiaa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tim
+: <a class="el" href="classCSimulador__Telha.xhtml#a7453feee3c47cccd7c0851cf30a3dcf3">CSimulador_Telha</a>
+</li>
+<li>tin_1
+: <a class="el" href="classCSimulador__Telha.xhtml#a5ca55b9258df0440ec677eb2b1ab96b8">CSimulador_Telha</a>
+</li>
+<li>tint
+: <a class="el" href="classCFuncoesClima.xhtml#a61dcce7b581dd784874a4e650d84ac85">CFuncoesClima</a>
+</li>
+<li>tipo_material
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a5a72824e391981d90c345675f70b2a5e">CMeioPoroso_Telha</a>
+</li>
+<li>tipoSaida
+: <a class="el" href="classCInterface__SimuladorTelha.xhtml#a0c40824ccd7bd9f5d33c1afe7e99379a">CInterface_SimuladorTelha</a>
+</li>
+<li>tmpfile_list
+: <a class="el" href="classGnuplot.xhtml#a7b9f721714ffb6aff0d374fcf1c8c90f">Gnuplot</a>
+</li>
+<li>tmpfile_num
+: <a class="el" href="classGnuplot.xhtml#acfc7e1f0bc2e131abb9844bdbe7fc01c">Gnuplot</a>
+</li>
+<li>tp
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tp0
+: <a class="el" href="classCSimulador__Telha.xhtml#a0c3f716d4618d4813d27a0fbabf4bc56">CSimulador_Telha</a>
+</li>
+<li>tp_inicial
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a17ceb5e529b097bd7f76c1b98ae542a7">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tpa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tpaa
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>tpm
+: <a class="el" href="classCSimulador__Telha.xhtml#ab0e2b84b8b1b8b3580f857886724122c">CSimulador_Telha</a>
+</li>
+<li>tpn_1
+: <a class="el" href="classCSimulador__Telha.xhtml#adbf113094dc6d2d64410678a0a62a285">CSimulador_Telha</a>
+</li>
+<li>two_dim
+: <a class="el" href="classGnuplot.xhtml#a871efce13e856022b3ba36caaa10ea33">Gnuplot</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>valid
+: <a class="el" href="classGnuplot.xhtml#a0155f4026915ed9b05b18c1e89ba9757">Gnuplot</a>
+</li>
+<li>vhora
+: <a class="el" href="classCSimulador__Telha.xhtml#ab8552ef145d5ccd7ff942ae83f6b28d2">CSimulador_Telha</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>wl
+: <a class="el" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">CMeioPoroso_Telha_Discretizada_TDMA</a>
+</li>
+<li>wl_inicial
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a0a8502f9e2c3cfba17f8562558d87e4f">CMeioPoroso_Telha</a>
+</li>
+<li>wli
+: <a class="el" href="classCMeioPoroso__Telha.xhtml#a20635430e93e2bb54163f971859bd43b">CMeioPoroso_Telha</a>
+</li>
+<li>wlm
+: <a class="el" href="classCSimulador__Telha.xhtml#a8eeee50e6948dc9e76d9188416455cb6">CSimulador_Telha</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

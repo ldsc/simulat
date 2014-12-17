@@ -1,0 +1,4 @@
+<map id="Gnuplot::PlotSlope" name="Gnuplot::PlotSlope">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a51ea5105eb87285820bb93910f8d346c" title="Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. " alt="" coords="185,5,319,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="369,5,469,32"/>
+</map>

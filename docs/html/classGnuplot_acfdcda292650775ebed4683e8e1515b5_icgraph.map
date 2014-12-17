@@ -1,0 +1,4 @@
+<map id="Gnuplot::set_style" name="Gnuplot::set_style">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a187eb517b362cf379492fe7f1621ee50" title="Construtor, seta o estilo do grafico na construcao. " alt="" coords="181,5,301,32"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#ae64e911770994ba05cc2f6dcbfe31540" title="Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. " alt="" coords="189,56,294,83"/>
+</map>

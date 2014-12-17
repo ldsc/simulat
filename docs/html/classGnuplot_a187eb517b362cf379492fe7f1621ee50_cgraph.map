@@ -1,0 +1,9 @@
+<map id="Gnuplot::Gnuplot" name="Gnuplot::Gnuplot">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a08d1e4ec069ec1cb82bb96427d1e0d7f" title="Cria arquivo temporario e retorna seu nome. Usa get_program_path(); e popen();. " alt="" coords="191,81,283,108"/>
+<area shape="rect" id="node8" href="$classGnuplot.xhtml#acfdcda292650775ebed4683e8e1515b5" title="Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. " alt="" coords="173,132,301,159"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a3a769e47861d74fa713070ecd857dd17" title="Retorna verdadeiro se a path esta presente. " alt="" coords="349,56,528,83"/>
+<area shape="rect" id="node6" href="$classGnuplot.xhtml#a356d2faaa79f08d13fec9718b776b28d" title="Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std. " alt="" coords="359,107,518,133"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#abc0f1d75cb78804a5b8efdfa4df582cd" title="Checa se o arquivo existe. " alt="" coords="577,5,711,32"/>
+<area shape="rect" id="node5" href="$CGnuplot_8cpp.xhtml#a999b660e008a191d56b4c01a09a38f45" title="stringtok" alt="" coords="608,56,680,83"/>
+<area shape="rect" id="node7" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="594,107,694,133"/>
+</map>

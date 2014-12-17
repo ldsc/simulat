@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Referência do Arquivo src/CSimulador_Telha.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo CSimulador_Telha.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdio&gt;</code><br/>
+<code>#include &lt;cassert&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &quot;<a class="el" href="CInterface_8h_source.xhtml">CInterface.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="CSimulador__Telha_8h_source.xhtml">CSimulador_Telha.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="CTermodinamica_8h_source.xhtml">CTermodinamica.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Gráfico de dependência de inclusões para CSimulador_Telha.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CSimulador__Telha_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ad9d93556e5a8cbc3c2aefe913dc649a1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CSimulador__Telha_8cpp.xhtml#ad9d93556e5a8cbc3c2aefe913dc649a1">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> &amp;obj)</td></tr>
+<tr class="separator:ad9d93556e5a8cbc3c2aefe913dc649a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="ad9d93556e5a8cbc3c2aefe913dc649a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCSimulador__Telha.xhtml">CSimulador_Telha</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referências <a class="el" href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">CSimulador_Telha::dt</a>, <a class="el" href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">CSimulador_Telha::dta</a>, <a class="el" href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">CSimulador_Telha::dtmax</a>, <a class="el" href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">CSimulador_Telha::dtmin</a>, <a class="el" href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">CSimulador_Telha::fluido</a>, <a class="el" href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">CSimulador_Telha::funcoesClima</a>, <a class="el" href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">CSimulador_Telha::recorrencia</a>, <a class="el" href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">CSimulador_Telha::tempo</a> e <a class="el" href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">CSimulador_Telha::tempoDecorrido</a>.</p>
+<div class="fragment"><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                                                              {</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha:&quot;</span></div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha -&gt; Herdados&quot;</span>;</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CMeioPoroso_Telha_Discretizada_TDMA&gt; (obj);</span></div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a> meioPoroso = obj;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    os &lt;&lt; meioPoroso;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CTransferenciaCalorMassa&gt; (obj);</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <a class="code" href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a> tc = obj;</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    os &lt;&lt; tc;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;        <span class="comment">//  os  &lt;&lt; static_cast&lt;CSolver_TDMA&gt; (obj);</span></div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\n==&gt; Objeto CSimulador_Telha -&gt; Agregados:&quot;</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">funcoesClima</a></div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">fluido</a>;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      <span class="comment">//&lt;&lt; obj.funcaoConteudoMassicoWl</span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    os  &lt;&lt; <span class="stringliteral">&quot;\ndt = &quot;</span>        &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">dt</a></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndta = &quot;</span>       &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">dta</a></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndtmax = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">dtmax</a></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ndtmin = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">dtmin</a></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntempo = &quot;</span>     &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">tempo</a></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\nrecorrencia = &quot;</span>   &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">recorrencia</a></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment">//      &lt;&lt; &quot;\ntempoInicioSimulacao = &quot;  &lt;&lt; obj.tempoInicioSimulacao</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;\ntempoDecorrido = &quot;</span>    &lt;&lt; obj.<a class="code" href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">tempoDecorrido</a>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment">//      &lt;&lt; &quot;\ntempoFimSimulacao = &quot;     &lt;&lt; obj.tempoFimSimulacao</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;}</div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a72921445e3aa8752029d75e5b5564a78"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a72921445e3aa8752029d75e5b5564a78">CSimulador_Telha::dtmin</a></div><div class="ttdeci">double dtmin</div><div class="ttdoc">intervalo de tempo mínimo da simulação </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:45</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a4dd637b349d8819ad044d9626600722f"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a4dd637b349d8819ad044d9626600722f">CSimulador_Telha::tempoDecorrido</a></div><div class="ttdeci">double tempoDecorrido</div><div class="ttdoc">tempo decorrido da simulação dias </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:52</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a21246123117845ab9b79e7187252b773"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a21246123117845ab9b79e7187252b773">CSimulador_Telha::funcoesClima</a></div><div class="ttdeci">CFuncoesClima funcoesClima</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:25</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a08042c4ed9a9002078f2ab4c3ab25aa6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a08042c4ed9a9002078f2ab4c3ab25aa6">CSimulador_Telha::dt</a></div><div class="ttdeci">double dt</div><div class="ttdoc">intervalo de tempo da simulação </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:42</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:11</div></div>
+<div class="ttc" id="classCTransferenciaCalorMassa_xhtml"><div class="ttname"><a href="classCTransferenciaCalorMassa.xhtml">CTransferenciaCalorMassa</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CTransferenciaCalorMassa.h:9</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ad34b06b7e57f628a53f8ee675bbdbd19"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ad34b06b7e57f628a53f8ee675bbdbd19">CSimulador_Telha::recorrencia</a></div><div class="ttdeci">int recorrencia</div><div class="ttdoc">número de recorrências cálculo acoplamento conteúdos e temperaturas. </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:48</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a123c8c013324a254f08fb79a67436be6"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a123c8c013324a254f08fb79a67436be6">CSimulador_Telha::dtmax</a></div><div class="ttdeci">double dtmax</div><div class="ttdoc">intervalo de tempo máximo da simulação </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:44</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_a8875e284bec4990b2609d5c790066847"><div class="ttname"><a href="classCSimulador__Telha.xhtml#a8875e284bec4990b2609d5c790066847">CSimulador_Telha::fluido</a></div><div class="ttdeci">CFluido fluido</div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:26</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_ab5b9492f5212374d81a8d116f06778ed"><div class="ttname"><a href="classCSimulador__Telha.xhtml#ab5b9492f5212374d81a8d116f06778ed">CSimulador_Telha::dta</a></div><div class="ttdeci">double dta</div><div class="ttdoc">intervalo de tempo da simulação no instante anterior </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:43</div></div>
+<div class="ttc" id="classCSimulador__Telha_xhtml_aa8de6e5c6e2eddac2134e5762ed8b3ff"><div class="ttname"><a href="classCSimulador__Telha.xhtml#aa8de6e5c6e2eddac2134e5762ed8b3ff">CSimulador_Telha::tempo</a></div><div class="ttdeci">double tempo</div><div class="ttdoc">tempo/hora atual da simulação (varia entre 0-&gt;24h) </div><div class="ttdef"><b>Definition:</b> CSimulador_Telha.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

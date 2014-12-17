@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>SIMULAT - Simulador Transferência Calor e Massa em Telhas: Código-Fonte de src/CMeioPoroso_Telha_Discretizada_TDMA.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SIMULAT - Simulador Transferência Calor e Massa em Telhas
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Simulador transferência calor e massa em telhas cerâmicas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Página&#160;Principal</span></a></li>
+      <li><a href="pages.xhtml"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.xhtml"><span>Classes</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.xhtml"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amigas</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.xhtml">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CMeioPoroso_Telha_Discretizada_TDMA.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CMeioPoroso__Telha__Discretizada__TDMA_8h.xhtml">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CMeioPoroso_Telha_Discretizada_TDMA_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CMeioPoroso_Telha_Discretizada_TDMA_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>         </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CInterface_8h.xhtml">CInterface.h</a>&quot;</span>    <span class="comment">// nodos!</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CMeioPoroso__Telha_8h.xhtml">CMeioPoroso_Telha.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a> :</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span> <a class="code" href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//   CFuncao_wl             funcao_wl;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aeb95fdc24b24ba79912d314ac7c6e9ae">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aeb95fdc24b24ba79912d314ac7c6e9ae">ti_inicial</a> { 22.04 };  </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ab7cbca1e56c9b6d195e13216cc300dd0">   16</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ab7cbca1e56c9b6d195e13216cc300dd0">ol_inicial</a> { 0.31  };  </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a17ceb5e529b097bd7f76c1b98ae542a7">   17</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a17ceb5e529b097bd7f76c1b98ae542a7">tp_inicial</a> { 24.275};  </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//const double ol_max = 0.31;       ///&lt; =porosidade</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="comment">// Propriedades do volume de controle (do nó da telha)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">   22</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">dif</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];           </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">   23</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">k</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];             </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">   24</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">wl</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];            </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">   25</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">h</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];             </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">   26</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">rov</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];           </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">   28</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">esp</a>;                      </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">   29</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">ol</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];            </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">   30</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">tp</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];            </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="comment">// Propriedades telha impermeável</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">   32</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">ti</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];            </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">   34</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">espa</a>;                     </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">   35</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">ola</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];           </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">   36</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">tpa</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];           </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <span class="comment">// Propriedades telha impermeável</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">   38</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">tia</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];           </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">   40</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">espaa</a>;                    </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">   41</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">olaa</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];          </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">   42</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">tpaa</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];          </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   <span class="comment">// Propriedades telha impermeável</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">   44</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">tiaa</a>[<a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> + 1];          </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">   46</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">olChuva</a>{0.0};             </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">   48</a></span>&#160;   <span class="keywordtype">double</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">dx</a> {1.0};                 </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <span class="comment">//double m{0.0};                 ///&lt; ???//m</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">   51</a></span>&#160;   <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">n</a> { <a class="code" href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a> };           </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a60b109e2b1fce0d1980b921062594b85">   57</a></span>&#160;  <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a60b109e2b1fce0d1980b921062594b85">CMeioPoroso_Telha_Discretizada_TDMA</a>(){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4">DadosDefault</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a500d568a62a886a85fea0fab0c7c3343">~CMeioPoroso_Telha_Discretizada_TDMA</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4">DadosDefault</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9">EntrarDadosObjeto</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a878c9b742de58d6238fe565c8f3a26e6">operator&lt;&lt;</a>(std::ostream&amp; os, <a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a>&amp; obj);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa633020d450d022edee4fc1d31940fee">   71</a></span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa633020d450d022edee4fc1d31940fee">CInterfaceSimuladorTelha</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_af17110be4150db655bedf16eda3be0bd"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#af17110be4150db655bedf16eda3be0bd">CMeioPoroso_Telha_Discretizada_TDMA::espaa</a></div><div class="ttdeci">double espaa</div><div class="ttdoc">espessura filme líquido sobre a telha (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:40</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aaec5a7e2f667ae2c8dccdafa5938aea9"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9">CMeioPoroso_Telha_Discretizada_TDMA::EntrarDadosObjeto</a></div><div class="ttdeci">void EntrarDadosObjeto()</div><div class="ttdoc">Entrada de dados. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.cpp:47</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a8b9f2a36b52a534a0111caea7722574d"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a8b9f2a36b52a534a0111caea7722574d">CMeioPoroso_Telha_Discretizada_TDMA::k</a></div><div class="ttdeci">double k[nodos+1]</div><div class="ttdoc">vetor condutividade (de cada nó) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:23</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aa6df7dec9094099eb467c14f30132991"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa6df7dec9094099eb467c14f30132991">CMeioPoroso_Telha_Discretizada_TDMA::ol</a></div><div class="ttdeci">double ol[nodos+1]</div><div class="ttdoc">conteúdo massa (instante atual) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:29</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ac5c26fe0cd20d7b14ec7031b35f17589"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac5c26fe0cd20d7b14ec7031b35f17589">CMeioPoroso_Telha_Discretizada_TDMA::espa</a></div><div class="ttdeci">double espa</div><div class="ttdoc">espessura filme líquido sobre a telha (no instante anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:34</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ac7c8b127a92cab4677ea5d126755e910"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ac7c8b127a92cab4677ea5d126755e910">CMeioPoroso_Telha_Discretizada_TDMA::tpa</a></div><div class="ttdeci">double tpa[nodos+1]</div><div class="ttdoc">temperatura telha permeabel (no instante anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:36</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a10c1c15a23e2174c179381bdc9acd032"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a10c1c15a23e2174c179381bdc9acd032">CMeioPoroso_Telha_Discretizada_TDMA::wl</a></div><div class="ttdeci">double wl[nodos+1]</div><div class="ttdoc">vetor conteúdo massa mássico (de cada nó) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:24</div></div>
+<div class="ttc" id="CInterface_8h_xhtml"><div class="ttname"><a href="CInterface_8h.xhtml">CInterface.h</a></div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a17ceb5e529b097bd7f76c1b98ae542a7"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a17ceb5e529b097bd7f76c1b98ae542a7">CMeioPoroso_Telha_Discretizada_TDMA::tp_inicial</a></div><div class="ttdeci">const double tp_inicial</div><div class="ttdoc">temperatura inicial telha permeável </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:17</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a7239f098feac26dbb03aa08d3fb6bd03"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a7239f098feac26dbb03aa08d3fb6bd03">CMeioPoroso_Telha_Discretizada_TDMA::ola</a></div><div class="ttdeci">double ola[nodos+1]</div><div class="ttdoc">conteúdo de massa (no instante anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:35</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a2fa537dad81d9817d0c769210b4a01e9"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a2fa537dad81d9817d0c769210b4a01e9">CMeioPoroso_Telha_Discretizada_TDMA::olaa</a></div><div class="ttdeci">double olaa[nodos+1]</div><div class="ttdoc">conteúdo massa (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:41</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a60b109e2b1fce0d1980b921062594b85"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a60b109e2b1fce0d1980b921062594b85">CMeioPoroso_Telha_Discretizada_TDMA::CMeioPoroso_Telha_Discretizada_TDMA</a></div><div class="ttdeci">CMeioPoroso_Telha_Discretizada_TDMA()</div><div class="ttdoc">double errorecorrenciaol,errorecorrenciatp,errorecorrenciaola,errorecorrenciatpa; ...</div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:57</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aeb95fdc24b24ba79912d314ac7c6e9ae"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aeb95fdc24b24ba79912d314ac7c6e9ae">CMeioPoroso_Telha_Discretizada_TDMA::ti_inicial</a></div><div class="ttdeci">const double ti_inicial</div><div class="ttdoc">temperatura inicial telha impermeável </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:15</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ab7cbca1e56c9b6d195e13216cc300dd0"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ab7cbca1e56c9b6d195e13216cc300dd0">CMeioPoroso_Telha_Discretizada_TDMA::ol_inicial</a></div><div class="ttdeci">const double ol_inicial</div><div class="ttdoc">conteúdo de umidade inicio simulação </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:16</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ae8258d72903e25df26ed0aaec00e2416"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae8258d72903e25df26ed0aaec00e2416">CMeioPoroso_Telha_Discretizada_TDMA::dx</a></div><div class="ttdeci">double dx</div><div class="ttdoc">intervalo de espaço, função da largura da telha e do número de nós. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:48</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha_xhtml"><div class="ttname"><a href="classCMeioPoroso__Telha.xhtml">CMeioPoroso_Telha</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha.h:16</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml">CMeioPoroso_Telha_Discretizada_TDMA</a></div><div class="ttdoc">por causa rotinas entrada saída </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:11</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a277cd40297aaadd354e70afcb593252a"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a277cd40297aaadd354e70afcb593252a">CMeioPoroso_Telha_Discretizada_TDMA::esp</a></div><div class="ttdeci">double esp</div><div class="ttdoc">espessura filme líquido sobre a telha (instante atual)[mm?] </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:28</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_abbcb0349b58923503f81036dd46afb60"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#abbcb0349b58923503f81036dd46afb60">CMeioPoroso_Telha_Discretizada_TDMA::tpaa</a></div><div class="ttdeci">double tpaa[nodos+1]</div><div class="ttdoc">temperatura telha permeabel (no instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:42</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a049536e47f3886c2ff2078f453bb5d74"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a049536e47f3886c2ff2078f453bb5d74">CMeioPoroso_Telha_Discretizada_TDMA::olChuva</a></div><div class="ttdeci">double olChuva</div><div class="ttdoc">conteúdo mássico de umidade relativo a chuva </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:46</div></div>
+<div class="ttc" id="CMeioPoroso__Telha_8h_xhtml"><div class="ttname"><a href="CMeioPoroso__Telha_8h.xhtml">CMeioPoroso_Telha.h</a></div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aad4f9c085bee82fe960ed4928a9d6da7"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aad4f9c085bee82fe960ed4928a9d6da7">CMeioPoroso_Telha_Discretizada_TDMA::tp</a></div><div class="ttdeci">double tp[nodos+1]</div><div class="ttdoc">temperatura telha permeável (no instante atual) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:30</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a6a9a0e50cbd1c9abb1c097ef548954a4"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4">CMeioPoroso_Telha_Discretizada_TDMA::DadosDefault</a></div><div class="ttdeci">void DadosDefault()</div><div class="ttdoc">Dados default. </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.cpp:17</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a26d9abae5613034687ddba54a3086578"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a26d9abae5613034687ddba54a3086578">CMeioPoroso_Telha_Discretizada_TDMA::ti</a></div><div class="ttdeci">double ti[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante atual) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:32</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a878c9b742de58d6238fe565c8f3a26e6"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a878c9b742de58d6238fe565c8f3a26e6">CMeioPoroso_Telha_Discretizada_TDMA::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, CMeioPoroso_Telha_Discretizada_TDMA &amp;obj)</div><div class="ttdoc">Saída de dados do objeto para os (tela) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.cpp:113</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aa633020d450d022edee4fc1d31940fee"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa633020d450d022edee4fc1d31940fee">CMeioPoroso_Telha_Discretizada_TDMA::CInterfaceSimuladorTelha</a></div><div class="ttdeci">friend class CInterfaceSimuladorTelha</div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:71</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a075fca285e570779428aafad9e445ba2"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a075fca285e570779428aafad9e445ba2">CMeioPoroso_Telha_Discretizada_TDMA::tia</a></div><div class="ttdeci">double tia[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:38</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_ae5f943b2b8c9b290aa31b76da2b39cf7"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#ae5f943b2b8c9b290aa31b76da2b39cf7">CMeioPoroso_Telha_Discretizada_TDMA::dif</a></div><div class="ttdeci">double dif[nodos+1]</div><div class="ttdoc">vetor difusividade (de cada nó) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:22</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a500d568a62a886a85fea0fab0c7c3343"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a500d568a62a886a85fea0fab0c7c3343">CMeioPoroso_Telha_Discretizada_TDMA::~CMeioPoroso_Telha_Discretizada_TDMA</a></div><div class="ttdeci">~CMeioPoroso_Telha_Discretizada_TDMA()=default</div><div class="ttdoc">Destrutor. </div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aa5d6a77222653bbc55b19a10736694ed"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aa5d6a77222653bbc55b19a10736694ed">CMeioPoroso_Telha_Discretizada_TDMA::h</a></div><div class="ttdeci">double h[nodos+1]</div><div class="ttdoc">vetor umidade relativa (de cada nó) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:25</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_aff2b0a9eb18dc65ea255b2e0a14f8608"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aff2b0a9eb18dc65ea255b2e0a14f8608">CMeioPoroso_Telha_Discretizada_TDMA::n</a></div><div class="ttdeci">const int n</div><div class="ttdoc">Número de nós (volumes de controles) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:51</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a269d6e37aaa98a05f0939aadacd8cfc6"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a269d6e37aaa98a05f0939aadacd8cfc6">CMeioPoroso_Telha_Discretizada_TDMA::rov</a></div><div class="ttdeci">double rov[nodos+1]</div><div class="ttdoc">vetor concentração vapor nos nodos (de cada nó) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:26</div></div>
+<div class="ttc" id="CInterface_8h_xhtml_a0f1d5a27cde55270f226a123bef28efe"><div class="ttname"><a href="CInterface_8h.xhtml#a0f1d5a27cde55270f226a123bef28efe">nodos</a></div><div class="ttdeci">constexpr int nodos</div><div class="ttdef"><b>Definition:</b> CInterface.h:12</div></div>
+<div class="ttc" id="classCMeioPoroso__Telha__Discretizada__TDMA_xhtml_a620b49cc78979bc13f0de98b94378617"><div class="ttname"><a href="classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a620b49cc78979bc13f0de98b94378617">CMeioPoroso_Telha_Discretizada_TDMA::tiaa</a></div><div class="ttdeci">double tiaa[nodos+1]</div><div class="ttdoc">temperatura da telha impermeável (instante anterior ao anterior) </div><div class="ttdef"><b>Definition:</b> CMeioPoroso_Telha_Discretizada_TDMA.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Domingo, 30 de Março de 2014 21:20:39 para SIMULAT - Simulador Transferência Calor e Massa em Telhas por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

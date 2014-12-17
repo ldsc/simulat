@@ -1,0 +1,5 @@
+<map id="Gnuplot::Surface" name="Gnuplot::Surface">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#a0e36dcd81618234c6cdd135a9e1eee2b" title="Ativa a visualizacao da superficie (para plotagen 3d). " alt="" coords="181,5,323,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a805f1807c9b3a0a6745d66fa1729e3be" title="Desativa a visualizacao da superficie (para plotagen 3d). " alt="" coords="173,56,331,83"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="379,31,479,57"/>
+</map>

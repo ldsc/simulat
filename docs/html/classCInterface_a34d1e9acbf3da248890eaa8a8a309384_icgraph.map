@@ -1,0 +1,11 @@
+<map id="CInterface::Carimbo" name="CInterface::Carimbo">
+<area shape="rect" id="node2" href="$classCFuncaoAdsorcao.xhtml#a361e4302a433b5604ec1f97a83e425ef" title="Entrada de dados (associados aos ensaios) " alt="" coords="195,5,405,46"/>
+<area shape="rect" id="node3" href="$classCFuncaoDifusividade.xhtml#a47f0332d0eee64d26382f55ad82d09f2" title="Entrada de dados (associados aos ensaios) " alt="" coords="227,70,373,111"/>
+<area shape="rect" id="node4" href="$classCFuncaoCondutividade.xhtml#a2cbe70afdd9eef1cdc237904710ee751" title="Entrada de dados (associados aos ensaios) " alt="" coords="221,135,379,177"/>
+<area shape="rect" id="node5" href="$classCFluido.xhtml#a86b2d6d0cb5b81d50d976385aa69dcf8" title="Entrada de dados. " alt="" coords="207,201,393,228"/>
+<area shape="rect" id="node6" href="$classCTransferenciaCalorMassa.xhtml#a07a41f40068191679771e44309b75beb" title="Entrada de dados. " alt="" coords="473,237,655,278"/>
+<area shape="rect" id="node7" href="$classCSimulador__Telha.xhtml#ad3ec0d6df9f0f7325de23d6a04e3b76a" title="Entrada de dados. " alt="" coords="723,295,895,337"/>
+<area shape="rect" id="node8" href="$classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936" title="Entrada de dados. " alt="" coords="201,354,399,395"/>
+<area shape="rect" id="node9" href="$classCMeioPoroso__Telha.xhtml#a70735fb3dc927168aca84bb0cecb0023" title="Entrada de dados. " alt="" coords="226,419,374,461"/>
+<area shape="rect" id="node10" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#aaec5a7e2f667ae2c8dccdafa5938aea9" title="Entrada de dados. " alt="" coords="454,419,674,461"/>
+</map>

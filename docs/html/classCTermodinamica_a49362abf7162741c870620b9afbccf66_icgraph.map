@@ -1,0 +1,8 @@
+<map id="CTermodinamica::ConcentracaoVapor" name="CTermodinamica::ConcentracaoVapor">
+<area shape="rect" id="node2" href="$classCSimulador__Telha.xhtml#a722e545a25689e36aff4d96cccd1ffcf" title="Cálculo dos valores médios de condutividade e difusividade. " alt="" coords="285,5,470,46"/>
+<area shape="rect" id="node3" href="$classCFuncoesClima.xhtml#adbb305c4199c55873aefeb0e22e0a5e4" title="Dados default. " alt="" coords="275,71,479,97"/>
+<area shape="rect" id="node5" href="$classCFuncoesClima.xhtml#a7f03fe9f4313e2a03e36f33b54a71936" title="Entrada de dados. " alt="" coords="279,122,476,163"/>
+<area shape="rect" id="node6" href="$classCFuncoesClima.xhtml#a64e6dc948deb1d9481b45ea2a6cb6c15" title="CFuncoesClima::ExecutarFuncoes\lClima" alt="" coords="264,187,491,229"/>
+<area shape="rect" id="node4" href="$classCFuncoesClima.xhtml#aa5a957d0b3ab212fd5b1ecd471068b12" title="Construtor. " alt="" coords="539,71,757,97"/>
+<area shape="rect" id="node7" href="$classCFuncoesClima.xhtml#ae5e9416ada714340dc87fd95b4c9898b" title="Executa funções clima. " alt="" coords="559,195,737,221"/>
+</map>

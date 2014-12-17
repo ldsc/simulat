@@ -1,0 +1,5 @@
+<map id="Gnuplot::XLogscale" name="Gnuplot::XLogscale">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#aff546fad227d93babeb5d2cc9f047b89" title="Ativa escala logaritma do eixo x (logscale nao e setado por default). " alt="" coords="197,5,352,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#aed8f962539fd8f53ab2c0218da7a6010" title="Desativa escala logaritma do eixo x (logscale nao e setado por default). " alt="" coords="190,56,359,83"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a07607803ede8dd5416906df0a1924fc5" title="Envia comando para o gnuplot. " alt="" coords="409,31,509,57"/>
+</map>

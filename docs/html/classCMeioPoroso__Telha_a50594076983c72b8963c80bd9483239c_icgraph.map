@@ -1,0 +1,8 @@
+<map id="CMeioPoroso_Telha::DadosDefault" name="CMeioPoroso_Telha::DadosDefault">
+<area shape="rect" id="node2" href="$classCMeioPoroso__Telha.xhtml#a0f4ddb7e7d00257dbaa340a4e8c4df42" title="Construtor default/sobrecarregado, recebe o tipo de material. " alt="" coords="239,5,387,46"/>
+<area shape="rect" id="node3" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a6a9a0e50cbd1c9abb1c097ef548954a4" title="Dados default. " alt="" coords="203,70,423,111"/>
+<area shape="rect" id="node4" href="$classCMeioPoroso__Telha__Discretizada__TDMA.xhtml#a60b109e2b1fce0d1980b921062594b85" title="double errorecorrenciaol,errorecorrenciatp,errorecorrenciaola,errorecorrenciatpa; ..." alt="" coords="473,41,791,82"/>
+<area shape="rect" id="node5" href="$classCSimulador__Telha.xhtml#aa2592b5ca7cce1ac595cc3a658a17c85" title="Dados default. " alt="" coords="523,107,741,133"/>
+<area shape="rect" id="node6" href="$classCSimulador__Telha__GanhosEnergia.xhtml#a8fee41da2f0f78851be425a7d0cc106d" title="Dados default. " alt="" coords="841,99,1066,141"/>
+<area shape="rect" id="node7" href="$classCSimulador__Telha__GanhosEnergia.xhtml#a57fee722f2205904797acbfb7332f178" title="Construtor. " alt="" coords="1115,99,1349,141"/>
+</map>

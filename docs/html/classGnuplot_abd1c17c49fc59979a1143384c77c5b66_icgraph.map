@@ -1,0 +1,6 @@
+<map id="Gnuplot::plotfile_xyz" name="Gnuplot::plotfile_xyz">
+<area shape="rect" id="node2" href="$classGnuplot.xhtml#aee30f21a00a4f31c8356a2ef1f0e26e3" title="Plota valores de x,y,z a partir de vetores. " alt="" coords="195,31,319,57"/>
+<area shape="rect" id="node5" href="$classGnuplot.xhtml#a3f5f7127182ea22da3ee0b78f0ade35c" title="Plota valores de x,y,z a partir de um arquivo de disco. " alt="" coords="198,81,317,108"/>
+<area shape="rect" id="node3" href="$classGnuplot.xhtml#a14191e89154f2716608f6907975cc012" title="Construtor, plota um grafico de x_y_z a partir de vetores, diretamente na construcao. " alt="" coords="376,5,496,32"/>
+<area shape="rect" id="node4" href="$classGnuplot.xhtml#a239b222cd7ff6ba4a60d583b22248a4f" title="Plota valores de x,y,z a partir de vetores. " alt="" coords="368,56,504,83"/>
+</map>
