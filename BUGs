@@ -1,0 +1,24 @@
+
+O programa foi montado em 92-93
+e rodava normalmente, mas apresentava um patamar constante na evolução das temperaturas.
+
+Por volta de 1998 fiz uma versão reduzida p/ UNIX, sem a interface gráfica
+(só eliminei as funções associadas a interface gráfica no DOS).
+O programa  apresentou um resultado um pouco diferente, o patamar evoluia,
+lentamente, mas não era constante (me parece mais correto).
+
+Em 7/2000 dando uma revisada encontrei alguns BUG's na versão DOS:
+
+BUG 1-A função fe_calculo_difusividade usava diretamente a variável D
+que é um ponteiro constante para o vetor das difusividades.
+Agora cria internamente a variável local difusividade.
+
+BUG 2-O calculo da pressão de saturação do vapor
+usava na versão do mestrado a função pow10(math.h)
+enquanto a versão do unix usava pow(x,y).
+Ao usar pow10 a pvs ficava constante em 1000, ao usar pow(x,y)
+variava entre ~2000-3000
+
+
+
+

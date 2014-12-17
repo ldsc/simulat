@@ -1,0 +1,60 @@
+==================================================
+Lista de tarefas Programa SIMULAT
+==================================================
+==========> 0- Organização
+[x]- Reorganizar a estrutura de diretórios
+[x]- Criar arquivo Leiame com histórico das versões
+[x]- Ativar uso do git na versão para GNU/Linux de 2014.
+[X]- Salvar todos os arquivos, com backup em pendrive, no dropbox, em cd a ser anexado a tese.
+
+==========> 1- Compilação 
+[x]- Trabalhar sobre a versão de 1996 para unix. Versão que foi recompilada em 2004-2008-2010
+
+==========> 2- Documentação 
+[x]- Renomear atributos para que código fique mais claro
+[x]- Renomear métodos para que código fique mais claro
+[x]- Adicionar os comentários dos atributos presentes na versão DOS de 2001 (arquivo Simulat_2000-dos.cpp).
+[X]- Atualizar os arquivos de explicações. 
+[]- Mover explicações para dentro do código?
+[]- Verificar as informações de unidades dos arquivos de explicações.
+
+==========> 3- Mudanças no código
+[]- Trocar double por long double
+[x]- Nos testes if() trocar if(double>int) por if(double>double)
+
+Atualizações
+================
+[]- Fazer com que vetores iniciem em 0 e não em 1.
+[]- Fazer com que número nodos seja dinâmico.
+[X]- Gerar gráficos usando CGnuplot.
+[] - Tentar gerar gráfico na medida em que a simulação avança!!
+
+[]-  notebook: debuginfo-install glibc-2.18-12.fc20.x86_64 libgcc-4.8.2-7.fc20.x86_64 libstdc++-4.8.2-7.fc20.x86_64
+
+==========> 4- Testes
+[x]- Pequenas diferenças surgiram quando mudei de main_v3.cpp para main_v4.cpp, pois troquei double por long double.
+[]- Gerar arquivo de saída e comparar com saída gerada pela versão 2(unix)
+Procurar saída antiga ou gerada por versão para DOS e comparar para ver se esta ok.
+[]- Depois que garantir que as contas estão ok, gerar exemplos de saída.
+
+
+
+Dicas para atualização versão Windows
+==================================================
+1- Partir do código da versão GNU-Linux.
+2- Acrescentar a classe com a parte gráfica.
+3- Compilar e rodar em máquina DOS.
+Tentar rodar no GNU/Linux usando DOS_EMU.
+
+
+==================================================
+Lista de tarefas Programa S3DMP
+==================================================
+1- Revisar/Ler códigos das classes existentes em S3DMP.
+2- Identificar/anotar o que pode ser aproveitado.
+3- Copiar para S3DMP informações atualizadas do SIMULAT
+4- Fazer com que S3DMP gere a mesma saída de simulat? (somente se não der muito trabalho!).
+5- Estudar a movimentação de classes de S3DMP para dentro da libldsc.
+6- Verificar aproveitamento destes códigos no simulador de poço (NERO).
+
+

@@ -1,0 +1,184 @@
+
+Arquivo: Leiame.txt
+
+Apresenta-se neste arquivo um conjunto de informações sobre as diferentes versões do programa simulat.
+
+Neste repositório público (https://github.com/ldsc/simulat), estamos colocando apenas a última versão do simulat,
+embora a descrição a seguir apresente, brevemente, todas as versões desenvolvidas.
+
+Para maiores detalhes consultar: andreduartebueno@gmail.com
+
+
+0- Lista de subdiretórios (tree)
+=======================================
+[bueno@localhost 01a-SimulacaoTelhaMestrado]$ tree
+.
+|-- BUGS       (lista de bugs encontrados)
+|-- Leiame.txt (este arquivo)
+|-- TODO       (lista tarefas a serem realizadas)
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v1-DOS-1993-recompilado-2001=====================>> Versão para DOS
+==============================================================================================================================
+|   |-- cvplan-ConverteDadosLabSolar-ParaPlanilhas.cpp
+|   |-- documen-CabecalhoDoPrograma-Simulat.cpp
+|   |-- explica-MostraResultadoDeUmaSimulacao.cpp
+|   |-- install-FazInstalacaoDoPrograma-Simulat.cpp
+|   |-- ListaArquivos.txt
+|   |-- readme-MostraConteudoDosArquivos-Explica-Variavel-Balanco.cpp
+|   |-- setup-FazInstalacaoDoPrograma-Simulat.cpp
+|   |-- Simulat-SimuladorTelhaMestrado-v1-DOS-1993-recompilado-2001.cpp
+|   |-- Simulat-SimuladorTelhaMestrado-v1-DOS-1993-recompilado-2001.ide
+|   |-- Simulat-SimuladorTelhaMestrado-v1-DOS-1993-recompilado-2001-SomenteCodigosClasses.h
+|   `-- variavel.doc
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v2-Unix-1996-recompilado-2004-2008-2010===========>> Versão para Unix (enterprise)
+==============================================================================================================================
+|   |-- Leiame.txt
+|   |-- Simulat-SimuladorTelhaMestrado-v2-Unix-1996-recompilado-2004-2008-2010.cpp
+|   |-- Simulat-SimuladorTelhaMestrado-v2-Unix-1996-recompilado-2004-2008-2010.cpp.out
+|   `-- Simulat-SimuladorTelhaMestrado-v2-Unix-1996-recompilado-2004-2008-2010.cpp.out.saida
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v3-GNULinux-2014-Documentado===============>> Versão para Linux (sun ultra40 M2)
+==============================================================================================================================
+|   |-- CMakeLists.txt
+|   |-- Doxyfile
+|   |-- modeloComentarios
+|   |-- Simulat-SimuladorTelhaMestrado-v3-GNULinux-Documentado.cpp
+|   `-- Simulat-SimuladorTelhaMestrado-v3-GNULinux-Documentado.kdev4
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v4-GNULinux-2014-Classes-SaidaGrafica===============>> Versão para Linux (sun ultra40 M2)
+==============================================================================================================================
+|-- Doxyfile
+`-- src
+    |-- CFluido.cpp
+    |-- CFluido.h
+    |-- CFuncaoAdsorcao_Celso.cpp
+    |-- CFuncaoAdsorcao_Celso.h
+    |-- CFuncaoAdsorcao.cpp
+    |-- CFuncaoAdsorcao.h
+    |-- CFuncaoAdsorcao_Pablo.cpp
+    |-- CFuncaoAdsorcao_Pablo.h
+    |-- CFuncaoCondutividade.cpp
+    |-- CFuncaoCondutividade.h
+    |-- CFuncaoConteudoMassicoWl.cpp
+    |-- CFuncaoConteudoMassicoWl.h
+    |-- CFuncaoDifusividade.cpp
+    |-- CFuncaoDifusividade.h
+    |-- CFuncoesClima.cpp
+    |-- CFuncoesClima.h
+    |-- CGnuplot.cpp
+    |-- CGnuplot.h
+    |-- CInterface.cpp
+    |-- CInterface.h
+    |-- CInterface_SimuladorTelha.cpp
+    |-- CInterface_SimuladorTelha.h
+    |-- CMakeLists.txt
+    |-- CMeioPoroso_Telha.cpp
+    |-- CMeioPoroso_Telha_Discretizada_TDMA.cpp
+    |-- CMeioPoroso_Telha_Discretizada_TDMA.h
+    |-- CMeioPoroso_Telha.h
+    |-- CSimulador_Telha.cpp
+    |-- CSimulador_Telha_GanhosEnergia.cpp
+    |-- CSimulador_Telha_GanhosEnergia.h
+    |-- CSimulador_Telha.h
+    |-- CSolver_TDMA.cpp
+    |-- CSolver_TDMA.h
+    |-- CTermodinamica.cpp
+    |-- CTermodinamica.h
+    |-- CTransferenciaCalorMassa.cpp
+    |-- CTransferenciaCalorMassa.h
+    |-- main.cpp
+
+1- Entendendo as versões:
+==========================
+==========> 1- Compilação 
+==========> 2- Documentação 
+==========> 3- Mudanças no código
+==========> 4- Testes
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v1-DOS-1993-recompilado-2001=====================>> Versão para DOS
+==============================================================================================================================
+==========> 1- Compilação
+Versão para DOS que foi desenvolvida em 1992-1993-1994.
+A última atualização é de 2001, inclui duas classes de saída (Saida e Saida_Grafica).
+
+==========> 2- Documentação
+Esta versão tem comentários para as variáveis na declaração da classe, ou seja, diz o que é cada variável.
+
+==========> 3- Mudanças no código
+Nesta versão, aparentemente, os bugs (citados no arquivo TODO) foram eliminados.
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v2-Unix-1996-recompilado-2004-2008-2010===========>> Versão para Unix (enterprise)
+==============================================================================================================================
+==========> 1- Compilação 
+Versão para Unix, o arquivo Sim_uni_1996_12_02.cpp foi montado em 1996 para rodar na enterprise do LMPT.
+
+==========> 2- Documentação 
+
+==========> 3- Mudanças no código
+Para gerar esta versão precisei retirar toda a parte gráfica (que só roda no DOS).
+
+Esta versão foi recompilada em 2004. Como apresentou 2 erros, tive de incluir:
+using namespace std; e trocar cprn(4) por cprn("\dev\lp0");
+
+==========> 4- Testes
+Foi esta versão que mostrou que o patamar da temperatura não era constante, mas apresentava uma subida lenta/leve.
+O erro estava no uso da função pow10(int), que truncava o valor passado para int.
+Como powr10 só tem para DOS, ao converter para UNIX, tive de usar powr(x,y), o que modificou o resultado do patamar de temperatura.
+Foi o uso da função powr10 que provocou certas oscilações nas simulações.
+
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v3-GNULinux-2014-Documentado===============>> Versão para Linux (sun ultra40 M2)
+==============================================================================================================================
+==========> 1- Compilação 
+1.1- Versão gerada em 2014, usando Fedora20 - GNU/Linux, rodando na enterprise Ultra40 M2.
+
+==========> 2- Documentação 
+2.1 - Todo código foi documentado usando JAVADOC.
+2.2 - Foi criado arquivo Doxyfile e gerada documentação no formato html.
+
+==========> 3- Mudanças no código
+3.1 - Atributos/métodos foram renomeados para código ficar mais claro.
+3.2 - Troquei double por long double (e depois voltei atrás para poder obter mesmos resultados)
+3.3 - Eliminei atributos desnecessários como i (usado nos for) e resp. Agora são criados quando necessário.
+3.4 - Algumas comparações if( double > int) foram corrigidas
+
+==========> 4- Testes
+4.1 Com a troca para long double houve uma pequena mudança nos resultados.
+Voltei atrás, recoloquei double e os resultados são os mesmos.
+Pequenas diferenças nas saídas estão associadas ao uso de acentuação na versão mais recente.
+
+==============================================================================================================================
+|-- Simulat-SimuladorTelhaMestrado-v4-GNULinux-2014-Classes-SaidaGrafica===============>> Versão para Linux (sun ultra40 M2)
+==============================================================================================================================
+==========> 1- Compilação 
+1.1- Versão gerada em 2014, usando Fedora20 - GNU/Linux, rodando na enterprise Ultra40 M2 e notebook sony.
+
+==========> 2- Documentação 
+2.1 - Todo código foi documentado usando JAVADOC.
+2.2 - Foi criado arquivo Doxyfile e gerada documentação no formato html.
+
+==========> 3- Mudanças no código
+3.1 - Todas as modificações da versão 3 mais os itens listados abaixo.
+3.2 - Foram criadas diversas classes.
+3.3 - Uso de conceitos básicos de C++11 como valor inicial dos atributos diretamente na declaração.
+3.4 - Uso de shared_ptr em CMeioPoroso_Telha.h/cpp.
+3.5 - No final da simulação gera gráficos usando classe CGnuplot.
+3.6 - ? tentar gerar gráfico na medida em que a simulação avança!!
+
+==========> 4- Testes
+4.1 Com a troca para long double houve uma pequena mudança nos resultados.
+Voltei atrás, recoloquei double e os resultados são os mesmos.
+Pequenas diferenças nas saídas estão associadas ao uso de acentuação na versão mais recente.
+
+
+
+Leia o arquivo TODO que tem as tarefas a serem realizadas
+
