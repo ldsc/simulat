@@ -5,7 +5,7 @@
   - Simulador Transferência Calor e Umidade em Telhas Cerâmicas (meios porosos).
   - A partir de propriedades físicas medidas em laboratório permite a simulação dos valores de conteúdo mássico e temperatura de telhas expostas ao meio ambiente.
   - Manual técnico: [[https://github.com/ldsc/simulat/blob/master/doc/ManualTecnico/Mestrado-AndreDuarteBueno.pdf][Mestrado-AndreDuarteBueno.pdf]].
-  - Apresentação: [[https://github.com/ldsc/simulat/blob/master/doc/ManualTecnico/Mestrado-AndreDuarteBueno-Apresentacao.pdf][Mestrado-AndreDuarteBueno-Apresentacao.pdf]].    
+  - Apresentação: [[https://github.com/ldsc/simulat/blob/master/doc/ManualTecnico/Mestrado-AndreDuarteBueno-Apresentacao.pdf][Mestrado-AndreDuarteBueno-Apresentacao.pdf]].
   - Imagens do software: [[https://github.com/ldsc/simulat/blob/master/doc/ManualTecnico/Mestrado-AndreDuarteBueno-ImagensSoftwareSimulat.pdf][ImagensSoftwareSimulat]].
 - Áreas de pesquisa vinculadas:
   - Modelagem Computacional (Algoritmos).
@@ -14,14 +14,13 @@
   - Programação em C++.
   - Transferência de Calor e Massa.
 
-* Versão: 
+* Versão:
 - 1.0.
 
 * Data:
 - 2008.
-  
+
 * Autor de Contato:
 - André Duarte Bueno
 - [[mailto:andreduartebueno@gmail.com][andreduartebueno@gmail.com]]
 - [[mailto:bueno@lenep.uenf.br][bueno@lenep.uenf.br]]
-
